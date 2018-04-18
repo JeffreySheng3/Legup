@@ -25,7 +25,7 @@ public class BattleShip extends Puzzle {
     public BattleShip() {
         super();
 
-        boardView = new BattleShipView(new Dimension(10, 10));
+        boardView = new BattleShipView(new Dimension(6, 6));
 
         // ADD RULES ONCE THEY ARE CREATED
     }
@@ -64,8 +64,8 @@ public class BattleShip extends Puzzle {
     @Override
     public void importPuzzle(String fileName) throws IOException, ParserConfigurationException, SAXException {
         if (fileName != null) {
-            InputStream inputStream = new FileInputStream(fileName);
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            InputStream inputStream = new FileInputStream(fileName);
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document document = builder.parse(inputStream);
 
@@ -74,33 +74,53 @@ public class BattleShip extends Puzzle {
             Element rootNode = document.getDocumentElement();
             Element puzzleElement = (Element) rootNode.getElementsByTagName("puzzle").item(0);
             Element boardElement = (Element) puzzleElement.getElementsByTagName("board").item(0);
-            Element dataElement = (Element) boardElement.getElementsByTagName("data").item(0);
-            NodeList elementDataList = dataElement.getElementsByTagName("element");
+            Element axesElement = (Element) boardElement.getElementsByTagName("axes").item(0);
+            Element shipElement = (Element) boardElement.getElementsByTagName("ships").item(0);
+            Element cellElement = (Element) boardElement.getElementsByTagName("cells").item(0);
+            Element rightElement = (Element) axesElement.getElementsByTagName("right").item(0);
+            Element bottomElement = (Element) axesElement.getElementsByTagName("bottom").item(0);
+            NodeList rightClueList = rightElement.getElementsByTagName("clue");
+            NodeList bottomClueList = bottomElement.getElementsByTagName("clue");
+            NodeList shipList = shipElement.getElementsByTagName("ship");
+            NodeList cells = cellElement.getElementsByTagName("cell");
 
             int size = Integer.valueOf(boardElement.getAttribute("size"));
             battleShipBoard = new BattleShipBoard(size);
 
-            ArrayList<ElementData> battleShipData = new ArrayList<>();
+            ArrayList<BattleShipCell> battleShipCell = new ArrayList<>();
             for (int i = 0; i < size * size; i++) {
-                battleShipData.add(null);
+                battleShipCell.add(null);
             }
 
-            for (int i = 0; i < elementDataList.getLength(); i++) {
-                NamedNodeMap attributeList = elementDataList.item(i).getAttributes();
-                int value = Integer.valueOf(attributeList.getNamedItem("value").getNodeValue());
-                int x = Integer.valueOf(attributeList.getNamedItem("x").getNodeValue());
-                int y = Integer.valueOf(attributeList.getNamedItem("y").getNodeValue());
+            for (int i = 0; i < rightClueList.getLength(); i++) {
+                battleShipBoard.getRight()[i] = Integer.valueOf(rightClueList.item(i).getAttributes().getNamedItem("value").getNodeValue());
+            }
 
-                BattleShipCell cell = new BattleShipCell(value, new Point(x, y));
+            for (int i = 0; i < bottomClueList.getLength(); i++) {
+                battleShipBoard.getBottom()[i] = Integer.valueOf(bottomClueList.item(i).getAttributes().getNamedItem("value").getNodeValue());
+            }
+
+            for (int i = 0; i < shipList.getLength(); i++) {
+                int length = Integer.valueOf(shipList.item(i).getAttributes().getNamedItem("length").getNodeValue());
+                int count = Integer.valueOf(shipList.item(i).getAttributes().getNamedItem("count").getNodeValue());
+                battleShipBoard.getShips().add(new Ship(length, count));
+            }
+
+            for (int i = 0; i < cells.getLength(); i++) {
+                int x = Integer.valueOf(cells.item(i).getAttributes().getNamedItem("x").getNodeValue());
+                int y = Integer.valueOf(cells.item(i).getAttributes().getNamedItem("y").getNodeValue());
+                String value = cells.item(i).getAttributes().getNamedItem("value").getNodeValue().toUpperCase();
+
+                BattleShipCell cell = new BattleShipCell(BattleShipCellType.valueOf(value).ordinal(), new Point(x, y));
                 battleShipBoard.setCell(x, y, cell);
-                cell.setModifiable(true); // CHANGE MODIFIABILITY LATER ACCORDING TO RULES, I JUST THREW SOMETHING IN THERE FOR NOW
+                cell.setModifiable(false);
                 cell.setGiven(true);
             }
 
             for (int x = 0; x < size; x++) {
                 for (int y = 0; y < size; y++) {
                     if (battleShipBoard.getCell(x, y) == null) {
-                        BattleShipCell cell = new BattleShipCell(0, new Point(x, y));
+                        BattleShipCell cell = new BattleShipCell(9, new Point(x, y));
                         cell.setModifiable(true);
                         battleShipBoard.setCell(x, y, cell);
                     }

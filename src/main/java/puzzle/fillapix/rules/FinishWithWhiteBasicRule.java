@@ -22,38 +22,44 @@ public class FinishWithWhiteBasicRule extends BasicRule {
         int height = fillapixBoard.getHeight();
         FillapixCell cell = fillapixBoard.getCell(elementIndex%width,elementIndex/width);
 
-        BlackOrWhiteCaseRule blackOrWhite = new BlackOrWhiteCaseRule();
-        TooManyBlackCellsContradictionRule tooManyBlackCells = new TooManyBlackCellsContradictionRule();
-
         FillapixBoard currentBoard = (FillapixBoard) transition.getParentNode().getBoard();
-        // See note in Finish with Black because the same thing applies here for this method
-        for(int i = -1; i < 2; i++) {
+        // given the modified cell, cell
+        // look at each cell in the applicable region
+        for (int i = -1; i < 2; i++) {
             for (int j = -1; j < 2; j++) {
                 int x = cell.getLocation().x + i;
                 int y = cell.getLocation().y + j;
+                // making sure it's not out of bounds
                 if (x > -1 && x < width && y > -1 && y < height) {
-                    // boolean parentCellUnknown = ((FillapixBoard) transition.getParentNode().getBoard()).getCell(x,y).isUnknown();
-                    // if (parentCellUnknown && !fillapixBoard.getCell(x,y).isWhite()) {
-                    //     return "All the changes you made must be white to apply this rule.";
-                    // }
-
-                    ArrayList<Board> cases = blackOrWhite.getCases(currentBoard, x*width+y);
-                    for (Board caseBoard: cases) {
-                        String contradiction = tooManyBlackCells.checkContradictionAt((FillapixBoard) caseBoard,x*width+y);
-                        FillapixCell caseCell = ((FillapixBoard) caseBoard).getCell(x,y);
-                        if (caseCell.hasSameState(fillapixBoard.getCell(x,y))) {
-                            if (contradiction==null) { // is a contradiction
-                                return "Incorrect use of Finish with Black, your answer leads to a contradiction.";
-                            } else {
-                                currentBoard = (FillapixBoard) caseBoard;
-                                break;
+                    FillapixCell cellInRegion = fillapixBoard.getCell(x,y);
+                    // and if that cell is a clue
+                    if (cellInRegion.isGiven()) {
+                        int clue = cellInRegion.getClue();
+                        // then check around that clue
+                        int numBlackCells = 0;
+                        for (int k = -1; k < 2; k++) {
+                            for (int l = -1; l < 2; l++) {
+                                int z = x+k;
+                                int w = y+l;
+                                if (z > -1 && z < width && w > -1 && w < height) {
+                                    if (currentBoard.getCell(z,w).isBlack()) {
+                                        numBlackCells++;
+                                    }
+                                }
                             }
+                        }
+                        // if the number of black cells
+                        // equal the clue, then this is a valid application
+                        if (numBlackCells<=clue) {
+                            return null;
+                        } else {
+                            System.out.println("WHAT WENT WRONG??? "+clue+"   "+numBlackCells);
                         }
                     }
                 }
             }
         }
-        return null;
+        return "Incorrect use of Finish with White";
     }
 
     @Override

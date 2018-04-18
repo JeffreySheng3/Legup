@@ -1,12 +1,10 @@
 package ui;
 
-public enum ToolbarName
-{
-    OPEN_PUZZLE, OPEN_PROOF, SAVE, UNDO, REDO, HINT, CHECK,
-    SUBMIT, DIRECTIONS;
+public enum ToolboxName {
+    ZOOM_IN, ZOOM_OUT, NORMAL_ZOOM, BEST_FIT, ANNOTATIONS;
 
     /**
-     * Gets the String representation of the ToolbarName enum
+     * Gets the String representation of the ToolboxName enum
      *
      * @return String representing the enum
      */
@@ -27,5 +25,4 @@ public enum ToolbarName
         }
         return str;
     }
-    
 }

@@ -1,5 +1,6 @@
 package puzzle.battleship;
 
-public enum BattleShipCellType {
-    SHIP_SEGMENT, WATER
+public enum BattleShipCellType
+{
+    WATER, SHIP_SEGMENT, SHIP_NORTH_END, SHIP_SOUTH_END, SHIP_WEST_END, SHIP_EAST_END, SHIP_CENTER, SHIP_SINGLE, CLUE, UNKNOWN
 }

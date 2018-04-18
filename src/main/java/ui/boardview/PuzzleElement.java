@@ -100,9 +100,11 @@ public abstract class PuzzleElement implements Shape
 
     public void drawHover(Graphics2D graphics2D)
     {
-        graphics2D.setColor(highLightColor);
-        graphics2D.setStroke(new BasicStroke(2));
-        graphics2D.drawRect(location.x + 1, location.y + 1, size.width - 2, size.height - 2);
+        if (data.isModifiable()) {
+            graphics2D.setColor(highLightColor);
+            graphics2D.setStroke(new BasicStroke(2));
+            graphics2D.drawRect(location.x + 1, location.y + 1, size.width - 2, size.height - 2);
+        }
     }
 
     public void drawModified(Graphics2D graphics2D)

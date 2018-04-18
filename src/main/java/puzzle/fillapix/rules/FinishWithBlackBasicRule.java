@@ -22,6 +22,54 @@ public class FinishWithBlackBasicRule extends BasicRule {
         int height = fillapixBoard.getHeight();
         FillapixCell cell = fillapixBoard.getCell(elementIndex%width,elementIndex/width);
 
+        FillapixBoard currentBoard = (FillapixBoard) transition.getParentNode().getBoard();
+        // given the modified cell, cell
+        // look at each cell in the applicable region
+        for (int i = -1; i < 2; i++) {
+            for (int j = -1; j < 2; j++) {
+                int x = cell.getLocation().x + i;
+                int y = cell.getLocation().y + j;
+                // making sure it's not out of bounds
+                if (x > -1 && x < width && y > -1 && y < height) {
+                    FillapixCell cellInRegion = fillapixBoard.getCell(x,y);
+                    // and if that cell is a clue
+                    if (cellInRegion.isGiven()) {
+                        // then check around that clue
+                        for (int k = -1; i < 2; i++) {
+                            for (int l = -1; j < 2; j++) {
+                                int z = x+k;
+                                int w = y+l;
+                                int numBlackCells = 0;
+                                int numUnknownCells = 0;
+                                if (z > -1 && z < width && w > -1 && w < height) {
+                                    if (currentBoard.getCell(z,w).isBlack()) {
+                                        numBlackCells++;
+                                    } else if (currentBoard.getCell(z,w).isUnknown()) {
+                                        numUnknownCells++;
+                                    }
+                                }
+                                // if the number of black cells and unknown cells
+                                // equal the clue, then this is a valid application
+                                if (numBlackCells+numUnknownCells==cellInRegion.getClue()) {
+                                    return null;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return "Incorrect use of Finish with Black";
+    }
+
+    /*
+    @Override
+    public String checkRuleAt(TreeTransition transition, int elementIndex) {
+        FillapixBoard fillapixBoard = (FillapixBoard) transition.getBoard();
+        int width = fillapixBoard.getWidth();
+        int height = fillapixBoard.getHeight();
+        FillapixCell cell = fillapixBoard.getCell(elementIndex%width,elementIndex/width);
+
         // start up case rule for each one
         // if that leads to a contradiction,
         // it must be the other one in the case
@@ -64,6 +112,7 @@ public class FinishWithBlackBasicRule extends BasicRule {
         }
         return null;
     }
+    */
 
     @Override
     public boolean doDefaultApplication(TreeTransition transition) {return false; }

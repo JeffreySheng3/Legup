@@ -43,6 +43,7 @@ public class LegupUI extends JFrame implements WindowListener
     protected FileDialog fileChooser;
     protected PickGameDialog pickGameDialog;
     protected JButton[] toolBarButtons;
+    protected JButton[] toolBoxButtons;
 
     protected JMenuBar mBar;
 
@@ -69,10 +70,13 @@ public class LegupUI extends JFrame implements WindowListener
     protected JMenu help;
 
     protected JToolBar toolBar;
+    protected JToolBar toolBox;
 
     protected BoardView boardView;
     private RuleFrame ruleFrame;
     private TreePanel treePanel;
+    private JSplitPane rightOfTopHalfPanel;
+    private JScrollPane emptyBoard;
 
     protected TitledBorder boardBorder;
 
@@ -265,11 +269,6 @@ public class LegupUI extends JFrame implements WindowListener
         toolBarButtons[ToolbarName.CHECK.ordinal()].addActionListener((ActionEvent e)  -> checkProof());
         toolBarButtons[ToolbarName.SUBMIT.ordinal()].addActionListener((ActionEvent e)  -> {});
         toolBarButtons[ToolbarName.DIRECTIONS.ordinal()].addActionListener((ActionEvent e)  -> {});
-        toolBarButtons[ToolbarName.ZOOM_IN.ordinal()].addActionListener((ActionEvent e)  -> boardView.zoomIn());
-        toolBarButtons[ToolbarName.ZOOM_OUT.ordinal()].addActionListener((ActionEvent e)  -> boardView.zoomOut());
-        toolBarButtons[ToolbarName.NORMAL_ZOOM.ordinal()].addActionListener((ActionEvent e)  -> boardView.zoomTo(1.0) );
-        toolBarButtons[ToolbarName.BEST_FIT.ordinal()].addActionListener((ActionEvent e)  -> boardView.zoomFit());
-        toolBarButtons[ToolbarName.ANNOTATIONS.ordinal()].addActionListener((ActionEvent e)  -> {  });
 
         toolBarButtons[ToolbarName.SAVE.ordinal()].setEnabled(false);
         toolBarButtons[ToolbarName.UNDO.ordinal()].setEnabled(false);
@@ -278,9 +277,52 @@ public class LegupUI extends JFrame implements WindowListener
         toolBarButtons[ToolbarName.CHECK.ordinal()].setEnabled(false);
         toolBarButtons[ToolbarName.SUBMIT.ordinal()].setEnabled(false);
         toolBarButtons[ToolbarName.DIRECTIONS.ordinal()].setEnabled(false);
-        getToolBarButtons()[ToolbarName.ANNOTATIONS.ordinal()].setEnabled(false);
 
         add(toolBar, BorderLayout.NORTH);
+    }
+
+    // contains all the code to setup the toolbox
+    private void setupToolBox(JPanel panel)
+    {
+        setToolBoxButtons(new JButton[ToolboxName.values().length]);
+        for(int i = 0; i < ToolboxName.values().length; i++)
+        {
+            String toolBoxName = ToolboxName.values()[i].toString();
+            getToolBoxButtons()[i] = new JButton(toolBoxName, new ImageIcon("images/Legup/" + toolBoxName + ".png"));
+        }
+
+        toolBox = new JToolBar();
+        toolBox.setFloatable(false);
+        toolBox.setRollover(true);
+
+        for(int i = 0; i < getToolBoxButtons().length; i++)
+        {
+            for(int s = 0; s < TOOLBAR_SEPARATOR_BEFORE.length; s++)
+            {
+                if(i == TOOLBAR_SEPARATOR_BEFORE[s])
+                {
+                    toolBar.addSeparator();
+                }
+            }
+            String toolBoxName = ToolboxName.values()[i].toString();
+
+            toolBox.add(getToolBoxButtons()[i]);
+            getToolBoxButtons()[i].setToolTipText(toolBoxName);
+
+            getToolBoxButtons()[i].setVerticalTextPosition(SwingConstants.BOTTOM);
+            getToolBoxButtons()[i].setHorizontalTextPosition(SwingConstants.CENTER);
+        }
+
+        toolBoxButtons[ToolboxName.ZOOM_IN.ordinal()].addActionListener((ActionEvent e)  -> boardView.zoomIn());
+        toolBoxButtons[ToolboxName.ZOOM_OUT.ordinal()].addActionListener((ActionEvent e)  -> boardView.zoomOut());
+        toolBoxButtons[ToolboxName.NORMAL_ZOOM.ordinal()].addActionListener((ActionEvent e)  -> boardView.zoomTo(1.0) );
+        toolBoxButtons[ToolboxName.BEST_FIT.ordinal()].addActionListener((ActionEvent e)  -> boardView.zoomFit());
+
+        toolBoxButtons[ToolboxName.ANNOTATIONS.ordinal()].addActionListener((ActionEvent e)  -> {  });
+        getToolBoxButtons()[ToolboxName.ANNOTATIONS.ordinal()].setEnabled(false);
+
+
+        panel.add(toolBox);
     }
 
     /**
@@ -298,13 +340,25 @@ public class LegupUI extends JFrame implements WindowListener
 
         treePanel = new TreePanel(this);
 
-        JScrollPane emptyBoard = new JScrollPane();
+        emptyBoard = new JScrollPane();
+        emptyBoard.setPreferredSize(new Dimension(1000, 400));
         TitledBorder titleBoard = BorderFactory.createTitledBorder("Board");
         titleBoard.setTitleJustification(TitledBorder.CENTER);
         emptyBoard.setBorder(titleBoard);
 
+        JPanel extrasAndZoom = new JPanel();
+        extrasAndZoom.setPreferredSize(new Dimension(200,400));
+        TitledBorder toolBoxTitle = BorderFactory.createTitledBorder("Board Panel");
+        toolBoxTitle.setTitleJustification(TitledBorder.CENTER);
+        extrasAndZoom.setBorder(toolBoxTitle);
+        setupToolBox(extrasAndZoom);
+
+
+        rightOfTopHalfPanel = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, emptyBoard, extrasAndZoom);
+
+
         JPanel boardPanel = new JPanel(new BorderLayout());
-        topHalfPanel = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, ruleFrame, emptyBoard);
+        topHalfPanel = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, ruleFrame, rightOfTopHalfPanel);
         mainPanel = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true, topHalfPanel, treePanel);
         topHalfPanel.setPreferredSize(new Dimension(600, 400));
         mainPanel.setPreferredSize(new Dimension(600, 600));
@@ -562,7 +616,7 @@ public class LegupUI extends JFrame implements WindowListener
         getToolBarButtons()[ToolbarName.CHECK.ordinal()].setEnabled(true);
         getToolBarButtons()[ToolbarName.SUBMIT.ordinal()].setEnabled(true);
         getToolBarButtons()[ToolbarName.DIRECTIONS.ordinal()].setEnabled(true);
-        getToolBarButtons()[ToolbarName.ANNOTATIONS.ordinal()].setEnabled(true);
+        getToolBoxButtons()[ToolboxName.ANNOTATIONS.ordinal()].setEnabled(true);
 
         pack();
     }
@@ -713,10 +767,39 @@ public class LegupUI extends JFrame implements WindowListener
         this.toolBarButtons = toolBarButtons;
     }
 
+    /**
+     * Gets the toolbox buttons
+     *
+     * @return toolbox buttons
+     */
+    public JButton[] getToolBoxButtons()
+    {
+        return toolBoxButtons;
+    }
+
+    /**
+     * Sets the toolbox buttons
+     *
+     * @param toolBoxButtons toolbox buttons
+     */
+    public void setToolBoxButtons(JButton[] toolBoxButtons)
+    {
+        this.toolBoxButtons = toolBoxButtons;
+    }
+
     public void setPuzzleView(Puzzle puzzle)
     {
         this.boardView = puzzle.getBoardView();
-        this.topHalfPanel.setRightComponent(boardView);
+        boardView.setPreferredSize(new Dimension(1000,400));
+
+        JPanel boardPanel = new JPanel();
+        boardPanel.add(this.boardView);
+        TitledBorder titleBoard = BorderFactory.createTitledBorder(puzzle.getName());
+        titleBoard.setTitleJustification(TitledBorder.CENTER);
+        boardPanel.setBorder(titleBoard);
+
+        this.rightOfTopHalfPanel.setLeftComponent(boardView);
+        this.topHalfPanel.setRightComponent(rightOfTopHalfPanel);
         this.topHalfPanel.setVisible(true);
 
         this.treePanel.getTreeView().resetView();

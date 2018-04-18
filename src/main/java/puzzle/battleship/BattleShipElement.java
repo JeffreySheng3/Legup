@@ -3,11 +3,12 @@ package puzzle.battleship;
 import ui.boardview.GridElement;
 
 import java.awt.*;
-import java.util.Random;
 
 public class BattleShipElement extends GridElement {
     private static final Color WATER_COLOR = Color.BLUE; // CAN CHANGE THIS TO ANY BLUE YOU WANT
     private static final Color SHIP_COLOR = Color.DARK_GRAY;
+    private static final Color UNKNOWN_COLOR = Color.LIGHT_GRAY;
+    private int clue;
 
     public BattleShipElement(BattleShipCell cell) {super(cell); }
 
@@ -15,12 +16,16 @@ public class BattleShipElement extends GridElement {
         BattleShipCell cell = (BattleShipCell) data;
         BattleShipCellType type = cell.getType();
 
-        // graphics2D.setColor(WATER_COLOR);
-        // graphics2D.fillRect(location.x, location.y, size.width, size.height);
-        colorBackgroundWater(graphics2D);
-        if( type == BattleShipCellType.SHIP_SEGMENT) {
-            graphics2D.setColor(SHIP_COLOR);
-            graphics2D.fillRect(location.x+size.width/4, location.y+size.height/4, size.width/2, size.height/2);
+        graphics2D.setColor(WATER_COLOR);
+        graphics2D.fillRect(location.x, location.y, size.width, size.height);
+
+        switch (type) {
+            case UNKNOWN:
+                graphics2D.setColor(UNKNOWN_COLOR);
+                graphics2D.fillRect(location.x, location.y, size.width, size.height);
+                break;
+            default:
+                drawShipPiece(graphics2D, type);
         }
 
         graphics2D.setColor(Color.BLACK);
@@ -28,51 +33,45 @@ public class BattleShipElement extends GridElement {
         graphics2D.drawRect(location.x, location.y, size.width, size.height);
     }
 
-    private void colorBackgroundWater(Graphics2D graphics2D) {
-        Color oceanColors[] = new Color[5];
-        oceanColors[0] = new Color(47, 86, 233);
-        oceanColors[1] = new Color(45, 100, 245);
-        oceanColors[2] = new Color(47, 141, 255);
-        oceanColors[3] = new Color(51, 171, 249);
-        oceanColors[4] = new Color(52, 204, 255);
-
-        graphics2D.setColor(oceanColors[0]);
-        graphics2D.fillRect(location.x, location.y, size.width, size.height);
-
-        Random generator = new Random();
-        for (int i = location.x; i < location.x+size.width; i = i+4) {
-            for (int j = location.y; j < location.y+size.height; j = j+2) {
-                int c = generator.nextInt(oceanColors.length);
-                graphics2D.setColor(oceanColors[c]);
-                if (i+4 < location.x+size.width && j+2 < location.y+size.height) {
-                    graphics2D.fillRect(i, j, 4,2);
-                } else if (i+4 < location.x+size.width) {
-                    graphics2D.fillRect(i, j, 4,(location.y+size.height)%2);
-                } else if (j+2 < location.y+size.height) {
-                    graphics2D.fillRect(i, j, (location.x+size.width)%4, 2);
-                } else {
-                    graphics2D.fillRect(i, j, (location.x+size.width)%4, (location.y+size.height)%2);
-                }
-            }
+    public void drawShipPiece(Graphics2D graphics2D, BattleShipCellType type) {
+        graphics2D.setColor(SHIP_COLOR);
+        switch (type) {
+            case SHIP_SEGMENT:
+                graphics2D.fillRect(location.x+size.width/4, location.y+size.height/4, size.width/2, size.height/2);
+                break;
+            case SHIP_NORTH_END:
+                graphics2D.fillOval(location.x, location.y, size.width, size.height);
+                graphics2D.fillRect(location.x, location.y+size.width/2, size.width, size.height-size.width/2);
+                break;
+            case SHIP_SOUTH_END:
+                graphics2D.fillOval(location.x, location.y, size.width, size.height);
+                graphics2D.fillRect(location.x, location.y, size.width, size.height-size.width/2);
+                break;
+            case SHIP_WEST_END:
+                graphics2D.fillOval(location.x, location.y, size.width, size.height);
+                graphics2D.fillRect(location.x+size.height/2, location.y, size.width-size.height/2, size.height);
+                break;
+            case SHIP_EAST_END:
+                graphics2D.fillOval(location.x, location.y, size.width, size.height);
+                graphics2D.fillRect(location.x, location.y, size.width-size.height/2, size.height);
+                break;
+            case SHIP_CENTER:
+                graphics2D.fillRect(location.x, location.y, size.width, size.height);
+                break;
+            case SHIP_SINGLE:
+                graphics2D.fillOval(location.x, location.y, size.width, size.height);
+                break;
+            default:
+                graphics2D.setColor(WATER_COLOR);
+                graphics2D.fillRect(location.x, location.y, size.width, size.height);
         }
+    }
 
-        /*
-        Random generator = new Random();
-        for (int i = location.x; i < location.x+size.width; i = i+8) {
-            for (int j = location.y; j < location.y+size.height; j = j+2) {
-                int c = generator.nextInt(oceanColors.length);
-                graphics2D.setColor(oceanColors[c]);
-                if (i+8 < location.x+size.width && j+2 < location.y+size.height) {
-                    graphics2D.fillRect(i, j, 8,2);
-                } else if (i+8 < location.x+size.width) {
-                    graphics2D.fillRect(i, j, 8,(location.y+size.height)%2);
-                } else if (j+2 < location.y+size.height) {
-                    graphics2D.fillRect(i, j, (location.x+size.width)%8, 2);
-                } else {
-                    graphics2D.fillRect(i, j, (location.x+size.width)%8, (location.y+size.height)%2);
-                }
-            }
-        }
-        */
+    public int getClue() {
+        return clue;
+    }
+
+    public void setClue(int clue) {
+        this.clue = clue;
     }
 }

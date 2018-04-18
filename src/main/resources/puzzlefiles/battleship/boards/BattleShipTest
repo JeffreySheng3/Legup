@@ -1,13 +1,33 @@
 <Legup>
     <puzzle qualifiedClassName="puzzle.battleship.BattleShip">
-        <board size="10">
-            <data>
-                <element value="1" x="2" y="0"/>
-                <element value="1" x="6" y="0"/>
-                <element value="2" x="1" y="1"/>
-                <element value="-1" x="8" y="1"/>
-                <element value="-1" x="2" y="2"/>
-            </data>
+        <board size="6">
+            <axes>
+                <right>
+                    <clue value = "3"/>
+                    <clue value = "1"/>
+                    <clue value = "2"/>
+                    <clue value = "1"/>
+                    <clue value = "0"/>
+                    <clue value = "3"/>
+                </right>
+                <bottom>
+                    <clue value = "0"/>
+                    <clue value = "3"/>
+                    <clue value = "3"/>
+                    <clue value = "1"/>
+                    <clue value = "2"/>
+                    <clue value = "1"/>
+                </bottom>
+            </axes>
+            <ships>
+                <ship length = "1" count = "3"/>
+                <ship length = "2" count = "2"/>
+                <ship length = "3" count = "1"/>
+            </ships>
+            <cells>
+                <cell value="water" x="1" y="4"/>
+                <cell value="ship_single" x="3" y="4"/>
+            </cells>
         </board>
     </puzzle>
 </Legup>
