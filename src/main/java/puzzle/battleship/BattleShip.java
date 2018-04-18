@@ -21,18 +21,29 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-public class BattleShip extends Puzzle {
-    public BattleShip() {
+public class BattleShip extends Puzzle
+{
+    public BattleShip()
+    {
         super();
 
-        boardView = new BattleShipView(new Dimension(6, 6));
+        this.name = "BattleShip";
+
+        this.importer = null;
+        this.exporter = null;
+
+        this.factory = null;
 
         // ADD RULES ONCE THEY ARE CREATED
     }
 
     @Override
-    public void initializeBoard() {
-        for (PuzzleElement element : boardView.getPuzzleElements()) {
+    public void initializeView()
+    {
+        BattleShipBoard board = (BattleShipBoard) currentBoard;
+        boardView = new BattleShipView(new Dimension(board.getWidth(), board.getHeight()));
+        for(PuzzleElement element : boardView.getPuzzleElements())
+        {
             int index = element.getIndex();
             BattleShipCell cell = (BattleShipCell) currentBoard.getElementData(index);
 
@@ -42,29 +53,41 @@ public class BattleShip extends Puzzle {
     }
 
     @Override
-    public Board generatePuzzle(int difficulty) {
+    public Board generatePuzzle(int difficulty)
+    {
         return null;
     }
 
+    /**
+     * Determines if the current board is a valid state
+     *
+     * @param board board to check for validity
+     *
+     * @return true if board is valid, false otherwise
+     */
     @Override
-    public boolean isValidBoardState(Board board) {
+    public boolean isBoardComplete(Board board)
+    {
         return false;
     }
 
     @Override
-    public void onBoardChange(Board board) {
+    public void onBoardChange(Board board)
+    {
 
     }
 
     @Override
-    public void onTreeSelectionChange(ArrayList<Selection> newSelection) {
+    public void onTreeSelectionChange(ArrayList<Selection> newSelection)
+    {
 
     }
 
     @Override
-    public void importPuzzle(String fileName) throws IOException, ParserConfigurationException, SAXException {
-        if (fileName != null) {
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+    public void importPuzzle(String fileName) throws IOException, ParserConfigurationException, SAXException
+    {
+        if(fileName != null)
+        {
             InputStream inputStream = new FileInputStream(fileName);
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document document = builder.parse(inputStream);
@@ -87,9 +110,10 @@ public class BattleShip extends Puzzle {
             int size = Integer.valueOf(boardElement.getAttribute("size"));
             battleShipBoard = new BattleShipBoard(size);
 
-            ArrayList<BattleShipCell> battleShipCell = new ArrayList<>();
-            for (int i = 0; i < size * size; i++) {
-                battleShipCell.add(null);
+            ArrayList<ElementData> battleShipData = new ArrayList<>();
+            for(int i = 0; i < size * size; i++)
+            {
+                battleShipData.add(null);
             }
 
             for (int i = 0; i < rightClueList.getLength(); i++) {
