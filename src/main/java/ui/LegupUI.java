@@ -81,7 +81,7 @@ public class LegupUI extends JFrame implements WindowListener
     protected BoardView boardView;
     private RuleFrame ruleFrame;
     private TreePanel treePanel;
-    private JSplitPane rightOfTopHalfPanel;
+    private JPanel rightOfTopHalfPanel;
     private JScrollPane emptyBoard;
 
     protected TitledBorder boardBorder;
@@ -323,7 +323,7 @@ public class LegupUI extends JFrame implements WindowListener
             getToolBoxButtons()[i] = new JButton(toolBoxName, new ImageIcon("images/Legup/" + toolBoxName + ".png"));
         }
 
-        toolBox = new JToolBar();
+        toolBox = new JToolBar(null, JToolBar.VERTICAL);
         toolBox.setFloatable(false);
         toolBox.setRollover(true);
 
@@ -337,10 +337,8 @@ public class LegupUI extends JFrame implements WindowListener
                 }
             }
             String toolBoxName = ToolboxName.values()[i].toString();
-
             toolBox.add(getToolBoxButtons()[i]);
             getToolBoxButtons()[i].setToolTipText(toolBoxName);
-
             getToolBoxButtons()[i].setVerticalTextPosition(SwingConstants.BOTTOM);
             getToolBoxButtons()[i].setHorizontalTextPosition(SwingConstants.CENTER);
         }
@@ -373,21 +371,17 @@ public class LegupUI extends JFrame implements WindowListener
         treePanel = new TreePanel(this);
 
         emptyBoard = new JScrollPane();
-        emptyBoard.setPreferredSize(new Dimension(1000, 400));
         TitledBorder titleBoard = BorderFactory.createTitledBorder("Board");
         titleBoard.setTitleJustification(TitledBorder.CENTER);
         emptyBoard.setBorder(titleBoard);
 
         JPanel extrasAndZoom = new JPanel();
-        extrasAndZoom.setPreferredSize(new Dimension(200,400));
-        TitledBorder toolBoxTitle = BorderFactory.createTitledBorder("Board Panel");
-        toolBoxTitle.setTitleJustification(TitledBorder.CENTER);
-        extrasAndZoom.setBorder(toolBoxTitle);
         setupToolBox(extrasAndZoom);
 
 
-        rightOfTopHalfPanel = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, emptyBoard, extrasAndZoom);
-
+        rightOfTopHalfPanel = new JPanel(new BorderLayout());
+        rightOfTopHalfPanel.add(emptyBoard, BorderLayout.WEST);
+        rightOfTopHalfPanel.add(extrasAndZoom, BorderLayout.EAST);
 
         JPanel boardPanel = new JPanel(new BorderLayout());
         topHalfPanel = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, ruleFrame, rightOfTopHalfPanel);
@@ -831,7 +825,8 @@ public class LegupUI extends JFrame implements WindowListener
         titleBoard.setTitleJustification(TitledBorder.CENTER);
         boardPanel.setBorder(titleBoard);
 
-        this.rightOfTopHalfPanel.setLeftComponent(boardView);
+        this.rightOfTopHalfPanel.remove(emptyBoard);
+        this.rightOfTopHalfPanel.add(boardView, BorderLayout.WEST);
         this.topHalfPanel.setRightComponent(rightOfTopHalfPanel);
         this.topHalfPanel.setVisible(true);
 
