@@ -1,0 +1,9 @@
+<puzzle class="puzzles.sudoku.Sudoku">
+  <board height="9" width="9">
+    <cell index="0" val="1" />
+    <cell index="4" val="4" />
+    <cell index="7" val="5" />
+    <cell index="8" val="4" />
+    <cell index="13" val="3" />
+  </board>
+</puzzle>
