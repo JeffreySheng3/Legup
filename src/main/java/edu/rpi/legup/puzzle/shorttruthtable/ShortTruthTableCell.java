@@ -3,55 +3,52 @@ package edu.rpi.legup.puzzle.shorttruthtable;
 import edu.rpi.legup.model.gameboard.GridCell;
 
 import java.awt.*;
-import java.util.HashSet;
-import java.util.Set;
 
-public class SudokuCell extends GridCell<Integer>
+public class LightUpCell extends GridCell<Integer>
 {
-    private int groupIndex;
-    private Set<Integer> annotations;
+    private boolean isLite;
 
-    /**
-     * SudokuCell Constructor - creates a new Sudoku cell to hold the puzzleElement
-     *
-     * @param value value of the sudoku cell
-     * @param location location of the cell on the board
-     * @param groupIndex index of the group the cell is in on the board
-     */
-    public SudokuCell(int value, Point location, int groupIndex)
+    public LightUpCell(int valueInt, Point location)
     {
-        super(value, location);
-        this.groupIndex = groupIndex;
-        this.annotations = new HashSet<>();
+        super(valueInt, location);
+        this.isLite = false;
     }
 
-    /**
-     * Gets the group index of the cell
-     *
-     * @return group index of the cell
-     */
-    public int getGroupIndex()
+    public LightUpCellType getType()
     {
-        return groupIndex;
+        switch(data)
+        {
+            case -4:
+                return LightUpCellType.BULB;
+            case -3:
+                return LightUpCellType.EMPTY;
+            case -2:
+                return LightUpCellType.UNKNOWN;
+            case -1:
+                return LightUpCellType.BLACK;
+            default:
+                if(data >= 0)
+                {
+                    return LightUpCellType.NUMBER;
+                }
+        }
+        return null;
     }
 
-    public Set<Integer> getAnnotations() {
-        return annotations;
+    public boolean isLite()
+    {
+        return isLite;
     }
 
-    public void setAnnotations(Set<Integer> annotations) {
-        this.annotations = annotations;
+    public void setLite(boolean isLite)
+    {
+        this.isLite = isLite;
     }
 
-    /**
-     * Performs a deep copy on the SudokuCell
-     *
-     * @return a new copy of the SudokuCell that is independent of this one
-     */
     @Override
-    public SudokuCell copy()
+    public LightUpCell copy()
     {
-        SudokuCell copy = new SudokuCell(data, (Point)location.clone(), groupIndex);
+        LightUpCell copy = new LightUpCell(data, (Point)location.clone());
         copy.setIndex(index);
         copy.setModifiable(isModifiable);
         copy.setGiven(isGiven);

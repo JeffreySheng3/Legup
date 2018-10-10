@@ -8,11 +8,11 @@ import org.w3c.dom.NodeList;
 
 import java.awt.*;
 
-public class SudokuImporter extends PuzzleImporter
+public class LightUpImporter extends PuzzleImporter
 {
-    public SudokuImporter(Sudoku sudoku)
+    public LightUpImporter(LightUp lightUp)
     {
-        super(sudoku);
+        super(lightUp);
     }
 
     /**
@@ -28,75 +28,67 @@ public class SudokuImporter extends PuzzleImporter
         {
             if(!node.getNodeName().equalsIgnoreCase("board"))
             {
-                throw new InvalidFileFormatException("Sudoku Importer: cannot find board puzzleElement");
+                throw new InvalidFileFormatException("lightup Importer: cannot find board puzzleElement");
             }
             Element boardElement = (Element)node;
             if(boardElement.getElementsByTagName("cells").getLength() == 0)
             {
-                throw new InvalidFileFormatException("Sudoku Importer: no puzzleElement found for board");
+                throw new InvalidFileFormatException("lightup Importer: no puzzleElement found for board");
             }
             Element dataElement = (Element)boardElement.getElementsByTagName("cells").item(0);
             NodeList elementDataList = dataElement.getElementsByTagName("cell");
 
-            SudokuBoard sudokuBoard;
-            int size;
-            int minorSize;
+            LightUpBoard lightUpBoard = null;
             if(!boardElement.getAttribute("size").isEmpty())
             {
-                size = Integer.valueOf(boardElement.getAttribute("size"));
-                minorSize = (int)Math.sqrt(size);
-                if(minorSize * minorSize != size)
-                {
-                    throw new InvalidFileFormatException("Sudoku Importer: invalid board dimensions");
-                }
-                sudokuBoard = new SudokuBoard(size);
+                int size = Integer.valueOf(boardElement.getAttribute("size"));
+                lightUpBoard = new LightUpBoard(size);
             }
-            else
+            else if(!boardElement.getAttribute("width").isEmpty() && !boardElement.getAttribute("height").isEmpty())
             {
-                throw new InvalidFileFormatException("Sudoku Importer: invalid board dimensions");
+                int width = Integer.valueOf(boardElement.getAttribute("width"));
+                int height = Integer.valueOf(boardElement.getAttribute("height"));
+                lightUpBoard = new LightUpBoard(width, height);
             }
+
+            if(lightUpBoard == null)
+            {
+                throw new InvalidFileFormatException("lightup Importer: invalid board dimensions");
+            }
+
+            int width = lightUpBoard.getWidth();
+            int height = lightUpBoard.getHeight();
 
             for(int i = 0; i < elementDataList.getLength(); i++)
             {
-                SudokuCell cell = (SudokuCell)puzzle.getFactory().importCell(elementDataList.item(i), sudokuBoard);
+                LightUpCell cell = (LightUpCell)puzzle.getFactory().importCell(elementDataList.item(i), lightUpBoard);
                 Point loc = cell.getLocation();
-                if(cell.getData() != 0)
+                if(cell.getData() != -2)
                 {
                     cell.setModifiable(false);
                     cell.setGiven(true);
                 }
-                sudokuBoard.setCell(loc.x, loc.y, cell);
+                lightUpBoard.setCell(loc.x, loc.y, cell);
             }
 
-            for(int y = 0; y < size; y++)
+            for(int y = 0; y < height; y++)
             {
-                for(int x = 0; x < size; x++)
+                for(int x = 0; x < width; x++)
                 {
-                    if(sudokuBoard.getCell(x, y) == null)
+                    if(lightUpBoard.getCell(x, y) == null)
                     {
-                        int groupIndex = x / minorSize + y / minorSize * minorSize;
-                        SudokuCell cell = new SudokuCell(0, new Point(x, y), groupIndex);
-                        cell.setIndex(y * size + x);
+                        LightUpCell cell = new LightUpCell(-2, new Point(x, y));
+                        cell.setIndex(y * height + x);
                         cell.setModifiable(true);
-                        sudokuBoard.setCell(x, y, cell);
+                        lightUpBoard.setCell(x, y, cell);
                     }
                 }
             }
-//
-//            for(int y = 0; y < size; y++)
-//            {
-//                for(int x = 0; x < size; x++)
-//                {
-//                    SudokuCell cell = sudokuBoard.getCell(x, y);
-//                    System.err.println("(" + x + ", " + y + ") - " + cell.getGroupIndex());
-//                }
-//            }
-
-            puzzle.setCurrentBoard(sudokuBoard);
+            puzzle.setCurrentBoard(lightUpBoard);
         }
         catch(NumberFormatException e)
         {
-            throw new InvalidFileFormatException("Sudoku Importer: unknown value where integer expected");
+            throw new InvalidFileFormatException("lightup Importer: unknown value where integer expected");
         }
     }
 }

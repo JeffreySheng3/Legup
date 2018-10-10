@@ -1,38 +1,30 @@
 package edu.rpi.legup.puzzle.shorttruthtable;
 
 import edu.rpi.legup.model.Puzzle;
+import edu.rpi.legup.model.RegisterPuzzle;
 import edu.rpi.legup.model.gameboard.Board;
 import edu.rpi.legup.model.gameboard.PuzzleElement;
 import edu.rpi.legup.model.rules.ContradictionRule;
-import edu.rpi.legup.ui.boardview.BoardView;
 
-public class Sudoku extends Puzzle {
-    private SudokuView boardView;
+@RegisterPuzzle
+public class LightUp extends Puzzle {
 
-    /**
-     * Sudoku Constructor
-     */
-    public Sudoku() {
+    public LightUp() {
         super();
+        name = "LightUp";
 
-        this.name = "Sudoku";
+        importer = new LightUpImporter(this);
+        exporter = new LightUpExporter(this);
 
-        this.importer = new SudokuImporter(this);
-        this.exporter = new SudokuExporter(this);
-
-        this.factory = new SudokuCellFactory();
-    }
-
-    public BoardView getBoardView() {
-        return boardView;
+        factory = new LightUpCellFactory();
     }
 
     /**
-     * Initializes the game board
+     * Initializes the game board. Called by the invoker of the class
      */
     @Override
     public void initializeView() {
-        boardView = new SudokuView((SudokuBoard) currentBoard);
+        boardView = new LightUpView((LightUpBoard) currentBoard);
     }
 
     /**
@@ -54,17 +46,17 @@ public class Sudoku extends Puzzle {
      */
     @Override
     public boolean isBoardComplete(Board board) {
-        SudokuBoard sudokuBoard = (SudokuBoard) board;
+        LightUpBoard lightUpBoard = (LightUpBoard) board;
+        lightUpBoard.fillWithLight();
 
         for (ContradictionRule rule : contradictionRules) {
-            if (rule.checkContradiction(sudokuBoard) == null) {
+            if (rule.checkContradiction(lightUpBoard) == null) {
                 return false;
             }
         }
-
-        for (PuzzleElement puzzleElement : sudokuBoard.getPuzzleElements()) {
-            SudokuCell cell = (SudokuCell) puzzleElement;
-            if (cell.getData() == 0) {
+        for (PuzzleElement data : lightUpBoard.getPuzzleElements()) {
+            LightUpCell cell = (LightUpCell) data;
+            if ((cell.getType() == LightUpCellType.UNKNOWN || cell.getType() == LightUpCellType.EMPTY) && !cell.isLite()) {
                 return false;
             }
         }
