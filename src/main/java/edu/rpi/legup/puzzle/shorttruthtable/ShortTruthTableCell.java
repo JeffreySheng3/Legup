@@ -4,32 +4,32 @@ import edu.rpi.legup.model.gameboard.GridCell;
 
 import java.awt.*;
 
-public class LightUpCell extends GridCell<Integer>
+public class ShortTruthTableCell extends GridCell<Integer>
 {
     private boolean isLite;
 
-    public LightUpCell(int valueInt, Point location)
+    public ShortTruthTableCell(int valueInt, Point location)
     {
         super(valueInt, location);
         this.isLite = false;
     }
 
-    public LightUpCellType getType()
+    public ShortTruthTableCellType getType()
     {
         switch(data)
         {
             case -4:
-                return LightUpCellType.BULB;
+                return ShortTruthTableCellType.BULB;
             case -3:
-                return LightUpCellType.EMPTY;
+                return ShortTruthTableCellType.EMPTY;
             case -2:
-                return LightUpCellType.UNKNOWN;
+                return ShortTruthTableCellType.UNKNOWN;
             case -1:
-                return LightUpCellType.BLACK;
+                return ShortTruthTableCellType.BLACK;
             default:
                 if(data >= 0)
                 {
-                    return LightUpCellType.NUMBER;
+                    return ShortTruthTableCellType.NUMBER;
                 }
         }
         return null;
@@ -46,9 +46,9 @@ public class LightUpCell extends GridCell<Integer>
     }
 
     @Override
-    public LightUpCell copy()
+    public ShortTruthTableCell copy()
     {
-        LightUpCell copy = new LightUpCell(data, (Point)location.clone());
+        ShortTruthTableCell copy = new ShortTruthTableCell(data, (Point)location.clone());
         copy.setIndex(index);
         copy.setModifiable(isModifiable);
         copy.setGiven(isGiven);

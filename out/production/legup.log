@@ -1,1 +1,124 @@
-[ERROR] 2018-09-24 13:20:35.576 [AWT-EventQueue-0] LegupUI - InvalidFileFormatException: Puzzle creation error: cannot find puzzle with that name
+[DEBUG] 2018-10-10 12:15:46.067 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.lightup.LightUp
+[DEBUG] 2018-10-10 12:15:46.161 [AWT-EventQueue-0] History - History Cleared
+[DEBUG] 2018-10-10 12:15:46.190 [AWT-EventQueue-0] TreeView - Creating new views for tree view.
+[DEBUG] 2018-10-10 12:15:46.237 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 2330x670
+[DEBUG] 2018-10-10 12:15:46.259 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 2330x670
+[DEBUG] 2018-10-10 12:15:48.447 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 2330x670
+[DEBUG] 2018-10-10 12:15:48.540 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 2330x670
+[DEBUG] 2018-10-10 12:15:48.620 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 2330x670
+[DEBUG] 2018-10-10 12:15:48.697 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 2330x670
+[DEBUG] 2018-10-10 12:15:48.771 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 2330x670
+[DEBUG] 2018-10-10 12:15:48.848 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 2330x670
+[DEBUG] 2018-10-10 12:15:48.937 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 2330x670
+[DEBUG] 2018-10-10 12:15:49.028 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 2330x670
+[DEBUG] 2018-10-10 12:15:49.101 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 2330x670
+[DEBUG] 2018-10-10 12:16:42.881 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[ERROR] 2018-10-10 12:16:42.881 [AWT-EventQueue-0] GameBoardFacade - java.lang.ClassNotFoundException: edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[ERROR] 2018-10-10 12:16:42.882 [AWT-EventQueue-0] LegupUI - InvalidFileFormatException: Puzzle creation error
+[DEBUG] 2018-10-10 12:20:28.805 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[ERROR] 2018-10-10 12:20:28.826 [AWT-EventQueue-0] LegupUI - InvalidFileFormatException: lightup Factory: cell unknown value
+[DEBUG] 2018-10-10 12:25:06.990 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[DEBUG] 2018-10-10 12:25:07.009 [AWT-EventQueue-0] History - History Cleared
+[DEBUG] 2018-10-10 12:25:07.029 [AWT-EventQueue-0] TreeView - Creating new views for tree view.
+[DEBUG] 2018-10-10 12:25:07.060 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:25:07.078 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[INFO ] 2018-10-10 12:25:26.222 [AWT-EventQueue-0] History - Pushed EditDataCommand to stack.
+[INFO ] 2018-10-10 12:25:26.222 [AWT-EventQueue-0] LegupUI - Pushing EditDataCommand to stack.
+[DEBUG] 2018-10-10 12:25:26.229 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[DEBUG] 2018-10-10 12:25:26.241 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[INFO ] 2018-10-10 12:25:27.032 [AWT-EventQueue-0] History - Pushed EditDataCommand to stack.
+[INFO ] 2018-10-10 12:25:27.032 [AWT-EventQueue-0] LegupUI - Pushing EditDataCommand to stack.
+[DEBUG] 2018-10-10 12:25:27.034 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[INFO ] 2018-10-10 12:25:27.372 [AWT-EventQueue-0] History - Pushed EditDataCommand to stack.
+[INFO ] 2018-10-10 12:25:27.372 [AWT-EventQueue-0] LegupUI - Pushing EditDataCommand to stack.
+[DEBUG] 2018-10-10 12:25:27.374 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[INFO ] 2018-10-10 12:25:27.784 [AWT-EventQueue-0] History - Pushed EditDataCommand to stack.
+[INFO ] 2018-10-10 12:25:27.784 [AWT-EventQueue-0] LegupUI - Pushing EditDataCommand to stack.
+[DEBUG] 2018-10-10 12:25:27.786 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[INFO ] 2018-10-10 12:25:28.098 [AWT-EventQueue-0] History - Pushed EditDataCommand to stack.
+[INFO ] 2018-10-10 12:25:28.099 [AWT-EventQueue-0] LegupUI - Pushing EditDataCommand to stack.
+[DEBUG] 2018-10-10 12:25:28.100 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[INFO ] 2018-10-10 12:25:28.559 [AWT-EventQueue-0] History - Pushed EditDataCommand to stack.
+[INFO ] 2018-10-10 12:25:28.559 [AWT-EventQueue-0] LegupUI - Pushing EditDataCommand to stack.
+[DEBUG] 2018-10-10 12:25:28.561 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[INFO ] 2018-10-10 12:25:28.923 [AWT-EventQueue-0] History - Pushed EditDataCommand to stack.
+[INFO ] 2018-10-10 12:25:28.923 [AWT-EventQueue-0] LegupUI - Pushing EditDataCommand to stack.
+[DEBUG] 2018-10-10 12:25:28.925 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[INFO ] 2018-10-10 12:25:29.093 [AWT-EventQueue-0] History - Pushed EditDataCommand to stack.
+[INFO ] 2018-10-10 12:25:29.093 [AWT-EventQueue-0] LegupUI - Pushing EditDataCommand to stack.
+[DEBUG] 2018-10-10 12:25:29.095 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[INFO ] 2018-10-10 12:25:29.401 [AWT-EventQueue-0] History - Pushed EditDataCommand to stack.
+[INFO ] 2018-10-10 12:25:29.401 [AWT-EventQueue-0] LegupUI - Pushing EditDataCommand to stack.
+[DEBUG] 2018-10-10 12:25:29.402 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[DEBUG] 2018-10-10 12:25:51.526 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[DEBUG] 2018-10-10 12:25:51.612 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[DEBUG] 2018-10-10 12:25:51.689 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[DEBUG] 2018-10-10 12:25:51.776 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[DEBUG] 2018-10-10 12:25:51.854 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[DEBUG] 2018-10-10 12:25:51.942 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[DEBUG] 2018-10-10 12:25:52.014 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[DEBUG] 2018-10-10 12:25:52.089 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[DEBUG] 2018-10-10 12:25:52.159 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 143x215
+[DEBUG] 2018-10-10 12:27:22.849 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[DEBUG] 2018-10-10 12:27:22.861 [AWT-EventQueue-0] History - History Cleared
+[DEBUG] 2018-10-10 12:27:22.880 [AWT-EventQueue-0] TreeView - Creating new views for tree view.
+[DEBUG] 2018-10-10 12:27:22.881 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:22.892 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:28.431 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:28.502 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:28.582 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:28.650 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:28.732 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:28.801 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:28.867 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:28.937 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.012 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.078 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.155 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.254 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.365 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.449 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.519 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.569 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.637 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.703 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.769 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.892 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:29.954 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:30.172 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:30.238 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:27:47.396 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[DEBUG] 2018-10-10 12:27:47.412 [AWT-EventQueue-0] History - History Cleared
+[DEBUG] 2018-10-10 12:27:47.421 [AWT-EventQueue-0] TreeView - Creating new views for tree view.
+[DEBUG] 2018-10-10 12:27:47.422 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:28:09.825 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[DEBUG] 2018-10-10 12:28:09.840 [AWT-EventQueue-0] History - History Cleared
+[DEBUG] 2018-10-10 12:28:09.849 [AWT-EventQueue-0] TreeView - Creating new views for tree view.
+[DEBUG] 2018-10-10 12:28:09.850 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:28:33.946 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[DEBUG] 2018-10-10 12:28:33.962 [AWT-EventQueue-0] History - History Cleared
+[DEBUG] 2018-10-10 12:28:33.972 [AWT-EventQueue-0] TreeView - Creating new views for tree view.
+[DEBUG] 2018-10-10 12:28:33.972 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:29:01.537 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[DEBUG] 2018-10-10 12:29:01.557 [AWT-EventQueue-0] History - History Cleared
+[DEBUG] 2018-10-10 12:29:29.698 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[DEBUG] 2018-10-10 12:30:01.059 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[DEBUG] 2018-10-10 12:30:28.685 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[DEBUG] 2018-10-10 12:30:28.702 [AWT-EventQueue-0] History - History Cleared
+[DEBUG] 2018-10-10 12:30:28.729 [AWT-EventQueue-0] TreeView - Creating new views for tree view.
+[DEBUG] 2018-10-10 12:30:28.760 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:30:28.771 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:32:15.511 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[DEBUG] 2018-10-10 12:32:15.545 [AWT-EventQueue-0] History - History Cleared
+[DEBUG] 2018-10-10 12:32:15.582 [AWT-EventQueue-0] TreeView - Creating new views for tree view.
+[DEBUG] 2018-10-10 12:32:15.614 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:32:15.621 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:32:23.589 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
+[DEBUG] 2018-10-10 12:32:23.601 [AWT-EventQueue-0] History - History Cleared
+[DEBUG] 2018-10-10 12:38:11.417 [AWT-EventQueue-0] TreeView - Creating new views for tree view.
+[DEBUG] 2018-10-10 12:38:11.418 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:38:11.475 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:38:11.539 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:38:11.616 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:38:11.699 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215
+[DEBUG] 2018-10-10 12:38:11.787 [AWT-EventQueue-0] TreeView - DrawTree: dimensions - 50x215

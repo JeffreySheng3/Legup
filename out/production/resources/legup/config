@@ -10,4 +10,3 @@
         <puzzle name="TreeTent" qualifiedClassName="puzzle.treetent.TreeTent" fileType=".xml"/>
         <puzzle name="ShortTruthTable" qualifiedClassName="puzzle.shorttruthtable.ShortTruthTable" fileType=".xml"/>
     </puzzles>
-</Legup>

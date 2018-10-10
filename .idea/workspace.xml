@@ -2,567 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7623f8eb-6df1-4e99-ab5f-2db637f9bafa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Legup2.0.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/Legup.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ai/Solver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/app/Config.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/app/GameBoardFacade.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/app/InvalidConfigException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/app/Settings.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/controller/BoardController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/controller/Controller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/controller/ElementController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/controller/RuleController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/controller/SelectionController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/controller/ToolbarController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/controller/TreeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/controller/TreeToolBarController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/Puzzle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/PuzzleExporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/PuzzleImporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/Board.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/ElementData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/ElementFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/GridBoard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/GridCell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/PuzzlePiece.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/rules/BasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/rules/CaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/rules/ContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/rules/MergeRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/rules/Rule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/rules/RuleType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/tree/Tree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/tree/TreeElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/tree/TreeElementType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/tree/TreeNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/model/tree/TreeTransition.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShip.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipBoard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipCell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipCellController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipCellType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/AdjacentShipsContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/ContinueShipBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/FinishWithWaterBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/FinishedWithShipsBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/IncompleteShipContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/SegmentTypeBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/SegmentTypeCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/ShipLocationCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/ShipOrWaterCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/SurroundShipBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/TooFewInFleetContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/TooFewRowColContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/TooManyInFleetContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/TooManyRowColContradiction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/Fillapix.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixBoard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixCell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixCellController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixCellFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixExporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixImporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/rules/BlackOrWhiteCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/rules/FinishWithBlackBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/rules/FinishWithWhiteBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/rules/TooFewBlackCellsContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/rules/TooManyBlackCellsContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/Heyawake.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/AdjacentBlacksContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/BlackOrWhiteCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/BlackPathBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/BottleNeckBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/FillRoomBlackBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/FillRoomWhiteBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/OneRowBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/PreventWhiteLineBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/RoomTooEmptyContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/RoomTooFullContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/ThreeByThreeBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/TwoInCornerBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/WhiteAreaContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/WhiteAroundBlackBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/WhiteEscapeBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/WhiteLineContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/ZigZagCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/ZigZagWhiteBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpBoard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpCell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpCellController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpCellFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpCellType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpExporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpImporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/BulbsInPathContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/BulbsOutsideDiagonalBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/CannotLightACellContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/EmptyCellinLightBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/EmptyCornersBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/FinishWithBulbsBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/FinishWithEmptyBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/LightOrEmptyCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/MustLightBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/SatisfyNumberCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/TooFewBulbsContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/TooManyBulbsContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/Masyu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuBoard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuCell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuCellFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuExporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuImporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/rules/BlackEdgeBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/rules/FinishPathBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/rules/NearWhiteBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/rules/OnlyOneChoiceBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/rules/WhiteEdgeBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/Nurikabe.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeBoard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeCell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeCellFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeExporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeImporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/BlackBetweenRegionsBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/BlackBottleNeckBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/BlackOrWhiteCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/BlackSquareContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/CornerBlackBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/FillinBlackBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/FillinWhiteBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/IsolateBlackContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/MultipleNumbersContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/NoNumberContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/PreventBlackSquareBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/SurroundRegionBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/TooFewSpacesContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/TooManySpacesContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/WhiteBottleNeckBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableBoard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableCell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableCellFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableExporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableImporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/Sudoku.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuBoard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuCell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuCellFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuExporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuImporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/AdvancedDeductionBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/LastCellForNumberBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/LastNumberForCellBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/NoSolutionContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/PossibleCellCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/PossibleNumberCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/RepeatedNumberContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentBoard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentCell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentCellFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentClue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentClueView$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentClueView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentExporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentImporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentLine.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentLineView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/EmptyFieldBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/FillinRowCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/FinishWithGrassBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/FinishWithTentsBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/LastCampingSpotBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/LinkTentCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/LinkTreeCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/NoTentForTreeContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/NoTreeForTentContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/SurroundTentWithGrassBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TentForTreeBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TentOrGrassCaseRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TooFewTentsContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TooManyTentsContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TouchingTentsContradictionRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TreeForTentBasicRule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/save/ExportFileException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/save/InvalidFileFormatException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/save/SavableBoard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/save/SavableProof.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/DynamicViewer$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/DynamicViewer$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/DynamicViewer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/JPopupPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/LegupUI.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/PickGameDialog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/Selection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/ToolbarName.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/WrapLayout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/ZoomWidget$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/ZoomWidget$PopupSlider.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/ZoomWidget.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/ZoomablePane.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/BoardView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/DataSelectionView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/ElementSelection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/GridBoardView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/GridElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/IBoardListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/PuzzleElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/PuzzlePieceView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/SelectionItemView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/BasicRulePanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/CaseRulePanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/CaseRuleSelectionView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/ContradictionRulePanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/IRuleListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/ITransitionListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/ITreeSelectionListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/RuleButton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/RuleFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/RulePanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeElementView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeNodeView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreePanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeSelection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeToolBarButton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeToolBarName.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeToolbarPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeTransitionView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/user/Submission.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/user/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/utility/DeleteTreeElementCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/utility/EditDataCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/utility/History.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/utility/IBoardListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/utility/ICommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/utility/PuzzleCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/utility/ValidateBasicRuleCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/utility/ValidateContradictionRuleCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/AddChild.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/AddRegion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Annotations.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Basic Rules.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Best Fit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Case Rules.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Check.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Collapse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Console.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Contradictions.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/DelChild.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Directions.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Hint.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/LegupSplash.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Merge.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/MergeRule.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/New.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Normal Zoom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Open Proof.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Open Puzzle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Redo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Save.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Submit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Undo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Zoom In.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Zoom Out.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/bar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/defaultContradiction.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/defaultRule.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/questionmark.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/unknown.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/BottomCap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/LeftCap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/Middle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/RightCap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/TopCap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/UnknownSegment.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/cases/SegmentType.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/cases/ShipLocations.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/cases/ShipOrWater.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/AdjacentShips.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/IncompleteShip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/MalformedShip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/too_few_in_fleet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/too_few_segments.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/too_many_in_fleet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/too_many_segments.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/labelforce.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/SegmentType.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/ShipOrWater.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[0].gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[10].gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[11].gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[12].gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[13].gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[14].gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[15].gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[1].gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[2].gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/screenshot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/rules/ContinueShip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/rules/SegmentChoice.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/rules/SurroundShip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/rules/finishShip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/rules/finishWater.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/submarine.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/too_many_in_fleet.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/water.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/cases/BlackOrWhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/contradictions/TooFewBlackCells.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/contradictions/TooManyBlackCells.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/rules/FinishWithBlack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/rules/FinishWithWhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/rulesharedcells.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/cases/BlackOrWhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/contradictions/RoomTooEmpty.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/contradictions/RoomTooFull.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/contradictions/WhiteArea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/contradictions/WhiteLine.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/contradictions/adjacentBlacks.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/finishRoom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/-1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/0.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/10.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/11.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/12.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/13.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/14.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/15.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/6.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/7.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/8.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/9.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/-1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/0.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/10.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/11.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/12.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/13.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/14.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/15.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/6.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/7.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/8.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/9.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/rules/FillRoomBlack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/rules/FillRoomWhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/rules/WhiteAroundBlack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/0.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/black.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/cases/LightOrEmpty.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/cases/Old/SatisfyNumber.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/cases/Old/SatisfyNumber2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/cases/SatisfyNumber.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/BulbsInPath.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/CannotLightACell.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/BulbsInPath.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/NoLight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/TooFewBulbs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/TooFewBulbs2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/TooManyBulbs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/TooManyBulbs2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/TooFewBulbs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/TooManyBulbs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/empty.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/light.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/AddLight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/BulbsOutsideDiagonal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/EmptyCellInLight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/EmptyCorners.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/FinishWithBulbs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/FinishWithEmpty.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/MustLight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/AddLight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/MustLight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/SurroundBulbs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/SurroundBulbs2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/SurroundWhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/SurroundWhite2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/WhiteCorners.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/WhiteInLight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/CaseBlackSplit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/CaseNormalSplit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/CaseWhiteSplit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/ContradictionBadLooping.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/ContradictionBlack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/ContradictionNoOptions.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/ContradictionOnly2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/ContradictionWhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuelBlockedBlack.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuleBlackEdge.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuleFinishPath.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuleNearWhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuleOnlyOneChoice.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuleWhiteEdge.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RulesConnectedCells.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/cases/BlackOrWhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/BlackArea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/BlackSquare.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/MultipleNumbers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/NoNumber.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/TooFewSpaces.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/TooManySpaces.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/nurikabe_icon_template.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/BetweenRegions.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/CornerBlack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/FillInBlack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/FillInWhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/NoBlackSquare.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/OneUnknownBlack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/OneUnknownRegion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/OneUnknownWhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/RuleWhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/SurroundBlack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/AdvancedDeduction.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/NoSolution.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/PossibleValues.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/RepeatedNumber.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/forcedByDeduction.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/forcedByElimination.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/possible_cells_number.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/tem.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/cont_bad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/cont_good.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/leads_to_cont.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/leads_to_soln.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/rule_bad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/soln.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/cont_bad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/cont_good.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/leads_to_cont.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/leads_to_soln.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/prototype.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/soln.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/NewTentLink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/NewTreeLink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/annotate_grass.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/annotate_tent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/aroundTent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/caseLinkTent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/caseLinkTree.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/caseLinkTree_full.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/caseTentOrGrass.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/case_colcount.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/case_rowcount.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/contra_NoTentForTree.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/contra_NoTreeForTent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/contra_adjacentTents.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/contra_miscount.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/finishGrass.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/finishTent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/grass.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/noTreesAround.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTentLink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTentLink1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTentLink2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTentLink3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTreeLink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTreeLink1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTreeLink2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/aroundTent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/aroundTent1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/caseLinkTent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/caseLinkTent1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/caseLinkTree.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/caseLinkTree1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/case_colcount.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/case_colcount1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/case_rowcount.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/case_rowcount1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_NoTreeForTent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_adjacentTents.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_adjacentTents1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_miscount.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_noNeighbors.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_noNeighbors1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_notree.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_notree2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/finishGrass.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/finishTent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/noTreesAround.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/noTreesAround1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/oneTentPosition.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/oneTentPosition1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/oneTentPosition.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/tent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/too_few_tents.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/too_many_tents.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/tree.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/update_template_wip.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzle_gen_script/..\lightup\LightUpBoard1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzle_gen_script/..\lightup\LightUpBoard2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzle_gen_script/..\lightup\LightUpBoard3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzle_gen_script/makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzle_gen_script/puzzle_maker.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/battleship/BattleShipTest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/fillapix/FillapixBoard1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/lightup/LightUpBoard1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/lightup/LightUpBoard2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/lightup/LightUpBoard3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/lightup/LightUpProof2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/lightup/LightUpProof3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/masyu/MasyuBoard1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/nurikabe/NurikabeBoard1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/sudoku/SudokuBoard1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/sudoku/SudokuProof1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/treetent/TreeTentBoard1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/treetent/TreeTenttest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/puzzle/lightup/rules/BulbsOutsideDiagonalBasicRule.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/puzzle/shorttruthtable/ShortTruthTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/puzzle/shorttruthtable/ShortTruthTableBoard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/puzzle/shorttruthtable/ShortTruthTableCell.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/puzzle/shorttruthtable/ShortTruthTableCellFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/puzzle/shorttruthtable/ShortTruthTableElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/puzzle/shorttruthtable/ShortTruthTableExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/puzzle/shorttruthtable/ShortTruthTableImporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/puzzle/shorttruthtable/ShortTruthTableView.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legup-update/build.gradle" afterPath="$PROJECT_DIR$/legup-update/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/edu/rpi/legup/puzzlefiles/shorttruthtable/ShortTruthTablePuzzle1" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/Sudoku.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/SudokuBoard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/SudokuCell.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/SudokuCellController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/SudokuCellFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/SudokuElementView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/SudokuExporter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/SudokuImporter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/SudokuView.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUp.class" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/user/UsageStatistics.class" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/user/UsageStatistics.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/legup.log" afterPath="$PROJECT_DIR$/out/production/legup.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/edu/rpi/legup/legup/config" afterPath="$PROJECT_DIR$/out/production/resources/edu/rpi/legup/legup/config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/legup/config" afterPath="$PROJECT_DIR$/out/production/resources/legup/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUp.java" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTable.java" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableBoard.java" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableBoard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCell.java" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCell.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellController.java" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellFactory.java" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.java" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableExporter.java" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableExporter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableView.java" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/user/UsageStatistics.java" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/user/UsageStatistics.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/edu/rpi/legup/legup/config" afterPath="$PROJECT_DIR$/src/main/resources/edu/rpi/legup/legup/config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/legup/config" afterPath="$PROJECT_DIR$/src/main/resources/legup/config" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -628,15 +96,136 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ShortTruthTableExporter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableExporter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShortTruthTableCellFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShortTruthTable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-187">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#809#810#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShortTruthTableBoard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableBoard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShortTruthTableImporter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+              <folding>
+                <marker date="1539189230027" expanded="true" signature="1379:1392" ph="//..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShortTruthTableView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShortTruthTableElementView.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/boardview/BoardView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+              <folding>
+                <element signature="e#5490#5491#0" expanded="true" />
+                <element signature="e#5527#5528#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZoomablePane.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/ZoomablePane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>model.</find>
       <find>cell</find>
+      <find>creation</find>
+      <find>Invalid File</find>
+      <find>cannot fin</find>
+      <find>Inva</find>
+      <find>edu.rpi.legup.puzzle.masyu.Mas</find>
+      <find>cell location out of</find>
+      <find>cell location out of b</find>
+      <find>edu.rpi.legup.puzzle.shorttruthtable</find>
+      <find>println</find>
+      <find>nurikabe</find>
+      <find>Nurikabe</find>
+      <find>puzzleElement</find>
+      <find>LightUp</find>
     </findStrings>
     <replaceStrings>
       <replace>edu.rpi.legup.model.</replace>
+      <replace>ShortTruthTable</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -1241,11 +830,25 @@
       <list>
         <option value="$PROJECT_DIR$/legup-update/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/user/UsageStatistics.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuView.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/Sudoku.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/user/UsageStatistics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableExporter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/legup/config" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/rpi/legup/legup/config" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/rpi/legup/puzzlefiles/shorttruthtable/ShortTruthTablePuzzle1" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/app/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCell.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/LightUpElementView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableBoard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java" />
       </list>
     </option>
   </component>
@@ -1269,10 +872,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1322,16 +921,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="legup" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="gameboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Legup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Legup2.0" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="legup" type="462c0819:PsiDirectoryNode" />
               <item name="puzzle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1352,16 +941,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="legup" type="462c0819:PsiDirectoryNode" />
               <item name="puzzle" type="462c0819:PsiDirectoryNode" />
-              <item name="nurikabe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Legup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Legup2.0" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="legup" type="462c0819:PsiDirectoryNode" />
-              <item name="puzzle" type="462c0819:PsiDirectoryNode" />
               <item name="shorttruthtable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1369,25 +948,53 @@
               <item name="Legup2.0" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="legup" type="462c0819:PsiDirectoryNode" />
-              <item name="puzzle" type="462c0819:PsiDirectoryNode" />
-              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Legup" type="b2602c69:ProjectViewProjectNode" />
               <item name="Legup2.0" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="legup" type="462c0819:PsiDirectoryNode" />
-              <item name="puzzle" type="462c0819:PsiDirectoryNode" />
-              <item name="treetent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Legup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Legup2.0" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="legup" type="462c0819:PsiDirectoryNode" />
+              <item name="puzzlefiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Legup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Legup2.0" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="legup" type="462c0819:PsiDirectoryNode" />
+              <item name="puzzlefiles" type="462c0819:PsiDirectoryNode" />
+              <item name="nurikabe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Legup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Legup2.0" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="legup" type="462c0819:PsiDirectoryNode" />
+              <item name="puzzlefiles" type="462c0819:PsiDirectoryNode" />
+              <item name="shorttruthtable" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1397,6 +1004,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.rpi.legup.puzzle.shorttruthtable" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable" />
     </key>
@@ -1560,28 +1170,29 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33879223" sideWeight="0.490232" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33879223" sideWeight="0.46092796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3285568" sideWeight="0.507326" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.53663003" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.495116" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.46336997" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25946277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3285568" sideWeight="0.492674" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25091577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.48779" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23992674" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2937564" sideWeight="0.497558" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1598,282 +1209,305 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuElementView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuExporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuImporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuCellFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/Sudoku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuCellController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/Nurikabe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/Legup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/user/UsageStatistics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/Sudoku.java" />
-    <entry file="file://$PROJECT_DIR$/legup-update/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/Legup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/user/UsageStatistics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpBoard.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/Sudoku.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/rpi/legup/puzzlefiles/nurikabe/NurikabeBoard1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/app/GameBoardFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="125" column="60" lean-forward="false" selection-start-line="125" selection-start-column="60" selection-end-line="125" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="164" column="12" lean-forward="false" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/legup/config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/org/w3c/dom/Element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="81" column="18" lean-forward="false" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/rpi/legup/legup/config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/app/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="78" column="45" lean-forward="true" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/gameboard/PuzzleElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/BulbsOutsideDiagonalBasicRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/CannotLightACellContradictionRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="75">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableBoard.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/Sudoku.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/Puzzle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTable.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableBoard.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableExporter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpCellController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpElementView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="80" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCell.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/gameboard/ElementFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableView.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/boardview/GridElementView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding>
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellType.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpCellType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/Sudoku.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuElementView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/rpi/legup/puzzlefiles/shorttruthtable/ShortTruthTablePuzzle1">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="30">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuExporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuImporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuCellFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuCellController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/SudokuBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/Sudoku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="49" column="51" lean-forward="false" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/Nurikabe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/rules/EmptyCellinLightBasicRule.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/rules/BulbsInPathContradictionRule.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/rules/TooManyBulbsContradictionRule.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/rules/EmptyCornersBasicRule.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableExporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#809#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+          <folding>
+            <marker date="1539189230027" expanded="true" signature="1379:1392" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/ZoomablePane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/boardview/BoardView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding>
+            <element signature="e#5490#5491#0" expanded="true" />
+            <element signature="e#5527#5528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/boardview/ElementView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="110" column="8" lean-forward="false" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

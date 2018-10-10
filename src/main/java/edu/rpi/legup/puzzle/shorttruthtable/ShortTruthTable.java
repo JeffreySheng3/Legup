@@ -7,16 +7,16 @@ import edu.rpi.legup.model.gameboard.PuzzleElement;
 import edu.rpi.legup.model.rules.ContradictionRule;
 
 @RegisterPuzzle
-public class LightUp extends Puzzle {
+public class ShortTruthTable extends Puzzle {
 
-    public LightUp() {
+    public ShortTruthTable() {
         super();
-        name = "LightUp";
+        name = "ShortTruthTable";
 
-        importer = new LightUpImporter(this);
-        exporter = new LightUpExporter(this);
+        importer = new ShortTruthTableImporter(this);
+        exporter = new ShortTruthTableExporter(this);
 
-        factory = new LightUpCellFactory();
+        factory = new ShortTruthTableCellFactory();
     }
 
     /**
@@ -24,7 +24,7 @@ public class LightUp extends Puzzle {
      */
     @Override
     public void initializeView() {
-        boardView = new LightUpView((LightUpBoard) currentBoard);
+        boardView = new ShortTruthTableView((ShortTruthTableBoard) currentBoard);
     }
 
     /**
@@ -46,17 +46,17 @@ public class LightUp extends Puzzle {
      */
     @Override
     public boolean isBoardComplete(Board board) {
-        LightUpBoard lightUpBoard = (LightUpBoard) board;
-        lightUpBoard.fillWithLight();
+        ShortTruthTableBoard shortTruthTableBoard = (ShortTruthTableBoard) board;
+        shortTruthTableBoard.fillWithLight();
 
         for (ContradictionRule rule : contradictionRules) {
-            if (rule.checkContradiction(lightUpBoard) == null) {
+            if (rule.checkContradiction(shortTruthTableBoard) == null) {
                 return false;
             }
         }
-        for (PuzzleElement data : lightUpBoard.getPuzzleElements()) {
-            LightUpCell cell = (LightUpCell) data;
-            if ((cell.getType() == LightUpCellType.UNKNOWN || cell.getType() == LightUpCellType.EMPTY) && !cell.isLite()) {
+        for (PuzzleElement data : shortTruthTableBoard.getPuzzleElements()) {
+            ShortTruthTableCell cell = (ShortTruthTableCell) data;
+            if ((cell.getType() == ShortTruthTableCellType.UNKNOWN || cell.getType() == ShortTruthTableCellType.EMPTY) && !cell.isLite()) {
                 return false;
             }
         }

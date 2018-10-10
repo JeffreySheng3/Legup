@@ -10,7 +10,7 @@ import org.w3c.dom.Node;
 
 import java.awt.*;
 
-public class LightUpCellFactory extends ElementFactory
+public class ShortTruthTableCellFactory extends ElementFactory
 {
     /**
      * Creates a puzzleElement based on the xml document Node and adds it to the board
@@ -21,7 +21,7 @@ public class LightUpCellFactory extends ElementFactory
      * @throws InvalidFileFormatException
      */
     @Override
-    public LightUpCell importCell(Node node, Board board) throws InvalidFileFormatException
+    public ShortTruthTableCell importCell(Node node, Board board) throws InvalidFileFormatException
     {
         try
         {
@@ -30,9 +30,9 @@ public class LightUpCellFactory extends ElementFactory
                 throw new InvalidFileFormatException("lightup Factory: unknown puzzleElement puzzleElement");
             }
 
-            LightUpBoard lightUpBoard = (LightUpBoard)board;
-            int width = lightUpBoard.getWidth();
-            int height = lightUpBoard.getHeight();
+            ShortTruthTableBoard shortTruthTableBoard = (ShortTruthTableBoard)board;
+            int width = shortTruthTableBoard.getWidth();
+            int height = shortTruthTableBoard.getHeight();
 
             NamedNodeMap attributeList = node.getAttributes();
             int value = Integer.valueOf(attributeList.getNamedItem("value").getNodeValue());
@@ -47,7 +47,7 @@ public class LightUpCellFactory extends ElementFactory
                 throw new InvalidFileFormatException("lightup Factory: cell unknown value");
             }
 
-            LightUpCell cell = new LightUpCell(value, new Point(x, y));
+            ShortTruthTableCell cell = new ShortTruthTableCell(value, new Point(x, y));
             cell.setIndex(y * height + x);
             return cell;
         }
@@ -72,7 +72,7 @@ public class LightUpCellFactory extends ElementFactory
     {
         org.w3c.dom.Element cellElement = document.createElement("cell");
 
-        LightUpCell cell = (LightUpCell)data;
+        ShortTruthTableCell cell = (ShortTruthTableCell)data;
         Point loc = cell.getLocation();
 
         cellElement.setAttribute("value", String.valueOf(cell.getData()));

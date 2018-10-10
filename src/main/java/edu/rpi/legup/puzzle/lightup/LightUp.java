@@ -13,7 +13,7 @@ public class LightUp extends Puzzle {
 
     public LightUp() {
         super();
-        name = "LightUp";
+        name = "ShortTruthTable";
 
         importer = new LightUpImporter(this);
         exporter = new LightUpExporter(this);

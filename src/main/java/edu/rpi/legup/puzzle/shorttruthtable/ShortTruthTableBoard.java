@@ -7,14 +7,14 @@ import java.awt.*;
 import java.util.HashSet;
 import java.util.Set;
 
-public class LightUpBoard extends GridBoard {
-    public LightUpBoard(int width, int height) {
+public class ShortTruthTableBoard extends GridBoard {
+    public ShortTruthTableBoard(int width, int height) {
         super(width, height);
     }
 
-    public LightUpBoard(int size) {
-        super(size, size);
-    }
+//    public ShortTruthTableBoard(int size) {
+//        super(size, size);
+//    }
 
     public void fillWithLight() {
         for (int y = 0; y < this.dimension.height; y++) {
@@ -25,33 +25,33 @@ public class LightUpBoard extends GridBoard {
 
         for (int y = 0; y < this.dimension.height; y++) {
             for (int x = 0; x < this.dimension.width; x++) {
-                LightUpCell cell = getCell(x, y);
-                if (cell.getType() == LightUpCellType.BULB) {
+                ShortTruthTableCell cell = getCell(x, y);
+                if (cell.getType() == ShortTruthTableCellType.BULB) {
                     cell.setLite(true);
                     for (int i = x + 1; i < this.dimension.width; i++) {
-                        LightUpCell c = getCell(i, y);
-                        if (c.getType() == LightUpCellType.NUMBER || c.getType() == LightUpCellType.BLACK) {
+                        ShortTruthTableCell c = getCell(i, y);
+                        if (c.getType() == ShortTruthTableCellType.NUMBER || c.getType() == ShortTruthTableCellType.BLACK) {
                             break;
                         }
                         c.setLite(true);
                     }
                     for (int i = x - 1; i >= 0; i--) {
-                        LightUpCell c = getCell(i, y);
-                        if (c.getType() == LightUpCellType.NUMBER || c.getType() == LightUpCellType.BLACK) {
+                        ShortTruthTableCell c = getCell(i, y);
+                        if (c.getType() == ShortTruthTableCellType.NUMBER || c.getType() == ShortTruthTableCellType.BLACK) {
                             break;
                         }
                         c.setLite(true);
                     }
                     for (int i = y + 1; i < this.dimension.height; i++) {
-                        LightUpCell c = getCell(x, i);
-                        if (c.getType() == LightUpCellType.NUMBER || c.getType() == LightUpCellType.BLACK) {
+                        ShortTruthTableCell c = getCell(x, i);
+                        if (c.getType() == ShortTruthTableCellType.NUMBER || c.getType() == ShortTruthTableCellType.BLACK) {
                             break;
                         }
                         c.setLite(true);
                     }
                     for (int i = y - 1; i >= 0; i--) {
-                        LightUpCell c = getCell(x, i);
-                        if (c.getType() == LightUpCellType.NUMBER || c.getType() == LightUpCellType.BLACK) {
+                        ShortTruthTableCell c = getCell(x, i);
+                        if (c.getType() == ShortTruthTableCellType.NUMBER || c.getType() == ShortTruthTableCellType.BLACK) {
                             break;
                         }
                         c.setLite(true);
@@ -61,34 +61,34 @@ public class LightUpBoard extends GridBoard {
         }
     }
 
-    public Set<LightUpCell> getAdj(LightUpCell cell) {
-        Set<LightUpCell> adjCells = new HashSet<>();
-        cell = (LightUpCell) getPuzzleElement(cell);
+    public Set<ShortTruthTableCell> getAdj(ShortTruthTableCell cell) {
+        Set<ShortTruthTableCell> adjCells = new HashSet<>();
+        cell = (ShortTruthTableCell) getPuzzleElement(cell);
 
         Point loc = cell.getLocation();
-        LightUpCell up = getCell(loc.x, loc.y + 1);
+        ShortTruthTableCell up = getCell(loc.x, loc.y + 1);
         if (up != null) {
             adjCells.add(up);
         }
-        LightUpCell down = getCell(loc.x, loc.y - 1);
+        ShortTruthTableCell down = getCell(loc.x, loc.y - 1);
         if (down != null) {
             adjCells.add(down);
         }
-        LightUpCell right = getCell(loc.x + 1, loc.y);
+        ShortTruthTableCell right = getCell(loc.x + 1, loc.y);
         if (right != null) {
             adjCells.add(right);
         }
-        LightUpCell left = getCell(loc.x - 1, loc.y);
+        ShortTruthTableCell left = getCell(loc.x - 1, loc.y);
         if (left != null) {
             adjCells.add(left);
         }
         return adjCells;
     }
 
-    public int getNumAdj(LightUpCell cell, LightUpCellType type) {
+    public int getNumAdj(ShortTruthTableCell cell, ShortTruthTableCellType type) {
         int num = 0;
-        Set<LightUpCell> adjCells = getAdj(cell);
-        for(LightUpCell c : adjCells) {
+        Set<ShortTruthTableCell> adjCells = getAdj(cell);
+        for(ShortTruthTableCell c : adjCells) {
             if(c.getType() == type) {
                 num++;
             }
@@ -96,10 +96,10 @@ public class LightUpBoard extends GridBoard {
         return num;
     }
 
-    public int getNumAdjLite(LightUpCell cell) {
+    public int getNumAdjLite(ShortTruthTableCell cell) {
         int num = 0;
-        Set<LightUpCell> adjCells = getAdj(cell);
-        for(LightUpCell c : adjCells) {
+        Set<ShortTruthTableCell> adjCells = getAdj(cell);
+        for(ShortTruthTableCell c : adjCells) {
             if(c.isLite()) {
                 num++;
             }
@@ -107,11 +107,11 @@ public class LightUpBoard extends GridBoard {
         return num;
     }
 
-    public int getNumPlacble(LightUpCell cell) {
+    public int getNumPlacble(ShortTruthTableCell cell) {
         int num = 0;
-        Set<LightUpCell> adjCells = getAdj(cell);
-        for(LightUpCell c : adjCells) {
-            if(c.getType() == LightUpCellType.UNKNOWN && !c.isLite()) {
+        Set<ShortTruthTableCell> adjCells = getAdj(cell);
+        for(ShortTruthTableCell c : adjCells) {
+            if(c.getType() == ShortTruthTableCellType.UNKNOWN && !c.isLite()) {
                 num++;
             }
         }
@@ -119,8 +119,8 @@ public class LightUpBoard extends GridBoard {
     }
 
     @Override
-    public LightUpCell getCell(int x, int y) {
-        return (LightUpCell) super.getCell(x, y);
+    public ShortTruthTableCell getCell(int x, int y) {
+        return (ShortTruthTableCell) super.getCell(x, y);
     }
 
     @Override
@@ -130,8 +130,8 @@ public class LightUpBoard extends GridBoard {
     }
 
     @Override
-    public LightUpBoard copy() {
-        LightUpBoard copy = new LightUpBoard(dimension.width, dimension.height);
+    public ShortTruthTableBoard copy() {
+        ShortTruthTableBoard copy = new ShortTruthTableBoard(dimension.width, dimension.height);
         for (int x = 0; x < this.dimension.width; x++) {
             for (int y = 0; y < this.dimension.height; y++) {
                 copy.setCell(x, y, getCell(x, y).copy());
