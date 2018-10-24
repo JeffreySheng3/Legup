@@ -25,39 +25,31 @@ public class ShortTruthTableCellFactory extends ElementFactory
     {
         try
         {
-            if(!node.getNodeName().equalsIgnoreCase("cell"))
+            if(!node.getNodeName().equalsIgnoreCase("premise") && !node.getNodeName().equalsIgnoreCase("conclusion"))
             {
-                throw new InvalidFileFormatException("lightup Factory: unknown puzzleElement puzzleElement");
+                throw new InvalidFileFormatException("shorttruthtable Factory: unknown puzzleElement puzzleElement");
             }
 
             ShortTruthTableBoard shortTruthTableBoard = (ShortTruthTableBoard)board;
             int width = shortTruthTableBoard.getWidth();
             int height = shortTruthTableBoard.getHeight();
-
-            NamedNodeMap attributeList = node.getAttributes();
-            int value = Integer.valueOf(attributeList.getNamedItem("value").getNodeValue());
-            int x = Integer.valueOf(attributeList.getNamedItem("x").getNodeValue());
-            int y = Integer.valueOf(attributeList.getNamedItem("y").getNodeValue());
-            if(x >= width || y >= height)
+            
+            int y = Integer.valueOf(node.getAttributes().getNamedItem("index").getNodeValue());
+            if(y >= height)
             {
-                throw new InvalidFileFormatException("lightup Factory: cell location out of bounds");
-            }
-            if(value < -4 || value > 4)
-            {
-                throw new InvalidFileFormatException("lightup Factory: cell unknown value");
+                throw new InvalidFileFormatException("shorttruthtable Factory: cell location out of bounds");
             }
 
-            ShortTruthTableCell cell = new ShortTruthTableCell(value, new Point(x, y));
-            cell.setIndex(y * height + x);
+            ShortTruthTableCell cell = new ShortTruthTableCell(0);
             return cell;
         }
         catch(NumberFormatException e)
         {
-            throw new InvalidFileFormatException("lightup Factory: unknown value where integer expected");
+            throw new InvalidFileFormatException("shorttruthtable Factory: unknown value where integer expected");
         }
         catch(NullPointerException e)
         {
-            throw new InvalidFileFormatException("lightup Factory: could not find attribute(s)");
+            throw new InvalidFileFormatException("shorttruthtable Factory: could not find attribute(s)");
         }
     }
 
@@ -73,11 +65,8 @@ public class ShortTruthTableCellFactory extends ElementFactory
         org.w3c.dom.Element cellElement = document.createElement("cell");
 
         ShortTruthTableCell cell = (ShortTruthTableCell)data;
-        Point loc = cell.getLocation();
 
         cellElement.setAttribute("value", String.valueOf(cell.getData()));
-        cellElement.setAttribute("x", String.valueOf(loc.x));
-        cellElement.setAttribute("y", String.valueOf(loc.y));
 
         return cellElement;
     }

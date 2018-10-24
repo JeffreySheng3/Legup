@@ -8,5 +8,5 @@
         <puzzle name="Nurikabe" qualifiedClassName="puzzle.nurikabe.Nurikabe" fileType=".xml"/>
         <puzzle name="Sudoku" qualifiedClassName="puzzle.sudoku.Sudoku" fileType=".xml"/>
         <puzzle name="TreeTent" qualifiedClassName="puzzle.treetent.TreeTent" fileType=".xml"/>
+        <puzzle name="ShortTruthTable" qualifiedClassName="puzzle.shorttruthtable.ShortTruthTable" fileType=".xml"/>
     </puzzles>
-</Legup>

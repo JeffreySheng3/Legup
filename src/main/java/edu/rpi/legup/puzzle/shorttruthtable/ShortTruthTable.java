@@ -47,7 +47,6 @@ public class ShortTruthTable extends Puzzle {
     @Override
     public boolean isBoardComplete(Board board) {
         ShortTruthTableBoard shortTruthTableBoard = (ShortTruthTableBoard) board;
-        shortTruthTableBoard.fillWithLight();
 
         for (ContradictionRule rule : contradictionRules) {
             if (rule.checkContradiction(shortTruthTableBoard) == null) {
@@ -56,7 +55,7 @@ public class ShortTruthTable extends Puzzle {
         }
         for (PuzzleElement data : shortTruthTableBoard.getPuzzleElements()) {
             ShortTruthTableCell cell = (ShortTruthTableCell) data;
-            if ((cell.getType() == ShortTruthTableCellType.UNKNOWN || cell.getType() == ShortTruthTableCellType.EMPTY) && !cell.isLite()) {
+            if ((cell.getType() == ShortTruthTableCellType.UNKNOWN || cell.getType() == ShortTruthTableCellType.EMPTY)) {
                 return false;
             }
         }

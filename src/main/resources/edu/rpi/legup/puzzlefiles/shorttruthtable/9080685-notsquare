@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Legup version="2.0.0">
+    <puzzle name="ShortTruthTable">
+        <board>
+            <premises>
+                <premise index="0" sentence="P ^ Q --> R" />
+            </premises>
+            <conclusion sentence="A v B" />
+        </board>
+    </puzzle>
+    <proof>
+        <nodes>
+            <node id="635752021" root="true"/>
+        </nodes>
+        <transitions>
+            <transition>
+                <atomic value="True" index="3"/>
+            </transition>
+        </transitions>
+    </proof>
+</Legup>

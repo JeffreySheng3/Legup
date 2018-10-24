@@ -1,10 +1,10 @@
 package edu.rpi.legup.puzzle.shorttruthtable;
 
-import edu.rpi.legup.ui.boardview.GridElementView;
+import edu.rpi.legup.ui.boardview.ElementView;
 
 import java.awt.*;
 
-public class ShortTruthTableElementView extends GridElementView
+public class ShortTruthTableElementView extends ElementView
 {
     private static final Color LITE = new Color(0xFFF176);
     private static final Font FONT = new Font("TimesRoman", Font.BOLD, 16);
@@ -33,7 +33,7 @@ public class ShortTruthTableElementView extends GridElementView
     {
         ShortTruthTableCell cell = (ShortTruthTableCell) puzzleElement;
         ShortTruthTableCellType type = cell.getType();
-        if(type == ShortTruthTableCellType.NUMBER)
+        if(type == ShortTruthTableCellType.VARIABLE)
         {
             graphics2D.setStroke(new BasicStroke(1));
             graphics2D.setColor(BLACK_COLOR);
@@ -53,10 +53,9 @@ public class ShortTruthTableElementView extends GridElementView
             graphics2D.setColor(BLACK_COLOR);
             graphics2D.fillRect(location.x, location.y, size.width, size.height);
         }
-        else if(type == ShortTruthTableCellType.EMPTY)
+        else if(type == ShortTruthTableCellType.SPACE)
         {
             graphics2D.setStroke(new BasicStroke(1));
-            graphics2D.setColor(cell.isLite() ? LITE : WHITE_COLOR);
             graphics2D.fillRect(location.x, location.y, size.width, size.height);
             graphics2D.setColor(BLACK_COLOR);
             graphics2D.fillRect(location.x + size.width * 7 / 16, location.y + size.height * 7 / 16, size.width / 8, size.height / 8);
@@ -65,7 +64,6 @@ public class ShortTruthTableElementView extends GridElementView
         else if(type == ShortTruthTableCellType.UNKNOWN)
         {
             graphics2D.setStroke(new BasicStroke(1));
-            graphics2D.setColor(cell.isLite() ? LITE : Color.LIGHT_GRAY);
             graphics2D.fillRect(location.x, location.y, size.width, size.height);
             graphics2D.setColor(Color.BLACK);
             graphics2D.drawRect(location.x, location.y, size.width, size.height);

@@ -35,11 +35,9 @@ public class ShortTruthTableView extends GridBoardView
         for(PuzzleElement puzzleElement : board.getPuzzleElements())
         {
             ShortTruthTableCell cell = (ShortTruthTableCell) puzzleElement;
-            Point loc = cell.getLocation();
             ShortTruthTableElementView elementView = new ShortTruthTableElementView(cell);
             elementView.setIndex(cell.getIndex());
             elementView.setSize(elementSize);
-            elementView.setLocation(new Point(loc.x * elementSize.width, loc.y * elementSize.height));
             elementViews.add(elementView);
         }
     }
@@ -53,7 +51,6 @@ public class ShortTruthTableView extends GridBoardView
     {
         super.onTreeElementChanged(treeElement);
         ShortTruthTableBoard shortTruthTableBoard = board instanceof CaseBoard ? (ShortTruthTableBoard)((CaseBoard)board).getBaseBoard() : (ShortTruthTableBoard)board;
-        shortTruthTableBoard.fillWithLight();
         repaint();
     }
 
@@ -66,7 +63,7 @@ public class ShortTruthTableView extends GridBoardView
         Dimension iconSize = new Dimension(32,32);
         Point loc = new Point(0,0);
 
-        ShortTruthTableElementView element1 = new ShortTruthTableElementView(new ShortTruthTableCell(-2, null));
+        ShortTruthTableElementView element1 = new ShortTruthTableElementView(new ShortTruthTableCell(-2));
         element1.setSize(iconSize);
         element1.setLocation(loc);
         SelectionItemView item1 = new SelectionItemView(element1.getPuzzleElement(), new ImageIcon(element1.getImage()));
@@ -74,7 +71,7 @@ public class ShortTruthTableView extends GridBoardView
         item1.setHorizontalTextPosition(SwingConstants.CENTER);
         selectionView.add(item1);
 
-        ShortTruthTableElementView element2 = new ShortTruthTableElementView(new ShortTruthTableCell(-4, null));
+        ShortTruthTableElementView element2 = new ShortTruthTableElementView(new ShortTruthTableCell(-4));
         element2.setSize(iconSize);
         element2.setLocation(loc);
         SelectionItemView item2 = new SelectionItemView(element2.getPuzzleElement(), new ImageIcon(element2.getImage()));
@@ -82,7 +79,7 @@ public class ShortTruthTableView extends GridBoardView
         item2.setHorizontalTextPosition(SwingConstants.CENTER);
         selectionView.add(item2);
 
-        ShortTruthTableElementView element3 = new ShortTruthTableElementView(new ShortTruthTableCell(-3, null));
+        ShortTruthTableElementView element3 = new ShortTruthTableElementView(new ShortTruthTableCell(-3));
         element3.setSize(iconSize);
         element3.setLocation(loc);
         SelectionItemView item3 = new SelectionItemView(element3.getPuzzleElement(), new ImageIcon(element3.getImage()));

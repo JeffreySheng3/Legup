@@ -1,54 +1,40 @@
 package edu.rpi.legup.puzzle.shorttruthtable;
 
-import edu.rpi.legup.model.gameboard.GridCell;
+import edu.rpi.legup.model.gameboard.PuzzleElement;
 
-import java.awt.*;
-
-public class ShortTruthTableCell extends GridCell<Integer>
+public class ShortTruthTableCell extends PuzzleElement<Integer>
 {
-    private boolean isLite;
+    private char letter;
+    private char connective;
+    private boolean isAtomic;
+    private Boolean val;
 
-    public ShortTruthTableCell(int valueInt, Point location)
+    public ShortTruthTableCell(int data)
     {
-        super(valueInt, location);
-        this.isLite = false;
+        super(data);
     }
 
     public ShortTruthTableCellType getType()
     {
         switch(data)
         {
-            case -4:
-                return ShortTruthTableCellType.BULB;
-            case -3:
-                return ShortTruthTableCellType.EMPTY;
             case -2:
-                return ShortTruthTableCellType.UNKNOWN;
+                return ShortTruthTableCellType.SPACE;
             case -1:
-                return ShortTruthTableCellType.BLACK;
+                return ShortTruthTableCellType.SYMBOL;
             default:
                 if(data >= 0)
                 {
-                    return ShortTruthTableCellType.NUMBER;
+                    return ShortTruthTableCellType.VARIABLE;
                 }
         }
         return null;
     }
 
-    public boolean isLite()
-    {
-        return isLite;
-    }
-
-    public void setLite(boolean isLite)
-    {
-        this.isLite = isLite;
-    }
-
     @Override
     public ShortTruthTableCell copy()
     {
-        ShortTruthTableCell copy = new ShortTruthTableCell(data, (Point)location.clone());
+        ShortTruthTableCell copy = new ShortTruthTableCell(data);
         copy.setIndex(index);
         copy.setModifiable(isModifiable);
         copy.setGiven(isGiven);
