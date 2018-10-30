@@ -2,1044 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7623f8eb-6df1-4e99-ab5f-2db637f9bafa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/puzzles files/nurikabe/5x5 Nurikabe Easy/118040" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/puzzles files/nurikabe/5x5 Nurikabe Easy/235235" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/legup-update/legup-update_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/legup-update/legup-update_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/innosetup/Output/setup.exe" beforeDir="false" afterPath="$PROJECT_DIR$/innosetup/Output/setup.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/legup-update/out/production/classes/edu/rpi/legupupdate/Update$Stream.class" beforeDir="false" afterPath="$PROJECT_DIR$/legup-update/out/production/classes/edu/rpi/legupupdate/Update$Stream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legup-update/src/main/java/edu/rpi/legupupdate/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/legup-update/src/main/java/edu/rpi/legupupdate/Update.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Legup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ai/Solver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/GameBoardFacade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/InvalidConfigException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/Settings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/controller/BoardController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/controller/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/controller/ElementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/controller/RuleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/controller/SelectionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/controller/ToolbarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/controller/TreeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/controller/TreeToolBarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/Legup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ai/Solver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/app/LegupPreferences.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/app/PuzzleKeyAccelerator.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/controller/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/controller/ElementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/controller/ElementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/controller/ToolbarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/history/AddTreeElementCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/history/ApplyDefaultBasicRuleCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/history/AutoCaseRuleCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/history/CommandError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/history/EditDataCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/history/InvalidCommandStateTransition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/history/MergeCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/history/ValidateCaseRuleCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/history/ValidateContradictionRuleCommand.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/Puzzle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/Puzzle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/PuzzleImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/PuzzleImporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/RegisterPuzzle.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/gameboard/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/gameboard/Board.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/gameboard/ElementFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/gameboard/ElementFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/rules/MergeRule.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/tree/TreeTransition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/model/tree/TreeTransition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShip.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipCellController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipCellFactory.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipCellType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipCellType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipClue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipClue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipClueView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipClueView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipElementView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipElementView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/BattleShipView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/AdjacentShipsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/ContinueShipBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/FinishWithWaterBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/IncompleteShipContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/SegmentTypeBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/SegmentTypeCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/ShipLocationCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/ShipOrWaterCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/SurroundShipBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/TooFewInFleetContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/TooFewRowColContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/TooManyInFleetContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/battleship/rules/TooManyRowColContradiction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/Fillapix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/FillapixBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/FillapixCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/FillapixCellController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/FillapixCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/FillapixCellType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/FillapixElementView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/FillapixElementView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/FillapixExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/FillapixImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/FillapixUtilities.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/FillapixView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/rules/BlackOrWhiteCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/rules/FinishWithBlackBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/rules/FinishWithWhiteBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/rules/TooFewBlackCellsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/fillapix/rules/TooManyBlackCellsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/HeyawakeBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/HeyawakeCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/HeyawakeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/HeyawakeElementView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/HeyawakeExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/HeyawakeFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/HeyawakeImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/HeyawakeImporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/HeyawakeView.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/AdjacentBlacksContradictionRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/AdjacentBlacksContradictionRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/BlackOrWhiteCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/BlackPathBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/BottleNeckBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/FillRoomBlackBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/FillRoomWhiteBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/OneRowBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/PreventWhiteLineBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/RoomTooEmptyContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/RoomTooFullContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/TwoInCornerBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/WhiteAreaContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/WhiteAroundBlackBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/WhiteEscapeBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/WhiteLineContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/ZigZagCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/heyawake/rules/ZigZagWhiteBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUp.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpBoard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpCell.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpCellController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpCellController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpCellFactory.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpCellType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpCellType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpElementView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/LightUpView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/BulbsInPathContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/BulbsOutsideDiagonalBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/CannotLightACellContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/EmptyCellinLightBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/EmptyCornersBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/FinishWithBulbsBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/FinishWithEmptyBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/LightOrEmptyCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/MustLightBasicRule.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/SatisfyNumberCaseRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/SatisfyNumberCaseRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/TooFewBulbsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/lightup/rules/TooManyBulbsContradictionRule.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/EditLineCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/EditLineCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/Masyu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/Masyu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuBoard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuElementView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuElementView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuExporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuExporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuImporter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuLine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuLineView.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/MasyuView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/BadLoopingContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/BlackContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/BlackEdgeBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/BlackSplitCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/BlockedBlackBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/ConnectedCellsBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/FinishPathBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/NearWhiteBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/NoOptionsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/NormalSplitCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/OnlyOneChoiceBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/OnlyTwoContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/WhiteContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/WhiteEdgeBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/masyu/rules/WhiteSplitCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/Nurikabe.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeBoard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeElementView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeImporter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeUtilities.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/NurikabeView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/BlackBetweenRegionsBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/BlackBottleNeckBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/BlackOrWhiteCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/BlackSquareContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/CantReachWhiteContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/CornerBlackBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/FillinBlackBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/FillinWhiteBasicRule.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/IsolateBlackContradictionRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/IsolateBlackContradictionRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/MultipleNumbersContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/NoNumberContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/PreventBlackSquareBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/SurroundRegionBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/TooFewSpacesContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/TooManySpacesContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/UnreachableBasicRule.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/WhiteBottleNeckBasicRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/nurikabe/rules/WhiteBottleNeckBasicRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/GroupType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/PossibleNumberCaseBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/Sudoku.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/SudokuBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/SudokuCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/SudokuCellController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/SudokuCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/SudokuElementView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/SudokuExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/SudokuImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/SudokuView.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/rules/AdvancedDeductionBasicRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/rules/AdvancedDeductionBasicRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/rules/LastCellForNumberBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/rules/LastNumberForCellBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/rules/NoSolutionContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/rules/PossibleCellCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/rules/PossibleNumberCaseRule.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/sudoku/rules/RepeatedNumberContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/ClueCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/EditLineCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTent.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentBoard.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentCellFactory.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentClue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentClueView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentClueView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentElementView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentImporter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentLine.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentLineView.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/TreeTentView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/EmptyFieldBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/FillinRowCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/FinishWithGrassBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/FinishWithTentsBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/LastCampingSpotBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/LinkTentCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/LinkTreeCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/NoTentForTreeContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/NoTreeForTentContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/SurroundTentWithGrassBasicRule.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/TentForTreeBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/TentOrGrassCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/TooFewTentsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/TooManyTentsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/TouchingTentsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/puzzle/treetent/rules/TreeForTentBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/save/SavableProof.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/LegupUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/LegupUI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/LegupUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/LegupUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/ManualPuzzleCreatorDialog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/PreferencesDialog$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/PreferencesDialog$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/PreferencesDialog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/PuzzleCreatorView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/ToolbarName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/WrapLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/boardview/SelectionItemView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/LegupLookAndFeel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/animation/MaterialUIMovement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/animation/MaterialUITimer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialButtonUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialCheckBoxMenuItemUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialCheckBoxUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialComboBoxRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialEditorPaneUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialFileChooserUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialLabelUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialMenuBarUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialMenuItemUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialMenuUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialPanelUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialPopupMenuUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialProgressBarUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialRadioButtonMenuItemUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialRadioButtonUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialSeparatorUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialSliderUI$Line.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialSliderUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialSpinnerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialSplitPaneDivider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialSplitPaneUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTabbedPaneUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTableCellEditor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTableCellRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTableHeaderCellRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTableHeaderUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTableUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTextFieldUI$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTextFieldUI$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTextFieldUI$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTextFieldUI$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTextFieldUI$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTextFieldUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTextPaneUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialToggleButtonUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialToolBarUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialToolTipUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTreeCellEditor$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTreeCellEditor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTreeCellRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/components/MaterialTreeUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/materialdesign/MaterialBorders.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/materialdesign/MaterialColors.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/materialdesign/MaterialDrawingUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/materialdesign/MaterialFonts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/lookandfeel/materialdesign/MaterialImages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/rulesview/CaseRuleSelectionView.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/treeview/TreeView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/ui/treeview/TreeView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/user/Submission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/user/UsageStatistics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/user/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/rpi/legup/utility/LegupUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/Puzzle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/PuzzleExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/PuzzleImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/ElementData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/ElementFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/GridBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/GridCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/gameboard/PuzzlePiece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/rules/BasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/rules/CaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/rules/ContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/rules/MergeRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/rules/Rule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/rules/RuleType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/tree/Tree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/tree/TreeElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/tree/TreeElementType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/tree/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/tree/TreeTransition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShip.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipCellController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipCellType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/BattleShipView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/AdjacentShipsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/ContinueShipBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/FinishWithWaterBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/FinishedWithShipsBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/IncompleteShipContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/SegmentTypeBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/SegmentTypeCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/ShipLocationCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/ShipOrWaterCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/SurroundShipBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/TooFewInFleetContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/TooFewRowColContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/TooManyInFleetContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/battleship/rules/TooManyRowColContradiction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/Fillapix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixCellController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/FillapixView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/rules/BlackOrWhiteCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/rules/FinishWithBlackBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/rules/FinishWithWhiteBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/rules/TooFewBlackCellsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/fillapix/rules/TooManyBlackCellsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/Heyawake.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/AdjacentBlacksContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/BlackOrWhiteCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/BlackPathBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/BottleNeckBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/FillRoomBlackBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/FillRoomWhiteBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/OneRowBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/PreventWhiteLineBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/RoomTooEmptyContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/RoomTooFullContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/ThreeByThreeBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/TwoInCornerBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/WhiteAreaContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/WhiteAroundBlackBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/WhiteEscapeBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/WhiteLineContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/ZigZagCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/heyawake/rules/ZigZagWhiteBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpCellController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpCellType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/LightUpView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/BulbsInPathContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/BulbsOutsideDiagonalBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/CannotLightACellContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/EmptyCellinLightBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/EmptyCornersBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/FinishWithBulbsBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/FinishWithEmptyBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/LightOrEmptyCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/MustLightBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/SatisfyNumberCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/TooFewBulbsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/lightup/rules/TooManyBulbsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/Masyu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/MasyuView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/rules/BlackEdgeBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/rules/FinishPathBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/rules/NearWhiteBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/rules/OnlyOneChoiceBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/masyu/rules/WhiteEdgeBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/Nurikabe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/NurikabeView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/BlackBetweenRegionsBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/BlackBottleNeckBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/BlackOrWhiteCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/BlackSquareContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/CornerBlackBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/FillinBlackBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/FillinWhiteBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/IsolateBlackContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/MultipleNumbersContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/NoNumberContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/PreventBlackSquareBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/SurroundRegionBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/TooFewSpacesContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/TooManySpacesContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/nurikabe/rules/WhiteBottleNeckBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/shorttruthtable/ShortTruthTableView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/Sudoku.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/SudokuView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/AdvancedDeductionBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/LastCellForNumberBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/LastNumberForCellBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/NoSolutionContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/PossibleCellCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/PossibleNumberCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/sudoku/rules/RepeatedNumberContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentClue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentClueView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentClueView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentLine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentLineView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/TreeTentView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/EmptyFieldBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/FillinRowCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/FinishWithGrassBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/FinishWithTentsBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/LastCampingSpotBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/LinkTentCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/LinkTreeCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/NoTentForTreeContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/NoTreeForTentContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/SurroundTentWithGrassBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TentForTreeBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TentOrGrassCaseRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TooFewTentsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TooManyTentsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TouchingTentsContradictionRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/puzzle/treetent/rules/TreeForTentBasicRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/save/ExportFileException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/save/InvalidFileFormatException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/save/SavableBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/save/SavableProof.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/DynamicViewer$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/DynamicViewer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/DynamicViewer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/JPopupPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/LegupUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/PickGameDialog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/Selection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/ToolbarName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/WrapLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/ZoomWidget$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/ZoomWidget$PopupSlider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/ZoomWidget.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/ZoomablePane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/BoardView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/DataSelectionView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/ElementSelection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/GridBoardView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/GridElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/IBoardListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/PuzzleElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/PuzzlePieceView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/boardview/SelectionItemView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/BasicRulePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/CaseRulePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/CaseRuleSelectionView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/ContradictionRulePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/IRuleListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/ITransitionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/ITreeSelectionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/RuleButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/RuleFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/rulesview/RulePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeElementView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeNodeView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeSelection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeToolBarButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeToolBarName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeToolbarPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeTransitionView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ui/treeview/TreeView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/user/Submission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/user/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/utility/DeleteTreeElementCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/utility/EditDataCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/utility/History.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/utility/IBoardListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/utility/ICommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/utility/PuzzleCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/utility/ValidateBasicRuleCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/utility/ValidateContradictionRuleCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/AddChild.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/AddRegion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Annotations.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Basic Rules.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Best Fit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Case Rules.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Collapse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Console.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Contradictions.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/DelChild.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Directions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Hint.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/LegupSplash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Merge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/MergeRule.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/New.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Normal Zoom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Open Proof.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Open Puzzle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Redo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Save.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Submit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Undo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Zoom In.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/Zoom Out.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/bar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/blank.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/defaultContradiction.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/defaultRule.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/questionmark.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/Legup/unknown.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/BottomCap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/LeftCap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/Middle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/RightCap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/TopCap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/UnknownSegment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/cases/SegmentType.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/cases/ShipLocations.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/cases/ShipOrWater.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/AdjacentShips.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/IncompleteShip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/MalformedShip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/too_few_in_fleet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/too_few_segments.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/too_many_in_fleet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/contradictions/too_many_segments.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/labelforce.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/SegmentType.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/ShipOrWater.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[0].gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[10].gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[11].gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[12].gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[13].gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[14].gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[15].gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[1].gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/image[2].gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/old/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/rules/ContinueShip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/rules/SegmentChoice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/rules/SurroundShip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/rules/finishShip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/rules/finishWater.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/submarine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/too_many_in_fleet.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/battleship/water.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/cases/BlackOrWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/contradictions/TooFewBlackCells.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/contradictions/TooManyBlackCells.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/rules/FinishWithBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/rules/FinishWithWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/fillapix/rulesharedcells.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/cases/BlackOrWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/contradictions/RoomTooEmpty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/contradictions/RoomTooFull.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/contradictions/WhiteArea.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/contradictions/WhiteLine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/contradictions/adjacentBlacks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/finishRoom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/regions/selected/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/rules/FillRoomBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/rules/FillRoomWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/heyawake/rules/WhiteAroundBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/black.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/cases/LightOrEmpty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/cases/Old/SatisfyNumber.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/cases/Old/SatisfyNumber2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/cases/SatisfyNumber.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/BulbsInPath.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/CannotLightACell.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/BulbsInPath.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/NoLight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/TooFewBulbs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/TooFewBulbs2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/TooManyBulbs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/Old/TooManyBulbs2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/TooFewBulbs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/contradictions/TooManyBulbs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/empty.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/light.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/AddLight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/BulbsOutsideDiagonal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/EmptyCellInLight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/EmptyCorners.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/FinishWithBulbs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/FinishWithEmpty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/MustLight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/AddLight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/MustLight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/SurroundBulbs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/SurroundBulbs2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/SurroundWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/SurroundWhite2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/WhiteCorners.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/lightup/rules/Old/WhiteInLight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/CaseBlackSplit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/CaseNormalSplit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/CaseWhiteSplit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/ContradictionBadLooping.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/ContradictionBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/ContradictionNoOptions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/ContradictionOnly2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/ContradictionWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuelBlockedBlack.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuleBlackEdge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuleFinishPath.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuleNearWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuleOnlyOneChoice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RuleWhiteEdge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/masyu/RulesConnectedCells.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/cases/BlackOrWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/BlackArea.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/BlackSquare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/MultipleNumbers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/NoNumber.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/TooFewSpaces.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/contradictions/TooManySpaces.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/nurikabe_icon_template.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/BetweenRegions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/CornerBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/FillInBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/FillInWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/NoBlackSquare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/OneUnknownBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/OneUnknownRegion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/OneUnknownWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/RuleWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/nurikabe/rules/SurroundBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/AdvancedDeduction.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/NoSolution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/PossibleValues.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/RepeatedNumber.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/forcedByDeduction.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/forcedByElimination.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/possible_cells_number.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/sudoku/tem.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/cont_bad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/cont_good.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/leads_to_cont.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/leads_to_soln.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/rule_bad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/classic/soln.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/cont_bad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/cont_good.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/leads_to_cont.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/leads_to_soln.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/prototype.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/tree/smiley/soln.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/NewTentLink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/NewTreeLink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/annotate_grass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/annotate_tent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/aroundTent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/caseLinkTent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/caseLinkTree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/caseLinkTree_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/caseTentOrGrass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/case_colcount.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/case_rowcount.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/contra_NoTentForTree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/contra_NoTreeForTent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/contra_adjacentTents.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/contra_miscount.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/finishGrass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/finishTent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/grass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/noTreesAround.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTentLink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTentLink1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTentLink2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTentLink3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTreeLink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTreeLink1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/NewTreeLink2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/aroundTent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/aroundTent1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/caseLinkTent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/caseLinkTent1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/caseLinkTree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/caseLinkTree1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/case_colcount.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/case_colcount1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/case_rowcount.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/case_rowcount1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_NoTreeForTent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_adjacentTents.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_adjacentTents1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_miscount.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_noNeighbors.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_noNeighbors1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_notree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/contra_notree2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/finishGrass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/finishTent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/noTreesAround.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/noTreesAround1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/oneTentPosition.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/old/oneTentPosition1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/oneTentPosition.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/tent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/too_few_tents.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/too_many_tents.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/tree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/images/treetent/update_template_wip.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzle_gen_script/..\lightup\LightUpBoard1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzle_gen_script/..\lightup\LightUpBoard2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzle_gen_script/..\lightup\LightUpBoard3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzle_gen_script/makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzle_gen_script/puzzle_maker.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/battleship/BattleShipTest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/fillapix/FillapixBoard1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/lightup/LightUpBoard1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/lightup/LightUpBoard2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/lightup/LightUpBoard3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/lightup/LightUpProof2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/lightup/LightUpProof3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/masyu/MasyuBoard1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/nurikabe/NurikabeBoard1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/sudoku/SudokuBoard1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/sudoku/SudokuProof1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/treetent/TreeTentBoard1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/puzzlefiles/treetent/TreeTenttest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/controller/ElementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/controller/ElementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/history/EditDataCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/history/EditDataCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/Puzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/Puzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/PuzzleImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/PuzzleImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/gameboard/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/gameboard/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/gameboard/ElementFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/gameboard/ElementFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/tree/TreeTransition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/model/tree/TreeTransition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipCellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipCellController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipCellType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipCellType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipClue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipClue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipClueView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipClueView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipElementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipElementView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/BattleShipView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/AdjacentShipsContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/AdjacentShipsContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/IncompleteShipContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/IncompleteShipContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/TooFewInFleetContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/TooFewInFleetContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/TooFewRowColContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/TooFewRowColContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/TooManyInFleetContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/TooManyInFleetContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/TooManyRowColContradiction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/battleship/rules/TooManyRowColContradiction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/Fillapix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/Fillapix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixCellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixCellController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixCellType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixCellType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixElementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixElementView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/FillapixView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/rules/BlackOrWhiteCaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/rules/BlackOrWhiteCaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/rules/FinishWithBlackBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/rules/FinishWithBlackBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/rules/FinishWithWhiteBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/rules/FinishWithWhiteBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/rules/TooFewBlackCellsContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/rules/TooFewBlackCellsContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/rules/TooManyBlackCellsContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/fillapix/rules/TooManyBlackCellsContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeElementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeElementView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/HeyawakeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/AdjacentBlacksContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/AdjacentBlacksContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/BlackPathBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/BlackPathBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/BottleNeckBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/BottleNeckBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/OneRowBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/OneRowBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/PreventWhiteLineBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/PreventWhiteLineBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/RoomTooEmptyContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/RoomTooEmptyContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/RoomTooFullContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/RoomTooFullContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/ThreeByThreeBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/ThreeByThreeBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/TwoInCornerBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/TwoInCornerBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/WhiteAreaContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/WhiteAreaContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/WhiteEscapeBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/WhiteEscapeBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/WhiteLineContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/WhiteLineContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/ZigZagCaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/ZigZagCaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/ZigZagWhiteBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/heyawake/rules/ZigZagWhiteBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpCellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpCellController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpCellType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpCellType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpElementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpElementView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/LightUpView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/BulbsInPathContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/BulbsInPathContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/BulbsOutsideDiagonalBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/BulbsOutsideDiagonalBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/CannotLightACellContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/CannotLightACellContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/EmptyCellinLightBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/EmptyCellinLightBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/EmptyCornersBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/EmptyCornersBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/FinishWithBulbsBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/FinishWithBulbsBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/FinishWithEmptyBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/FinishWithEmptyBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/MustLightBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/MustLightBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/SatisfyNumberCaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/SatisfyNumberCaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/TooFewBulbsContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/TooFewBulbsContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/TooManyBulbsContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/lightup/rules/TooManyBulbsContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/EditLineCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/EditLineCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/Masyu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/Masyu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuElementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuElementView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuLineView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuLineView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/BadLoopingContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/BadLoopingContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/BlackContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/BlackContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/BlackEdgeBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/BlackEdgeBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/FinishPathBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/FinishPathBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/NearWhiteBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/NearWhiteBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/NoOptionsContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/NoOptionsContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/OnlyOneChoiceBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/OnlyOneChoiceBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/OnlyTwoContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/OnlyTwoContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/WhiteContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/WhiteContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/WhiteEdgeBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/rules/WhiteEdgeBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/Nurikabe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/Nurikabe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeElementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeElementView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/BlackBetweenRegionsBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/BlackBetweenRegionsBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/BlackBottleNeckBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/BlackBottleNeckBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/BlackOrWhiteCaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/BlackOrWhiteCaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/BlackSquareContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/BlackSquareContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/CantReachWhiteContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/CantReachWhiteContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/CornerBlackBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/CornerBlackBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/FillinBlackBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/FillinBlackBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/FillinWhiteBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/FillinWhiteBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/IsolateBlackContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/IsolateBlackContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/MultipleNumbersContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/MultipleNumbersContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/NoNumberContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/NoNumberContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/PreventBlackSquareBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/PreventBlackSquareBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/SurroundRegionBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/SurroundRegionBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/TooFewSpacesContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/TooFewSpacesContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/TooManySpacesContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/TooManySpacesContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/UnreachableBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/UnreachableBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/WhiteBottleNeckBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/rules/WhiteBottleNeckBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/PossibleNumberCaseBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/PossibleNumberCaseBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/Sudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/Sudoku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuCellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuCellController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuElementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuElementView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/SudokuView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/AdvancedDeductionBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/AdvancedDeductionBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/LastCellForNumberBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/LastCellForNumberBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/LastNumberForCellBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/LastNumberForCellBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/NoSolutionContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/NoSolutionContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/PossibleCellCaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/PossibleCellCaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/PossibleNumberCaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/PossibleNumberCaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/RepeatedNumberContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/sudoku/rules/RepeatedNumberContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/ClueCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/ClueCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/EditLineCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/EditLineCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentClue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentClue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentClueView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentClueView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentElementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentElementView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentLineView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentLineView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/TreeTentView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/EmptyFieldBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/EmptyFieldBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/FillinRowCaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/FillinRowCaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/FinishWithGrassBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/FinishWithGrassBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/FinishWithTentsBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/FinishWithTentsBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/LastCampingSpotBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/LastCampingSpotBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/LinkTentCaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/LinkTentCaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/LinkTreeCaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/LinkTreeCaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/NoTentForTreeContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/NoTentForTreeContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/NoTreeForTentContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/NoTreeForTentContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/SurroundTentWithGrassBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/SurroundTentWithGrassBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TentForTreeBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TentForTreeBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TentOrGrassCaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TentOrGrassCaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TooFewTentsContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TooFewTentsContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TooManyTentsContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TooManyTentsContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TouchingTentsContradictionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TouchingTentsContradictionRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TreeForTentBasicRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/treetent/rules/TreeForTentBasicRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/LegupUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/LegupUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/PreferencesDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/PreferencesDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/treeview/TreeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/ui/treeview/TreeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/user/UsageStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rpi/legup/user/UsageStatistics.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -1163,117 +168,41 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="14" />
           <entry key="java" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="8" />
+          <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Legup" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="70" column="89" selection-start-line="70" selection-start-column="89" selection-end-line="70" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-              <folding>
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/nurikabe/NurikabeCell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-              <folding>
-                <marker date="1540405342948" expanded="true" signature="777:926" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuCellFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <marker date="1540405342943" expanded="true" signature="2695:2971" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="21">
+              <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -1879,14 +808,13 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCell.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
-    <option name="height" value="947" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1971,6 +899,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540932277262" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -2187,10 +1116,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1680" height="947" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4946565" visible="true" weight="0.22771673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4946565" visible="true" weight="0.22202381" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -2207,7 +1136,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5842491" side_tool="true" weight="0.33821988" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.497558" weight="0.32958034" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.490232" weight="0.32958034" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.41575092" visible="true" weight="0.33801168" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.41575092" weight="0.2742857" />
       <window_info anchor="bottom" id="Build" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2220,13 +1149,13 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4946565" weight="0.22302592" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4946565" visible="true" weight="0.22771673" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5053435" side_tool="true" weight="0.21367522" />
+      <window_info id="Favorites" order="5" sideWeight="0.5053435" side_tool="true" weight="0.21367522" />
+      <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48779" weight="0.3285568" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.43406594" weight="0.32958034" />
@@ -2235,18 +1164,19 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.497558" weight="0.32958034" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5842491" side_tool="true" weight="0.33821988" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.41575092" visible="true" weight="0.33879223" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.497558" weight="0.32958034" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.490232" weight="0.32958034" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.497558" weight="0.32958034" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.490232" weight="0.32958034" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.41575092" visible="true" weight="0.2748538" />
+      <window_info anchor="bottom" id="Build" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Gradle" order="7" weight="0.23992674" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.23992674" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2476,20 +1406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -2501,19 +1417,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding>
-            <marker date="1540405342948" expanded="true" signature="777:926" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/masyu/MasyuCellFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="147">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <marker date="1540405342943" expanded="true" signature="2695:2971" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2521,24 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-          <folding>
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
@@ -2551,8 +1443,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableElementView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="70" column="89" selection-start-line="70" selection-start-column="89" selection-end-line="70" selection-end-column="89" />
+        <state relative-caret-position="1038">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCellController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTableImporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/rpi/legup/puzzle/shorttruthtable/ShortTruthTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
