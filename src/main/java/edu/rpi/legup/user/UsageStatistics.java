@@ -40,6 +40,7 @@ public class UsageStatistics {
             HttpResponse response = httpclient.execute(httppost);
             HttpEntity entity = response.getEntity();
 
+<<<<<<< HEAD
 //            if (entity != null) {
 //                InputStream instream = entity.getContent();
 //
@@ -49,6 +50,17 @@ public class UsageStatistics {
 //                    instream.close();
 //                }
 //            }
+=======
+            if (entity != null) {
+                InputStream instream = entity.getContent();
+
+                try {
+//                    System.err.println(new String(instream.readAllBytes()));
+                } finally {
+                    instream.close();
+                }
+            }
+>>>>>>> 1edfe3b3fbb825cfcf5cf07613f7b9cdbfba350c
         } catch (IOException e) {
             return false;
         }
