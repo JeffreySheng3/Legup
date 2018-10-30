@@ -1,7 +1,0 @@
-[DEBUG] 2018-10-23 14:28:05.239 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
-[ERROR] 2018-10-23 14:28:05.272 [AWT-EventQueue-0] LegupUI - InvalidFileFormatException: shorttruthtable Factory: could not find attribute(s)
-[DEBUG] 2018-10-23 15:25:24.050 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
-[ERROR] 2018-10-23 15:25:24.068 [AWT-EventQueue-0] LegupUI - InvalidFileFormatException: shorttruthtable Factory: could not find attribute(s)
-[DEBUG] 2018-10-23 17:22:51.411 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
-[ERROR] 2018-10-23 17:22:51.412 [AWT-EventQueue-0] LegupUI - InvalidFileFormatException: shorttruthtable Factory: could not find attribute(s)
-[DEBUG] 2018-10-23 17:28:33.864 [AWT-EventQueue-0] GameBoardFacade - Loading edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTable
