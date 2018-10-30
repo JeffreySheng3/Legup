@@ -31,7 +31,6 @@ public class ShortTruthTableCellFactory extends ElementFactory
             }
 
             ShortTruthTableBoard shortTruthTableBoard = (ShortTruthTableBoard)board;
-            int width = shortTruthTableBoard.getWidth();
             int height = shortTruthTableBoard.getHeight();
             
             int y = Integer.valueOf(node.getAttributes().getNamedItem("index").getNodeValue());

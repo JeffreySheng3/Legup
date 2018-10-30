@@ -47,12 +47,6 @@ public class ShortTruthTableElementView extends ElementView
             int yText = location.y + ((size.height - metrics.getHeight()) / 2) + metrics.getAscent();
             graphics2D.drawString(String.valueOf(puzzleElement.getData()), xText, yText);
         }
-        else if(type == ShortTruthTableCellType.BLACK)
-        {
-            graphics2D.setStroke(new BasicStroke(1));
-            graphics2D.setColor(BLACK_COLOR);
-            graphics2D.fillRect(location.x, location.y, size.width, size.height);
-        }
         else if(type == ShortTruthTableCellType.SPACE)
         {
             graphics2D.setStroke(new BasicStroke(1));
@@ -61,20 +55,20 @@ public class ShortTruthTableElementView extends ElementView
             graphics2D.fillRect(location.x + size.width * 7 / 16, location.y + size.height * 7 / 16, size.width / 8, size.height / 8);
             graphics2D.drawRect(location.x, location.y, size.width, size.height);
         }
-        else if(type == ShortTruthTableCellType.UNKNOWN)
+        else if(type == ShortTruthTableCellType.SYMBOL)
         {
             graphics2D.setStroke(new BasicStroke(1));
             graphics2D.fillRect(location.x, location.y, size.width, size.height);
             graphics2D.setColor(Color.BLACK);
             graphics2D.drawRect(location.x, location.y, size.width, size.height);
-        }
-        else if(type == ShortTruthTableCellType.BULB)
-        {
-            graphics2D.setColor(Color.LIGHT_GRAY);
-            graphics2D.fillRect(location.x, location.y, size.width, size.height);
-            graphics2D.drawImage(ShortTruthTableView.lightImage, location.x, location.y, size.width, size.height, LITE, null);
-            graphics2D.setColor(BLACK_COLOR);
-            graphics2D.drawRect(location.x, location.y, size.width, size.height);
+
+            graphics2D.setColor(WHITE_COLOR);
+            graphics2D.setFont(FONT);
+            FontMetrics metrics = graphics2D.getFontMetrics(FONT);
+            String value = String.valueOf(puzzleElement.getData());
+            int xText = location.x + (size.width - metrics.stringWidth(value)) / 2;
+            int yText = location.y + ((size.height - metrics.getHeight()) / 2) + metrics.getAscent();
+            graphics2D.drawString(String.valueOf(puzzleElement.getData()), xText, yText);
         }
     }
 }
