@@ -13,8 +13,8 @@ public class ShortTruthTableBoard extends Board {
     public ShortTruthTableBoard(int width, int height) {
         super(width * height);
         this.dimension = new Dimension();
-        this.dimension.width = width;
-        this.dimension.height = height;
+        dimension.width = width;
+        dimension.height = height;
     }
 
     public ShortTruthTableCell getCell(int x, int y) {
@@ -26,11 +26,7 @@ public class ShortTruthTableBoard extends Board {
     }
 
     public void setCell(int x, int y, ShortTruthTableCell cell) {
-        if (x * dimension.width + y >= puzzleElements.size() &&
-                x < dimension.width && y < dimension.height && x >= 0 && y >= 0) {
-            return;
-        }
-        puzzleElements.set(y * dimension.width + x, cell);
+        puzzleElements.set(x + y * dimension.width, cell);
     }
 
     public Dimension getDimension() {

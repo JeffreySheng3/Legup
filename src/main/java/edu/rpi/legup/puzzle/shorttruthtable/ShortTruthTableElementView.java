@@ -36,22 +36,22 @@ public class ShortTruthTableElementView extends ElementView
         if(type == ShortTruthTableCellType.VARIABLE)
         {
             graphics2D.setStroke(new BasicStroke(1));
-            graphics2D.setColor(BLACK_COLOR);
+            graphics2D.setColor(WHITE_COLOR);
             graphics2D.fillRect(location.x, location.y, size.width, size.height);
 
-            graphics2D.setColor(WHITE_COLOR);
+            graphics2D.setColor(BLACK_COLOR);
             graphics2D.setFont(FONT);
             FontMetrics metrics = graphics2D.getFontMetrics(FONT);
-            String value = String.valueOf(puzzleElement.getData());
+            String value = String.valueOf(cell.getLetter());
             int xText = location.x + (size.width - metrics.stringWidth(value)) / 2;
             int yText = location.y + ((size.height - metrics.getHeight()) / 2) + metrics.getAscent();
-            graphics2D.drawString(String.valueOf(puzzleElement.getData()), xText, yText);
+            graphics2D.drawString(value, xText, yText);
         }
-        else if(type == ShortTruthTableCellType.SPACE)
+        else if(type == ShortTruthTableCellType.EMPTY)
         {
             graphics2D.setStroke(new BasicStroke(1));
             graphics2D.fillRect(location.x, location.y, size.width, size.height);
-            graphics2D.setColor(BLACK_COLOR);
+            graphics2D.setColor(WHITE_COLOR);
             graphics2D.fillRect(location.x + size.width * 7 / 16, location.y + size.height * 7 / 16, size.width / 8, size.height / 8);
             graphics2D.drawRect(location.x, location.y, size.width, size.height);
         }

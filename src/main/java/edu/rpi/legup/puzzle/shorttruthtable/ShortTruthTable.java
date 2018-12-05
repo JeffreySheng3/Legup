@@ -55,9 +55,10 @@ public class ShortTruthTable extends Puzzle {
         }
         for (PuzzleElement data : shortTruthTableBoard.getPuzzleElements()) {
             ShortTruthTableCell cell = (ShortTruthTableCell) data;
-            if ((cell.getType() == ShortTruthTableCellType.UNKNOWN || cell.getType() == ShortTruthTableCellType.EMPTY)) {
-                return false;
-            }
+//            if ((cell.getType() == ShortTruthTableCellType.UNKNOWN || cell.getType() == ShortTruthTableCellType.EMPTY)) {
+//                return false;
+//            }
+            return false;
         }
         return true;
     }

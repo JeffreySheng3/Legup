@@ -1,6 +1,7 @@
 package edu.rpi.legup.puzzle.shorttruthtable;
 
 import edu.rpi.legup.model.gameboard.PuzzleElement;
+import java.awt.*;
 
 public class ShortTruthTableCell extends PuzzleElement<Integer>
 {
@@ -8,10 +9,27 @@ public class ShortTruthTableCell extends PuzzleElement<Integer>
     private char connective;
     private boolean isAtomic;
     private Boolean val;
+    private Point loc;
 
     public ShortTruthTableCell(int data)
     {
         super(data);
+        this.loc = new Point();
+    }
+
+    public void setLetter(char letter) {
+        this.isAtomic = true;
+        this.letter = letter;
+        this.setData(0);
+    }
+
+    public char getLetter() {
+        return this.letter;
+    }
+
+    public void setConnective(char c) {
+        this.isAtomic = true;
+        this.connective = c;
     }
 
     public ShortTruthTableCellType getType()
@@ -19,7 +37,7 @@ public class ShortTruthTableCell extends PuzzleElement<Integer>
         switch(data)
         {
             case -2:
-                return ShortTruthTableCellType.SPACE;
+                return ShortTruthTableCellType.EMPTY;
             case -1:
                 return ShortTruthTableCellType.SYMBOL;
             default:
@@ -29,6 +47,15 @@ public class ShortTruthTableCell extends PuzzleElement<Integer>
                 }
         }
         return null;
+    }
+
+    public void setLocation(int x, int y) {
+        loc.x = x;
+        loc.y = y;
+    }
+
+    public Point getLocation() {
+        return loc;
     }
 
     @Override

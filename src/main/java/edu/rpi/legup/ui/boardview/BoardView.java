@@ -188,12 +188,12 @@ public abstract class BoardView extends ScrollView implements IBoardListener {
     }
 
     public void drawBoard(Graphics2D graphics2D) {
-        System.out.println("[DEBUG] elementViews");
-        System.out.println(getElementCount());
+//        System.out.println("[DEBUG] elementViews");
+//        System.out.println(getElementCount());
         int i = 0;
         for (ElementView element : elementViews) {
             ++i;
-            System.out.println("[DEBUG] " + i +" "+ element);
+//            System.out.println("[DEBUG] " + i +" "+ element);
             element.draw(graphics2D);
         }
     }

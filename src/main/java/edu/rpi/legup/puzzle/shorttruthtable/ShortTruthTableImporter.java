@@ -26,13 +26,11 @@ public class ShortTruthTableImporter extends PuzzleImporter
     {
         try
         {
-            if(!node.getNodeName().equalsIgnoreCase("board"))
-            {
+            if(!node.getNodeName().equalsIgnoreCase("board")) {
                 throw new InvalidFileFormatException("shorttruthtable Importer: cannot find board puzzleElement");
             }
             Element boardElement = (Element)node;
-            if(boardElement.getElementsByTagName("premises").getLength() == 0)
-            {
+            if(boardElement.getElementsByTagName("premises").getLength() == 0) {
                 throw new InvalidFileFormatException("shorttruthtable Importer: no premises found in board");
             }
             Element dataElement = (Element)boardElement.getElementsByTagName("premises").item(0);
@@ -64,51 +62,47 @@ public class ShortTruthTableImporter extends PuzzleImporter
                     else throw new InvalidFileFormatException("shorttruthtable Importer: invalid character found in sentence " + s);
                 }
                 // maximum sentence width, therefore "board" width
+                System.out.println("Current Sentence '" + s + "' has length " + width_current);
                 width = (width_current > width) ? width_current : width;
             }
 
             ShortTruthTableBoard shortTruthTableBoard = new ShortTruthTableBoard(width, height);
 
-            for(int i = 0; i < width; i++) {
-                for(int j = 0; j < height; j++) {
-                    ShortTruthTableCell cell = new ShortTruthTableCell(0);
+            for(int i = 0; i < height; i++) {
+                String s;
+                if (i==premiseDataList.getLength()) s = conclusion.getAttribute("sentence");
+                else s = ((Element)premiseDataList.item(i)).getAttribute("sentence");
+                // remove spaces from the string, so as not to create blank tiles
+                s = s.replaceAll("\\s","");
 
-                    String s;
-                    if (j==premiseDataList.getLength()) s = conclusion.getAttribute("sentence");
-                    else s = ((Element)premiseDataList.item(i)).getAttribute("sentence");
+                for (int j = 0,k = 0; k < width; j++,k++) {
+                    ShortTruthTableCell cell = new ShortTruthTableCell(0);
+                    cell.setModifiable(true);
+
                     char c = ' ';
                     try {
-                        c = s.charAt(i);
+                        c = s.charAt(j);
                     }
                     catch(StringIndexOutOfBoundsException ex) {
-
+                        cell.setData(-2);
                     }
-                    if (c==' ') continue;
+                    if (c==' ') {
+                        cell.setModifiable(false);
+                    }
                     else if (65 <= c && c <= 90) {
-                        cell.setData(0);
+                        cell.setLetter(c);
                     }
                     else if (c=='<' || c=='-') {
-                        width_current++;
                         j+=2;
+                        cell.setData(-1);
                     }
                     else if (c=='^' || c=='v' || c=='~' || c=='(' || c==')' ) {
-                        width_current++;
+                        cell.setData(-1);
                     }
-                    cell.setIndex(i*j);
-                    cell.setData();
-                    cell.setModifiable(true);
-                    shortTruthTableBoard.setCell(i,j,cell);
-                }
-            }
-
-            for(int y = 0; y < height; y++) {
-                for(int x = 0; x < width; x++) {
-                    if(shortTruthTableBoard.getCell(x, y) == null) {
-                        ShortTruthTableCell cell = new ShortTruthTableCell(-2);
-                        cell.setIndex(y * height + x);
-                        cell.setModifiable(true);
-                        shortTruthTableBoard.setCell(x, y, cell);
-                    }
+                    cell.setIndex(i*width+k);
+                    cell.setLocation(k,i);
+                    System.out.println("Cell at location (" + k + "," + i + ") has element " + c);
+                    shortTruthTableBoard.setCell(k,i,cell);
                 }
             }
             puzzle.setCurrentBoard(shortTruthTableBoard);

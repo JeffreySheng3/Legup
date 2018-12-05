@@ -29,15 +29,17 @@ public class ShortTruthTableView extends GridBoardView
     }
 
     public ShortTruthTableView(ShortTruthTableBoard board)
-    {
+    {   
         super(new BoardController(), new ShortTruthTableCellController(), board.getDimension());
 
         for(PuzzleElement puzzleElement : board.getPuzzleElements())
         {
+            Point location = ((ShortTruthTableCell)puzzleElement).getLocation();
             ShortTruthTableCell cell = (ShortTruthTableCell) puzzleElement;
             ShortTruthTableElementView elementView = new ShortTruthTableElementView(cell);
             elementView.setIndex(cell.getIndex());
             elementView.setSize(elementSize);
+            elementView.setLocation(new Point(location.x*elementSize.width,location.y*elementSize.height));
             elementViews.add(elementView);
         }
     }

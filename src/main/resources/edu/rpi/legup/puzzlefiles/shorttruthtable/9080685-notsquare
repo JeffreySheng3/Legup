@@ -4,8 +4,9 @@
         <board>
             <premises>
                 <premise index="0" sentence="P ^ Q --> R" />
+                <premise index="1" sentence="Q" />
             </premises>
-            <conclusion sentence="A v B" />
+            <conclusion sentence="P ^ R" />
         </board>
     </puzzle>
     <proof>
