@@ -47,7 +47,9 @@ public class ShortTruthTableBoard extends Board {
         ShortTruthTableBoard copy = new ShortTruthTableBoard(this.dimension.width, this.dimension.height);
         for (int x = 0; x < this.dimension.width; x++) {
             for (int y = 0; y < this.dimension.height; y++) {
-                copy.setCell(x, y, getCell(x, y).copy());
+                System.out.println("Copying cell ("+x+","+y+")");
+                ShortTruthTableCell c = getCell(x, y).copy();
+                copy.setCell(x, y, c);
             }
         }
         return copy;

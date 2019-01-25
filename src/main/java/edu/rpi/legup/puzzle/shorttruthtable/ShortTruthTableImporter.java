@@ -30,26 +30,28 @@ public class ShortTruthTableImporter extends PuzzleImporter
                 throw new InvalidFileFormatException("shorttruthtable Importer: cannot find board puzzleElement");
             }
             Element boardElement = (Element)node;
-            if(boardElement.getElementsByTagName("premises").getLength() == 0) {
-                throw new InvalidFileFormatException("shorttruthtable Importer: no premises found in board");
+            if (boardElement.getElementsByTagName("premises").getLength() == 0 && boardElement.getElementsByTagName("sentence").getLength() == 0) {
+                throw new InvalidFileFormatException("shorttruthtable Importer: no premises or sentences found in board");
             }
             Element dataElement = (Element)boardElement.getElementsByTagName("premises").item(0);
-            NodeList premiseDataList = dataElement.getElementsByTagName("premise");
+            NodeList sentenceDataList = boardElement.getElementsByTagName("sentence");
+            NodeList premiseDataList = null;
+            if (dataElement.getElementsByTagName("premise")!=null) premiseDataList = dataElement.getElementsByTagName("premise");
             Element conclusion = (Element)boardElement.getElementsByTagName("conclusion").item(0);
 
             int height = 0;
             int width = 0;
 
-            for (int i=0; i<premiseDataList.getLength()+1; ++i) {
+            for (int i=0; i<premiseDataList.getLength()+sentenceDataList.getLength()+1; ++i) {
                 int width_current = 0;
                 height++;
                 String s;
-                if (i==premiseDataList.getLength()) s = conclusion.getAttribute("sentence");
+                if (i==premiseDataList.getLength()+sentenceDataList.getLength()) s = conclusion.getAttribute("sentence");
+                else if (i>=premiseDataList.getLength()) s = ((Element)sentenceDataList.item(i-premiseDataList.getLength())).getAttribute("sen");
                 else s = ((Element)premiseDataList.item(i)).getAttribute("sentence");
                 for (int j=0; j < s.length(); j++) {
                     char c = s.charAt(j);
-                    if (c==' ') continue;
-                    else if (65 <= c && c <= 90) {
+                    if (65 <= c && c <= 90) {
                         width_current++;
                     }
                     else if (c=='<' || c=='-') {
@@ -59,7 +61,7 @@ public class ShortTruthTableImporter extends PuzzleImporter
                     else if (c=='^' || c=='v' || c=='~' || c=='(' || c==')' ) {
                         width_current++;
                     }
-                    else throw new InvalidFileFormatException("shorttruthtable Importer: invalid character found in sentence " + s);
+                    else if (c!=' ') throw new InvalidFileFormatException("shorttruthtable Importer: invalid character found in sentence " + s);
                 }
                 // maximum sentence width, therefore "board" width
                 System.out.println("Current Sentence '" + s + "' has length " + width_current);
@@ -70,7 +72,8 @@ public class ShortTruthTableImporter extends PuzzleImporter
 
             for(int i = 0; i < height; i++) {
                 String s;
-                if (i==premiseDataList.getLength()) s = conclusion.getAttribute("sentence");
+                if (i==premiseDataList.getLength()+sentenceDataList.getLength()) s = conclusion.getAttribute("sentence");
+                else if (i>=premiseDataList.getLength()) s = ((Element)sentenceDataList.item(i-premiseDataList.getLength())).getAttribute("sen");
                 else s = ((Element)premiseDataList.item(i)).getAttribute("sentence");
                 // remove spaces from the string, so as not to create blank tiles
                 s = s.replaceAll("\\s","");
@@ -94,14 +97,14 @@ public class ShortTruthTableImporter extends PuzzleImporter
                     }
                     else if (c=='<' || c=='-') {
                         j+=2;
-                        cell.setData(-1);
+                        cell.setConnective(c);
                     }
                     else if (c=='^' || c=='v' || c=='~' || c=='(' || c==')' ) {
-                        cell.setData(-1);
+                        cell.setConnective(c);
                     }
                     cell.setIndex(i*width+k);
                     cell.setLocation(k,i);
-                    System.out.println("Cell at location (" + k + "," + i + ") has element " + c);
+                    System.out.println("Setting cell (" + k + "," + i + "): " + cell);
                     shortTruthTableBoard.setCell(k,i,cell);
                 }
             }

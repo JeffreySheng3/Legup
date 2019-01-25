@@ -11,25 +11,17 @@ public class ShortTruthTableCellController extends ElementController
     public void changeCell(MouseEvent e, PuzzleElement data)
     {
         ShortTruthTableCell cell = (ShortTruthTableCell)data;
-        if(e.getButton() == MouseEvent.BUTTON1)
+        if (e.getButton() == MouseEvent.BUTTON1)
         {
-            if(e.isControlDown())
+            if (e.isControlDown())
             {
                 this.boardView.getSelectionPopupMenu().show(boardView, this.boardView.getCanvas().getX() + e.getX(), this.boardView.getCanvas().getY() + e.getY());
             }
             else
             {
-                if(cell.getData() == -2)
+                if (cell.isAtomic())
                 {
-                    data.setData(-4);
-                }
-                else if(cell.getData() == -4)
-                {
-                    data.setData(-3);
-                }
-                else
-                {
-                    data.setData(-2);
+                    cell.setValue(!cell.getValue());
                 }
             }
         }

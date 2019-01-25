@@ -2,11 +2,9 @@
 <Legup version="2.0.0">
     <puzzle name="ShortTruthTable">
         <board>
-            <premises>
-                <premise index="0" sentence="(P ^ Q) --> R" />
-                <premise index="1" sentence="Q" />
-            </premises>
-            <conclusion sentence="P ^ R" />
+            <sentence index="0" sen="(P ^ Q) --> R" />
+            <sentence index="1" sen="Q" />
+            <sentence index="2" sen="P ^ R" />
         </board>
     </puzzle>
     <proof>

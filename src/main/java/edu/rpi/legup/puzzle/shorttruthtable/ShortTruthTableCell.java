@@ -23,13 +23,23 @@ public class ShortTruthTableCell extends PuzzleElement<Integer>
         this.setData(0);
     }
 
+    public void setValue(boolean val) { this.val = val; }
+    public Boolean getValue() { return this.val; }
+
     public char getLetter() {
         return this.letter;
     }
 
     public void setConnective(char c) {
-        this.isAtomic = true;
+        this.isAtomic = !(c=='(' || c==')');
         this.connective = c;
+        this.setData(-1);
+    }
+
+    public boolean isAtomic(){return isAtomic;}
+
+    public char getConnective() {
+        return this.connective;
     }
 
     public ShortTruthTableCellType getType()
