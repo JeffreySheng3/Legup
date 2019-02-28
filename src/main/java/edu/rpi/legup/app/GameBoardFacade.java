@@ -153,6 +153,51 @@ public class GameBoardFacade implements IHistorySubject {
         }
     }
 
+    public static Puzzle getPuzzleFromStream(InputStream inputStream) throws InvalidFileFormatException {
+        Document document;
+        try {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            document = builder.parse(inputStream);
+        } catch (IOException | SAXException | ParserConfigurationException e) {
+            LOGGER.error("Invalid file", e);
+            throw new InvalidFileFormatException("Could not find file");
+        }
+        Puzzle puzzle;
+        Element rootNode = document.getDocumentElement();
+        if (rootNode.getTagName().equals("Legup")) {
+            try {
+                Config config = new Config();
+
+                Node node = rootNode.getElementsByTagName("puzzle").item(0);
+                String qualifiedClassName = config.getPuzzleClassForName(node.getAttributes().getNamedItem("name").getNodeValue());
+                if (qualifiedClassName == null) {
+                    throw new InvalidFileFormatException("Puzzle creation error: cannot find puzzle with that name");
+                }
+                LOGGER.debug("Loading " + qualifiedClassName);
+
+                Class<?> c = Class.forName(qualifiedClassName);
+                Constructor<?> cons = c.getConstructor();
+                puzzle = (Puzzle) cons.newInstance();
+
+                PuzzleImporter importer = puzzle.getImporter();
+                if (importer == null) {
+                    LOGGER.error("Puzzle importer is null");
+                    throw new InvalidFileFormatException("Puzzle importer null");
+                }
+                importer.initializePuzzle(node);
+            } catch (ClassNotFoundException | NoSuchMethodException | InvocationTargetException |
+                    IllegalAccessException | InstantiationException | InvalidConfigException e) {
+                LOGGER.error(e);
+                throw new InvalidFileFormatException("Puzzle creation error");
+            }
+        } else {
+            LOGGER.error("Invalid file");
+            throw new InvalidFileFormatException("Invalid file: must be a Legup file");
+        }
+        return puzzle;
+    }
+
     /**
      * Sets the window title to 'PuzzleName - FileName'
      * Removes the extension

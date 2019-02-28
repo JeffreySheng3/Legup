@@ -45,6 +45,7 @@ public class TreeView extends ScrollView implements ITreeListener {
     private Tree tree;
     private TreeNodeView rootNodeView;
     private Map<TreeElement, TreeElementView> viewMap;
+    private Map<TreeElementView, TreeCollapsedNode> collapsedNodeMap;
     private Dimension dimension;
 
     private TreeViewSelection selection;
@@ -56,6 +57,7 @@ public class TreeView extends ScrollView implements ITreeListener {
         setPreferredSize(new Dimension(640, 160));
 
         viewMap = new HashMap<>();
+        collapsedNodeMap = new HashMap<>();
 
         selection = new TreeViewSelection();
     }

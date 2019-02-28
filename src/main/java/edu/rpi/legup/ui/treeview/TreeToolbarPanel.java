@@ -34,6 +34,5 @@ public class TreeToolbarPanel extends JPanel {
         add(collapse);
         collapse.addActionListener(a -> treePanel.collapse());
         collapse.setToolTipText("Collapse nodes");
-        collapse.setEnabled(false);
     }
 }

@@ -30,6 +30,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Consumer;
 
 import org.apache.logging.log4j.LogManager;
@@ -126,7 +127,8 @@ public abstract class Puzzle implements IBoardSubject, ITreeSubject {
     public boolean isPuzzleComplete() {
         boolean isComplete = tree.isValid();
         if (isComplete) {
-            for (TreeElement leaf : tree.getLeafTreeElements()) {
+            Set<TreeElement> leafs = tree.getLeafTreeElements();
+            for (TreeElement leaf : leafs) {
                 if(leaf.getType() == TreeElementType.NODE) {
                     TreeNode node = (TreeNode)leaf;
                     if (!node.isRoot()) {

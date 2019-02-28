@@ -70,6 +70,7 @@ public class TreeTransitionView extends TreeElementView {
      *
      * @param graphics2D graphics2D used for drawing
      */
+    @Override
     public void draw(Graphics2D graphics2D) {
         arrowhead = createTransitionTriangle(RADIUS);
 
