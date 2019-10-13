@@ -24,7 +24,35 @@ public class TreeForTentBasicRule extends BasicRule {
      */
     @Override
     public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement) {
-        return null;
+        if (!(puzzleElement instanceof TreeTentLine)) {
+            return "Lines must be created for this rule.";
+        }
+        TreeTentBoard   initialBoard =  (TreeTentBoard) transition.getParents().get(0).getBoard();
+        TreeTentLine    initLine =      (TreeTentLine) initialBoard.getPuzzleElement(puzzleElement);
+        TreeTentBoard   finalBoard =    (TreeTentBoard) transition.getBoard();
+        TreeTentLine    finalLine =     (TreeTentLine) finalBoard.getPuzzleElement(puzzleElement);
+        TreeTentCell tree, tent;
+        if (finalLine.getC1().getType() == TreeTentType.TREE || finalLine.getC2().getType() == TreeTentType.TENT) {
+            tree = finalLine.getC1();
+            tent = finalLine.getC2();
+        } else if (finalLine.getC2().getType() == TreeTentType.TREE || finalLine.getC1().getType() == TreeTentType.TENT) {
+            tree = finalLine.getC2();
+            tent = finalLine.getC1();
+        } else {
+            return "This line must connect a tree to a tent.";
+        }
+
+        if (isForced(initialBoard, tree, tent)) {
+            return null;
+        } else {
+            return "This cell is not forced to be tent.";
+        }
+    }
+    //Rule is forced if only one tree is available for this tent
+    private boolean isForced(TreeTentBoard board, TreeTentCell tree, TreeTentCell tent) {
+        List<TreeTentCell> trees = board.getAdjacent(tent, TreeTentType.TREE);
+        return (trees.size() != 1);
+//        return !trees.isEmpty();
     }
 
     /**
