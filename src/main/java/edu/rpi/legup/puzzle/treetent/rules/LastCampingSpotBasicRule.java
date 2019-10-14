@@ -76,18 +76,18 @@ public class LastCampingSpotBasicRule extends BasicRule {
         }
         /* Validate that this tree has no other unlinked tents*/
         List<TreeTentCell> adjTents = board.getAdjacent(tree, TreeTentType.TENT); //get adjacent tents to the placed tent
-        for (TreeTentCell c : adjTents) {
-            /* Verify this cell is linked */
-            Point loc = tree.getLocation();
-            boolean linked = false;
-            for (TreeTentLine line : board.getLines()) {
-                if (line.getC1().getLocation().equals(loc) || line.getC2().getLocation().equals(loc)) {
-                    linked = true;
-                    break;
-                }
-            }
-            if(!linked) {return false;}
-        }
+//        for (TreeTentCell c : adjTents) {
+//            /* Verify this cell is linked */
+//            Point loc = tree.getLocation();
+//            boolean linked = false;
+//            for (TreeTentLine line : board.getLines()) {
+//                if (line.getC1().getLocation().equals(loc) || line.getC2().getLocation().equals(loc)) {
+//                    linked = true;
+//                    break;
+//                }
+//            }
+//            if(!linked) {return false;}
+//        }
 
         return true; //validated that this tree has only one empty adjacent space, and no unlinked tents
 
