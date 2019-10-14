@@ -30,7 +30,7 @@ public class TouchingTentsContradictionRule extends ContradictionRule {
         if (cell.getType() != TreeTentType.TREE) {
             return "This cell does not contain a contradiction at this location.";
         }
-        int adjTree = treeTentBoard.getAdjacent(cell, TreeTentType.TREE).size();
+        int adjTree = treeTentBoard.getAdjacent(cell, TreeTentType.TREE).size(); //Get adjacent trees
         if (adjTree > 0) {
             return null;
         } else {
