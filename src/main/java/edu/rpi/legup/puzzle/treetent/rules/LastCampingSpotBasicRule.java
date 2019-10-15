@@ -9,6 +9,12 @@ import edu.rpi.legup.puzzle.treetent.TreeTentBoard;
 import edu.rpi.legup.puzzle.treetent.TreeTentCell;
 import edu.rpi.legup.puzzle.treetent.TreeTentLine;
 import edu.rpi.legup.puzzle.treetent.TreeTentType;
+import edu.rpi.legup.puzzle.treetent.rules.TentForTreeBasicRule;
+import edu.rpi.legup.model.Puzzle;
+import edu.rpi.legup.ui.treeview.TreeView;
+import edu.rpi.legup.ui.treeview.TreeViewSelection;
+
+import static edu.rpi.legup.app.GameBoardFacade.getInstance;
 
 import java.awt.*;
 import java.util.List;
@@ -20,6 +26,7 @@ public class LastCampingSpotBasicRule extends BasicRule {
                 "If an unlinked tree is adjacent to only one blank cell and not adjacent to any unlinked tents, the blank cell must be a tent.",
                 "edu/rpi/legup/images/treetent/oneTentPosition.png");
     }
+    private TreeTentCell treeCell;
 
     /**
      * Checks whether the child node logically follows from the parent node
@@ -47,6 +54,23 @@ public class LastCampingSpotBasicRule extends BasicRule {
         }
 //        return null;
         if (isForced(initialBoard, initCell)) {
+            /* Below is an attempt to get the connection line to populate automatically, but couldn't get it to work */
+
+//            TreeTentLine line = new TreeTentLine(initCell, treeCell); //create line
+////            finalBoard.addModifiedData(line);
+////            finalBoard.getLines().add(line);
+////            transition.propagateAddition(line);
+////
+////            Puzzle puzzle = getInstance().getPuzzleModule();
+////            TreeView treeView = getInstance().getLegupUI().getTreePanel().getTreeView();
+////            puzzle.notifyBoardListeners(listener -> listener.onBoardDataChanged(line));
+////            puzzle.notifyBoardListeners(listener -> listener.onTreeElementChanged(transition));
+////            TreeViewSelection newSelection = new TreeViewSelection(treeView.getElementView(transition));
+////            puzzle.notifyTreeListeners(listener -> listener.onTreeSelectionChanged(newSelection));
+//            TentForTreeBasicRule t =new TentForTreeBasicRule();
+//            TreeNode parent =       new TreeNode(initialBoard);
+//            TreeTransition tran =   new TreeTransition(parent, finalBoard);
+//            t.checkRuleRawAt( tran, line);
             return null;
         } else {
             return "This cell is not forced to be tent.";
@@ -76,19 +100,19 @@ public class LastCampingSpotBasicRule extends BasicRule {
         }
         /* Validate that this tree has no other unlinked tents*/
         List<TreeTentCell> adjTents = board.getAdjacent(tree, TreeTentType.TENT); //get adjacent tents to the placed tent
-//        for (TreeTentCell c : adjTents) {
-//            /* Verify this cell is linked */
-//            Point loc = tree.getLocation();
-//            boolean linked = false;
-//            for (TreeTentLine line : board.getLines()) {
-//                if (line.getC1().getLocation().equals(loc) || line.getC2().getLocation().equals(loc)) {
-//                    linked = true;
-//                    break;
-//                }
-//            }
-//            if(!linked) {return false;}
-//        }
-
+        for (TreeTentCell c : adjTents) {
+            /* Verify this cell is linked */
+            Point loc = c.getLocation();
+            boolean linked = false;
+            for (TreeTentLine line : board.getLines()) {
+                if (line.getC1().getLocation().equals(loc) || line.getC2().getLocation().equals(loc)) {
+                    linked = true;
+                    break;
+                }
+            }
+            if(!linked) {return false;}
+        }
+        treeCell = tree;
         return true; //validated that this tree has only one empty adjacent space, and no unlinked tents
 
         //*******************************************************************
