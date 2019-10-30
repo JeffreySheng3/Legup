@@ -31,8 +31,8 @@ public class NoTreeForTentContradictionRule extends ContradictionRule {
             return "This cell does not contain a contradiction at this location.";
         }
         int adjTree = treeTentBoard.getAdjacent(cell, TreeTentType.TREE).size();
-        int adjUnknown = treeTentBoard.getAdjacent(cell, TreeTentType.UNKNOWN).size();
-        if (adjTree == 0 && adjUnknown == 0) {
+//        int adjUnknown = treeTentBoard.getAdjacent(cell, TreeTentType.UNKNOWN).size();
+        if (adjTree == 0) {
             return null;
         } else {
             return "This cell does not contain a contradiction at this location.";

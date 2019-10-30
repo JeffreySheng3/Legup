@@ -25,6 +25,8 @@ public class TreeTentCell extends GridCell<Integer> {
         }
     }
 
+    public Point getLocation(){ return (Point) location.clone(); }
+
     @Override
     public TreeTentCell copy() {
         TreeTentCell copy = new TreeTentCell(data, (Point) location.clone());

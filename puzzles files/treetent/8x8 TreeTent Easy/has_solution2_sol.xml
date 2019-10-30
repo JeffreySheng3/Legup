@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Legup version="2.0.0">
+<puzzle name="TreeTent">
+<board height="8" width="8">
+<cells>
+<cell value="1" x="2" y="0"/>
+<cell value="1" x="0" y="2"/>
+<cell value="1" x="1" y="2"/>
+<cell value="1" x="3" y="2"/>
+<cell value="1" x="6" y="2"/>
+<cell value="1" x="6" y="3"/>
+<cell value="1" x="1" y="4"/>
+<cell value="1" x="7" y="4"/>
+<cell value="1" x="4" y="5"/>
+<cell value="1" x="0" y="6"/>
+<cell value="1" x="3" y="7"/>
+<cell value="1" x="5" y="7"/>
+</cells>
+<axis side="east">
+<clue index="" value="1"/>
+<clue index="" value="2"/>
+<clue index="" value="1"/>
+<clue index="" value="2"/>
+<clue index="" value="2"/>
+<clue index="" value="2"/>
+<clue index="" value="2"/>
+<clue index="" value="0"/>
+</axis>
+<axis side="south">
+<clue index="-2" value="1"/>
+<clue index="-2" value="2"/>
+<clue index="-2" value="1"/>
+<clue index="-2" value="2"/>
+<clue index="-2" value="2"/>
+<clue index="-2" value="2"/>
+<clue index="-2" value="2"/>
+<clue index="-2" value="0"/>
+</axis>
+</board>
+<proof>
+<tree>
+<node id="27785856" root="true">
+<transition child="31512360" id="6506085" rule="Finish with Grass">
+<cell value="2" x="6" y="7"/>
+<cell value="2" x="0" y="7"/>
+<cell value="2" x="2" y="7"/>
+<cell value="2" x="7" y="7"/>
+<cell value="2" x="4" y="7"/>
+<cell value="2" x="1" y="7"/>
+</transition>
+</node>
+<node id="31512360">
+<transition child="32961443" id="26126258" rule="Last Camping Spot">
+<cell value="3" x="3" y="6"/>
+<cell value="3" x="5" y="6"/>
+</transition>
+</node>
+<node id="32961443">
+<transition child="16783925" id="25116630" rule="Tent for Tree">
+<line x1="5" x2="5" y1="6" y2="7"/>
+<line x1="3" x2="3" y1="6" y2="7"/>
+</transition>
+</node>
+<node id="16783925">
+<transition child="33059653" id="24976090" rule="Surround Tent with Grass">
+<cell value="2" x="6" y="5"/>
+<cell value="2" x="6" y="6"/>
+<cell value="2" x="5" y="5"/>
+<cell value="2" x="2" y="5"/>
+<cell value="2" x="3" y="5"/>
+<cell value="2" x="4" y="6"/>
+<cell value="2" x="2" y="6"/>
+</transition>
+</node>
+<node id="33059653">
+<transition child="6219223" id="20748014" rule="Finish with Grass">
+<cell value="2" x="1" y="6"/>
+<cell value="2" x="7" y="6"/>
+</transition>
+</node>
+<node id="6219223">
+<transition child="17432842" id="24207875" rule="Last Camping Spot">
+<cell value="3" x="0" y="5"/>
+<cell value="3" x="4" y="4"/>
+</transition>
+</node>
+<node id="17432842">
+<transition child="33418175" id="13677921" rule="Tent for Tree">
+<line x1="0" x2="0" y1="5" y2="6"/>
+<line x1="4" x2="4" y1="4" y2="5"/>
+</transition>
+</node>
+<node id="33418175">
+<transition child="28183603" id="24897356" rule="Surround Tent with Grass">
+<cell value="2" x="3" y="4"/>
+<cell value="2" x="3" y="3"/>
+<cell value="2" x="5" y="4"/>
+<cell value="2" x="1" y="5"/>
+<cell value="2" x="4" y="3"/>
+<cell value="2" x="0" y="4"/>
+<cell value="2" x="5" y="3"/>
+</transition>
+</node>
+<node id="28183603">
+<transition child="21092898" id="11679456" rule="Empty Field">
+<cell value="2" x="2" y="3"/>
+<cell value="2" x="5" y="1"/>
+<cell value="2" x="7" y="1"/>
+<cell value="2" x="5" y="0"/>
+<cell value="2" x="6" y="0"/>
+<cell value="2" x="0" y="0"/>
+<cell value="2" x="4" y="1"/>
+<cell value="2" x="4" y="0"/>
+<cell value="2" x="7" y="0"/>
+</transition>
+</node>
+<node id="21092898">
+<transition child="28677879" id="26717702" rule="Tree or Grass">
+<cell value="3" x="1" y="3"/>
+</transition>
+<transition child="27178684" id="13721574" rule="Tree or Grass">
+<cell value="2" x="1" y="3"/>
+</transition>
+</node>
+<node id="27178684">
+<transition child="577762" id="20484673" rule="Last Camping Spot">
+<cell value="3" x="2" y="4"/>
+</transition>
+</node>
+<node id="577762">
+<transition child="17281542" id="31349278" rule="Tent for Tree">
+<line x1="2" x2="1" y1="4" y2="4"/>
+</transition>
+</node>
+<node id="17281542">
+<transition child="24901963" id="19950190" rule="Finish with Grass">
+<cell value="2" x="6" y="4"/>
+</transition>
+</node>
+<node id="24901963">
+<transition child="29068239" id="23025317" rule="Finish with Grass">
+<cell value="2" x="2" y="1"/>
+<cell value="2" x="2" y="2"/>
+</transition>
+</node>
+<node id="29068239">
+<transition child="25146534" id="2232867" rule="Finish with Tents">
+<cell value="3" x="7" y="5"/>
+</transition>
+</node>
+<node id="25146534">
+<transition child="17241433" id="11359353" rule="Tent for Tree">
+<line x1="7" x2="7" y1="5" y2="4"/>
+</transition>
+</node>
+<node id="17241433">
+<transition child="27917712" id="26647220" rule="Finish with Tents">
+<cell value="3" x="0" y="3"/>
+<cell value="3" x="7" y="3"/>
+</transition>
+</node>
+<node id="27917712">
+<transition child="15779492" id="31245300" rule="Tent for Tree">
+<line x1="6" x2="7" y1="3" y2="3"/>
+<line x1="0" x2="0" y1="3" y2="2"/>
+</transition>
+</node>
+<node id="15779492">
+<transition child="33239650" id="9802714" rule="Surround Tent with Grass">
+<cell value="2" x="7" y="2"/>
+</transition>
+</node>
+<node id="33239650">
+<transition child="16525442" id="17074336" rule="Last Camping Spot">
+<cell value="3" x="1" y="1"/>
+</transition>
+</node>
+<node id="16525442">
+<transition child="16048406" id="24014318" rule="Tent for Tree">
+<line x1="1" x2="1" y1="1" y2="2"/>
+</transition>
+</node>
+<node id="16048406">
+<transition child="3486924" id="5185894" rule="Surround Tent with Grass">
+<cell value="2" x="0" y="1"/>
+<cell value="2" x="1" y="0"/>
+</transition>
+</node>
+<node id="3486924">
+<transition child="15750177" id="2542133" rule="Finish with Tents">
+<cell value="3" x="3" y="0"/>
+</transition>
+</node>
+<node id="15750177">
+<transition child="20911763" id="11555930" rule="Tent for Tree">
+<line x1="2" x2="3" y1="0" y2="0"/>
+</transition>
+</node>
+<node id="20911763">
+<transition child="25787240" id="3266504" rule="Surround Tent with Grass">
+<cell value="2" x="3" y="1"/>
+</transition>
+</node>
+<node id="25787240">
+<transition child="455321" id="7804227" rule="Last Camping Spot">
+<cell value="3" x="4" y="2"/>
+</transition>
+</node>
+<node id="455321">
+<transition child="13660059" id="14305574" rule="Tent for Tree">
+<line x1="4" x2="3" y1="2" y2="2"/>
+</transition>
+</node>
+<node id="13660059">
+<transition child="19831371" id="2219141" rule="Surround Tent with Grass">
+<cell value="2" x="5" y="2"/>
+</transition>
+</node>
+<node id="19831371">
+<transition child="14051683" id="4927414" rule="Last Camping Spot">
+<cell value="3" x="6" y="1"/>
+</transition>
+</node>
+<node id="14051683">
+<transition child="18128568" id="16745010" rule="Tent for Tree">
+<line x1="6" x2="6" y1="1" y2="2"/>
+</transition>
+</node>
+<node id="18128568"/>
+<node id="28677879">
+<transition child="10897739" id="12290801" rule="Surround Tent with Grass">
+<cell value="2" x="0" y="3"/>
+<cell value="2" x="2" y="2"/>
+<cell value="2" x="2" y="4"/>
+</transition>
+</node>
+<node id="10897739">
+<transition child="21945309" id="14896804" rule="Tent for Tree">
+<line x1="1" x2="1" y1="3" y2="4"/>
+</transition>
+</node>
+<node id="21945309">
+<transition child="32952643" id="6868507" rule="Finish with Grass">
+<cell value="2" x="1" y="0"/>
+<cell value="2" x="1" y="1"/>
+</transition>
+</node>
+<node id="32952643">
+<transition child="12180518" id="27481839" rule="No Tent For Tree"/>
+</node>
+<node id="12180518"/>
+</tree>
+</proof>
+</puzzle>
+</Legup>

@@ -43,6 +43,7 @@ public class LastCampingSpotBasicRule extends BasicRule {
     @Override
     public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement) {
         if (puzzleElement instanceof TreeTentLine) {
+//        if (!(puzzleElement instanceof TreeTentLine)) {
             return "Line is not valid for this rule.";
         }
         TreeTentBoard initialBoard =    (TreeTentBoard) transition.getParents().get(0).getBoard();
@@ -76,7 +77,8 @@ public class LastCampingSpotBasicRule extends BasicRule {
             return "This cell is not forced to be tent.";
         }
     }
-//**** Change image to only have tent placement (shouldn't give the idea that a link should be drawn)
+
+//**** Give option here to draw link as well
     private boolean isForced(TreeTentBoard board, TreeTentCell cell) {
         /* Check only one empty space is adjacent to this tree, and no unlinked tents
          * "unlinked tree adjacent to only one blank cell, and not adjacent to any unlinked tents, blank cell must be a tent."*/
