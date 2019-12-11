@@ -6,6 +6,9 @@ import edu.rpi.legup.model.rules.ContradictionRule;
 import edu.rpi.legup.puzzle.treetent.TreeTentBoard;
 import edu.rpi.legup.puzzle.treetent.TreeTentCell;
 import edu.rpi.legup.puzzle.treetent.TreeTentType;
+import edu.rpi.legup.puzzle.treetent.TreeTentLine;
+import java.awt.*;
+import java.util.List;
 
 public class NoTreeForTentContradictionRule extends ContradictionRule {
 
@@ -30,9 +33,19 @@ public class NoTreeForTentContradictionRule extends ContradictionRule {
         if (cell.getType() != TreeTentType.TENT) {
             return "This cell does not contain a contradiction at this location.";
         }
-        int adjTree = treeTentBoard.getAdjacent(cell, TreeTentType.TREE).size();
-//        int adjUnknown = treeTentBoard.getAdjacent(cell, TreeTentType.UNKNOWN).size();
-        if (adjTree == 0) {
+
+        //check unlinked trees
+        List<TreeTentCell> adjTree = treeTentBoard.getAdjacent(cell, TreeTentType.TREE);
+        List<TreeTentCell> un_Tree = treeTentBoard.getAdjacent(cell, TreeTentType.TREE);
+        //Remove all trees that are part of a link
+        for (TreeTentCell adj_tree : adjTree) {
+            for (TreeTentLine line : treeTentBoard.getLines()) {
+                if (line.getC1().getLocation().equals(adj_tree.getLocation()) || line.getC2().getLocation().equals(adj_tree.getLocation())) {
+                    un_Tree.remove(adj_tree);
+                }
+            }
+        }
+        if (un_Tree.size() == 0) {
             return null;
         } else {
             return "This cell does not contain a contradiction at this location.";

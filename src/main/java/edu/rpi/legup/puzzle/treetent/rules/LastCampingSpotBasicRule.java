@@ -53,8 +53,14 @@ public class LastCampingSpotBasicRule extends BasicRule {
         if (!(initCell.getType() == TreeTentType.UNKNOWN && finalCell.getType() == TreeTentType.TENT)) { //must be placing a tent at an unknown cell
             return "This cell must be a tent.";
         }
+        //TODO: Return false if there are any unlinked or unknown spots
 //        return null;
         if (isForced(initialBoard, initCell)) {
+            //        String out = "trees:"+Integer.toString(trees)+ "-- tents:"+Integer.toString(tents)+"-- lines:"+Integer.toString(lines);
+//        JFrame f;
+//        f=new JFrame();
+//        JOptionPane.showMessageDialog(f,out);
+
             /* Below is an attempt to get the connection line to populate automatically, but couldn't get it to work */
 
 //            TreeTentLine line = new TreeTentLine(initCell, treeCell); //create line
@@ -88,6 +94,15 @@ public class LastCampingSpotBasicRule extends BasicRule {
         /* isolate the tree in this list with only one empty adjacent space: */
         TreeTentCell tree = null;
         for (TreeTentCell c : adjTrees){
+            //make sure unlinked
+            boolean skip = false;
+            for (TreeTentLine line : board.getLines()) {
+                if (line.getC1().getLocation().equals(c.getLocation()) || line.getC2().getLocation().equals(c.getLocation())) {
+                    skip = true;
+                    break;
+                }
+            }
+            if(skip) {continue;}
             if(board.getAdjacent(c, TreeTentType.UNKNOWN).size() == 1){
                 tree = c;   //Found the valid tree
                 break;
