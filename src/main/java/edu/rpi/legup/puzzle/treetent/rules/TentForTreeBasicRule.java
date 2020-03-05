@@ -28,6 +28,8 @@ public class TentForTreeBasicRule extends BasicRule {
      * @param puzzleElement equivalent puzzleElement
      * @return null if the child node logically follow from the parent node at the specified puzzleElement,
      * otherwise error message
+     *
+     * TODO: Check at all neighboring adjacent trees, if they have any other trees adjacent to them return false
      */
     @Override
     public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement) {

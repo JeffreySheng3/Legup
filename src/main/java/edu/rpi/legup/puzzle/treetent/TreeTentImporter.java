@@ -18,6 +18,8 @@ public class TreeTentImporter extends PuzzleImporter {
      *
      * @param node xml document node
      * @throws InvalidFileFormatException
+     *
+     * Puzzle files have rows starting from top left, columns counted top down (basically whole board is rotated 90 clockwise)
      */
     @Override
     public void initializeBoard(Node node) throws InvalidFileFormatException {
@@ -49,6 +51,7 @@ public class TreeTentImporter extends PuzzleImporter {
             int width = treeTentBoard.getWidth();
             int height = treeTentBoard.getHeight();
 
+            //add trees
             for (int i = 0; i < elementDataList.getLength(); i++) {
                 TreeTentCell cell = (TreeTentCell) puzzle.getFactory().importCell(elementDataList.item(i), treeTentBoard);
                 Point loc = cell.getLocation();

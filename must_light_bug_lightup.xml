@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Legup version="2.0.0">
+<puzzle name="LightUp">
+<board height="7" width="7">
+<cells>
+<cell value="0" x="2" y="0"/>
+<cell value="2" x="4" y="0"/>
+<cell value="-1" x="0" y="2"/>
+<cell value="-1" x="6" y="2"/>
+<cell value="1" x="3" y="3"/>
+<cell value="0" x="0" y="4"/>
+<cell value="2" x="6" y="4"/>
+<cell value="-1" x="2" y="6"/>
+<cell value="-1" x="4" y="6"/>
+</cells>
+</board>
+<proof>
+<tree>
+<node id="26321088" root="true">
+<transition child="331790553" id="1223610524" rule="Finish with Empty">
+<cell value="-3" x="2" y="1"/>
+<cell value="-3" x="1" y="0"/>
+<cell value="-3" x="3" y="0"/>
+</transition>
+</node>
+<node id="331790553">
+<transition child="971064283" id="1240180254" rule="Finish with Bulbs">
+<cell value="-4" x="4" y="1"/>
+<cell value="-4" x="5" y="0"/>
+</transition>
+</node>
+<node id="971064283">
+<transition child="1895674695" id="1312992360" rule="Finish with Bulbs">
+<cell value="-4" x="6" y="5"/>
+<cell value="-4" x="6" y="3"/>
+</transition>
+</node>
+<node id="1895674695">
+<transition child="770616215" id="64732095" rule="Must Light">
+<cell value="-4" x="3" y="2"/>
+</transition>
+</node>
+<node id="770616215">
+<transition child="2114146007" id="707144473" rule="Must Light">
+<cell value="-4" x="0" y="0"/>
+</transition>
+</node>
+<node id="2114146007">
+<transition child="757299435" id="1143371195" rule="Finish with Empty">
+<cell value="-3" x="3" y="4"/>
+<cell value="-3" x="2" y="3"/>
+</transition>
+</node>
+<node id="757299435">
+<transition child="785762961" id="136606791" rule="Must Light">
+<cell value="-4" x="3" y="6"/>
+</transition>
+</node>
+<node id="785762961">
+<transition child="1857580702" id="525125630" rule="Finish with Empty">
+<cell value="-3" x="0" y="3"/>
+<cell value="-3" x="1" y="4"/>
+</transition>
+</node>
+<node id="1857580702">
+<transition child="1261779385" id="873919068" rule="Must Light">
+<cell value="-4" x="1" y="6"/>
+</transition>
+</node>
+<node id="1261779385">
+<transition child="1663907347" id="329099654" rule="Must Light">
+<cell value="-4" x="2" y="4"/>
+</transition>
+</node>
+<node id="1663907347"/>
+</tree>
+</proof>
+</puzzle>
+</Legup>

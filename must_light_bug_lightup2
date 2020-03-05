@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Legup version="2.0.0">
+    <puzzle name="LightUp">
+        <board height="7" width="7">
+            <cells>
+                <cell value="0" x="2" y="0"/>
+                <cell value="2" x="4" y="0"/>
+                <cell value="-1" x="0" y="2"/>
+                <cell value="-1" x="6" y="2"/>
+                <cell value="1" x="3" y="3"/>
+                <cell value="0" x="0" y="4"/>
+                <cell value="2" x="6" y="4"/>
+                <cell value="-1" x="2" y="6"/>
+                <cell value="-1" x="4" y="6"/>
+            </cells>
+        </board>
+        <proof>
+            <tree>
+                <node id="1879947324" root="true">
+                    <transition child="134507803" id="850576977" rule="Finish with Empty">
+                        <cell value="-3" x="1" y="0"/>
+                        <cell value="-3" x="2" y="1"/>
+                        <cell value="-3" x="3" y="0"/>
+                    </transition>
+                </node>
+                <node id="134507803">
+                    <transition child="173499332" id="665107829" rule="Finish with Bulbs">
+                        <cell value="-4" x="5" y="0"/>
+                        <cell value="-4" x="4" y="1"/>
+                    </transition>
+                </node>
+                <node id="173499332">
+                    <transition child="1606470818" id="728904025" rule="Empty Cells in Light">
+                        <cell value="-3" x="5" y="4"/>
+                    </transition>
+                </node>
+                <node id="1606470818">
+                    <transition child="2134929319" id="303928984" rule="Finish with Bulbs">
+                        <cell value="-4" x="6" y="5"/>
+                        <cell value="-4" x="6" y="3"/>
+                    </transition>
+                </node>
+                <node id="2134929319">
+                    <transition child="1016401179" id="824006952" rule="Finish with Empty">
+                        <cell value="-3" x="1" y="4"/>
+                        <cell value="-3" x="0" y="3"/>
+                    </transition>
+                </node>
+                <node id="1016401179">
+                    <transition child="591045592" id="1738607886" rule="Must Light">
+                        <cell value="-4" x="0" y="0"/>
+                    </transition>
+                </node>
+                <node id="591045592">
+                    <transition child="1883419481" id="998058925" rule="Satisfy Number">
+                        <cell value="-4" x="4" y="3"/>
+                    </transition>
+                    <transition child="1607265035" id="725921619" rule="Satisfy Number">
+                        <cell value="-4" x="3" y="2"/>
+                    </transition>
+                    <transition child="1100975903" id="614611113" rule="Satisfy Number">
+                        <cell value="-4" x="2" y="3"/>
+                    </transition>
+                    <transition child="1993360797" id="997861734" rule="Satisfy Number">
+                        <cell value="-4" x="3" y="4"/>
+                    </transition>
+                </node>
+                <node id="1993360797">
+                    <transition child="569333657" id="1879702985" rule="Finish with Empty">
+                        <cell value="-3" x="2" y="3"/>
+                        <cell value="-3" x="3" y="2"/>
+                    </transition>
+                </node>
+                <node id="569333657">
+                    <transition child="1450392253" id="1351498506" rule="Must Light">
+                        <cell value="-4" x="1" y="2"/>
+                    </transition>
+                </node>
+                <node id="1450392253">
+                    <transition child="504514704" id="465264354" rule="Must Light">
+                        <cell value="-4" x="0" y="6"/>
+                    </transition>
+                </node>
+                <node id="504514704"/>
+                <node id="1100975903">
+                    <transition child="592426600" id="391707190" rule="Finish with Empty">
+                        <cell value="-3" x="3" y="4"/>
+                        <cell value="-3" x="3" y="2"/>
+                    </transition>
+                </node>
+                <node id="592426600">
+                    <transition child="1846170282" id="791348883" rule="Must Light">
+                        <cell value="-4" x="3" y="6"/>
+                    </transition>
+                </node>
+                <node id="1846170282">
+                    <transition child="884014582" id="1057581801" rule="Must Light">
+                        <cell value="-4" x="1" y="6"/>
+                    </transition>
+                </node>
+                <node id="884014582"/>
+                <node id="1607265035">
+                    <transition child="1845273092" id="102411958" rule="Finish with Empty">
+                        <cell value="-3" x="2" y="3"/>
+                        <cell value="-3" x="3" y="4"/>
+                    </transition>
+                </node>
+                <node id="1845273092">
+                    <transition child="455158592" id="1682616267" rule="Must Light">
+                        <cell value="-4" x="3" y="6"/>
+                    </transition>
+                </node>
+                <node id="455158592">
+                    <transition child="227500934" id="1517758251" rule="Must Light">
+                        <cell value="-4" x="1" y="6"/>
+                    </transition>
+                </node>
+                <node id="227500934">
+                    <transition child="793268201" id="280672609" rule="Must Light">
+                        <cell value="-4" x="2" y="4"/>
+                    </transition>
+                </node>
+                <node id="793268201"/>
+                <node id="1883419481">
+                    <transition child="1997850268" id="1128552228" rule="Bulbs In Path"/>
+                </node>
+                <node id="1997850268"/>
+            </tree>
+        </proof>
+    </puzzle>
+</Legup>
