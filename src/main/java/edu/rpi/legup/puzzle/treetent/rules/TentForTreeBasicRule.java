@@ -12,6 +12,11 @@ import edu.rpi.legup.puzzle.treetent.TreeTentType;
 
 import java.util.List;
 
+import java.awt.*;
+import java.util.List;
+import javax.swing.*;
+
+
 public class TentForTreeBasicRule extends BasicRule {
 
     public TentForTreeBasicRule() {
@@ -58,9 +63,40 @@ public class TentForTreeBasicRule extends BasicRule {
         }
     }
 
-    private boolean isForced(TreeTentBoard board, TreeTentCell tree, TreeTentCell tent) {
-        List<TreeTentCell> tents = board.getAdjacent(tree, TreeTentType.TENT);
-        return !tents.isEmpty();
+
+    //TODO Still looks to have an issue, check if linked tents are excluded properly    ** check picture for situation
+    //TODO -- Also, must check this rule for ALL adjacent trees, return true if even one tree this is valid for
+    //          can also try to apply contradiction rule here for each tree (prolly tent for tree)
+    private boolean isForced(TreeTentBoard board, TreeTentCell tree_, TreeTentCell tent) {
+        //check empty spaces
+//        if (board.getAdjacent(tree_, TreeTentType.UNKNOWN).size() != 0) {
+//            return false;
+//        }
+        //Get all trees adjacent to the placed tent, check if any of them are required to have this tent
+        List<TreeTentCell> trees = board.getAdjacent(tent, TreeTentType.TREE);
+        for (TreeTentCell tree : trees) {
+            //skip if this has any unknown spaces
+            if(board.getAdjacent(tree, TreeTentType.UNKNOWN).size() > 0) {continue;}
+
+            //check unlinked tents
+            List<TreeTentCell> tents = board.getAdjacent(tree, TreeTentType.TENT);
+            List<TreeTentCell> un_tents = board.getAdjacent(tree, TreeTentType.TENT);
+
+            //Remove all tents that are part of a link
+            for (TreeTentCell adj_tent : tents) {
+                for (TreeTentLine line : board.getLines()) {
+                    if (line.getC1().getLocation().equals(adj_tent.getLocation()) || line.getC2().getLocation().equals(adj_tent.getLocation())) {
+                        un_tents.remove(adj_tent);
+                    }
+                }
+            }
+//            String out = "*unlinked tents::"+Integer.toString(un_tents.size());
+//            JFrame f;
+//            f=new JFrame();
+//            JOptionPane.showMessageDialog(f,out);
+            if (un_tents.size() == 1) {return true;}
+        }
+        return false;
     }
 
     /**

@@ -53,11 +53,24 @@ public class TreeTent extends Puzzle {
     public boolean isBoardComplete(Board board) {
         TreeTentBoard treeTentBoard = (TreeTentBoard) board;
 
-        for (ContradictionRule rule : contradictionRules) {
-            if (rule.checkContradiction(treeTentBoard) == null) {
-                return false;
-            }
-        }
+//        String out = "Calling checker, contRules = " + Integer.toString(contradictionRules.size());
+//        JFrame f;
+//        f=new JFrame();
+//        JOptionPane.showMessageDialog(f,out); // Maybe don't do this check at all?
+//        for (ContradictionRule rule : contradictionRules) {
+//            out = "Checking rule: " + rule.getRuleName();
+//            f=new JFrame();
+//            JOptionPane.showMessageDialog(f,out);
+//            if (rule.checkContradiction(treeTentBoard) == null) {
+//                out = "returning false for rule: " + rule.getRuleName();
+//                f=new JFrame();
+//                JOptionPane.showMessageDialog(f,out);
+//                return false;
+//            }
+//        }
+//        out = "Checked all cont rules";
+//        f=new JFrame();
+//        JOptionPane.showMessageDialog(f,out);
 
         for (PuzzleElement puzzleElement : treeTentBoard.getPuzzleElements()) {
             TreeTentCell cell = (TreeTentCell) puzzleElement;
@@ -77,16 +90,12 @@ public class TreeTent extends Puzzle {
 
         }
 
-//        String out = "trees:"+Integer.toString(trees)+ "-- tents:"+Integer.toString(tents)+"-- lines:"+Integer.toString(lines);
-//        JFrame f;
-//        f=new JFrame();
-//        JOptionPane.showMessageDialog(f,out);
         if(trees != lines || trees != tents || tents != lines) { return false; } //indicates an unlinked tree
 
         return true;
     }
-    /**TODO:  Implement checker, fix tent for tree, isnt checking if there are empty spaces adjacent(should return false if there is)*
-     *          -Also look into case rules
+    /**TODO:
+     *      Check the checker code when using case rule branching, should ret valid for a single valid branch
      */
 
     /**

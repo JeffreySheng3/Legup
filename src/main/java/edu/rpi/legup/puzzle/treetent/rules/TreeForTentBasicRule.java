@@ -55,13 +55,23 @@ public class TreeForTentBasicRule extends BasicRule {
         }
     }
     //Rule is forced if only one tree is available for this tent
-    private boolean isForced(Board board, PuzzleElement tree_element, PuzzleElement tent_element) {
-        TreeTentBoard treeTentBoard = (TreeTentBoard) board;
+    private boolean isForced(TreeTentBoard board, PuzzleElement tree_element, PuzzleElement tent_element) {
+//        TreeTentBoard treeTentBoard = (TreeTentBoard) board;
         TreeTentCell tree = (TreeTentCell) tree_element;
         TreeTentCell tent = (TreeTentCell) tent_element;
-        List<TreeTentCell> trees = treeTentBoard.getAdjacent(tent, TreeTentType.TREE);
-        return (trees.size() != 1);
-//        return !trees.isEmpty();
+
+        List<TreeTentCell> trees = board.getAdjacent(tent, TreeTentType.TREE);
+        List<TreeTentCell> un_trees = board.getAdjacent(tent, TreeTentType.TREE);
+
+        //Remove all trees that are part of a link
+        for (TreeTentCell adj_tree : trees) {
+            for (TreeTentLine line : board.getLines()) {
+                if (line.getC1().getLocation().equals(adj_tree.getLocation()) || line.getC2().getLocation().equals(adj_tree.getLocation())) {
+                    un_trees.remove(adj_tree);
+                }
+            }
+        }
+        return (un_trees.size() == 1);
     }
 
     /**
