@@ -9,6 +9,11 @@ import edu.rpi.legup.model.tree.TreeTransition;
 import edu.rpi.legup.puzzle.nurikabe.NurikabeBoard;
 import edu.rpi.legup.puzzle.nurikabe.NurikabeCell;
 import edu.rpi.legup.puzzle.nurikabe.NurikabeType;
+import edu.rpi.legup.puzzle.nurikabe.NurikabeUtilities;
+import edu.rpi.legup.utility.DisjointSets;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class FillinBlackBasicRule extends BasicRule {
 
@@ -27,6 +32,29 @@ public class FillinBlackBasicRule extends BasicRule {
      * @return null if the child node logically follow from the parent node at the specified puzzleElement,
      * otherwise error message
      */
+
+    //Rule checks out when black is placed on any location besides adjacent to a number tile
+    @Override
+    public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement){
+        NurikabeBoard board = (NurikabeBoard) transition.getBoard();
+        NurikabeBoard origBoard = (NurikabeBoard) transition.getParents().get(0).getBoard();
+
+        NurikabeCell cell = (NurikabeCell) board.getPuzzleElement(puzzleElement);
+
+        if(cell.getType() != NurikabeType.BLACK){
+            return "Only black cells are allowed for this rule!";
+        }
+
+        int x = cell.getLocation().x;
+        int y = cell.getLocation().y;
+
+        NurikabeCell upCell = board.getCell(x, y - 1);
+        NurikabeCell rightCell = board.getCell(x + 1, y);
+        NurikabeCell downCell = board.getCell(x, y + 1);
+        NurikabeCell leftCell = board.getCell(x - 1, y);
+        return null;
+    }
+    /*
     @Override
     public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement) {
         NurikabeBoard board = (NurikabeBoard) transition.getBoard();
@@ -45,6 +73,7 @@ public class FillinBlackBasicRule extends BasicRule {
         }
         return null;
     }
+     */
 
     /**
      * Creates a transition {@link Board} that has this rule applied to it using the {@link TreeNode}.
