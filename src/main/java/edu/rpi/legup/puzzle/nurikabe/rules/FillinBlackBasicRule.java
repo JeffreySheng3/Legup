@@ -48,10 +48,15 @@ public class FillinBlackBasicRule extends BasicRule {
         int x = cell.getLocation().x;
         int y = cell.getLocation().y;
 
-        NurikabeCell upCell = board.getCell(x, y - 1);
-        NurikabeCell rightCell = board.getCell(x + 1, y);
-        NurikabeCell downCell = board.getCell(x, y + 1);
-        NurikabeCell leftCell = board.getCell(x - 1, y);
+        NurikabeType upCellType = board.getCell(x, y - 1).getType();
+        NurikabeType rightCell = board.getCell(x + 1, y).getType();
+        NurikabeType downCell = board.getCell(x, y + 1).getType();
+        NurikabeType leftCell = board.getCell(x - 1, y).getType();
+
+        if(upCellType == NurikabeType.WHITE || rightCell == NurikabeType.WHITE || downCell == NurikabeType.WHITE || leftCell == NurikabeType.WHITE){
+            return "Does not follow the rule.";
+        }
+
         return null;
     }
     /*
