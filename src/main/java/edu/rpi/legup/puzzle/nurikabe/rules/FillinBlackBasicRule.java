@@ -53,7 +53,10 @@ public class FillinBlackBasicRule extends BasicRule {
         NurikabeType downCell = board.getCell(x, y + 1).getType();
         NurikabeType leftCell = board.getCell(x - 1, y).getType();
 
-        if(upCellType == NurikabeType.WHITE || rightCell == NurikabeType.WHITE || downCell == NurikabeType.WHITE || leftCell == NurikabeType.WHITE){
+        if( (upCellType == NurikabeType.WHITE || upCellType == NurikabeType.UNKNOWN)  ||
+                (rightCell == NurikabeType.WHITE || rightCell == NurikabeType.UNKNOWN) ||
+                (downCell == NurikabeType.WHITE || downCell == NurikabeType.UNKNOWN) ||
+                (leftCell == NurikabeType.WHITE || leftCell == NurikabeType.UNKNOWN) ){
             return "Does not follow the rule.";
         }
 
