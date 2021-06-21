@@ -3,17 +3,12 @@ package edu.rpi.legup.puzzle.nurikabe.rules;
 import edu.rpi.legup.model.gameboard.Board;
 import edu.rpi.legup.model.gameboard.PuzzleElement;
 import edu.rpi.legup.model.rules.BasicRule;
-import edu.rpi.legup.model.rules.ContradictionRule;
 import edu.rpi.legup.model.tree.TreeNode;
 import edu.rpi.legup.model.tree.TreeTransition;
 import edu.rpi.legup.puzzle.nurikabe.NurikabeBoard;
 import edu.rpi.legup.puzzle.nurikabe.NurikabeCell;
 import edu.rpi.legup.puzzle.nurikabe.NurikabeType;
-import edu.rpi.legup.puzzle.nurikabe.NurikabeUtilities;
-import edu.rpi.legup.utility.DisjointSets;
 
-import java.util.HashSet;
-import java.util.Set;
 
 public class FillinBlackBasicRule extends BasicRule {
 
@@ -37,7 +32,6 @@ public class FillinBlackBasicRule extends BasicRule {
     @Override
     public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement){
         NurikabeBoard board = (NurikabeBoard) transition.getBoard();
-        NurikabeBoard origBoard = (NurikabeBoard) transition.getParents().get(0).getBoard();
 
         NurikabeCell cell = (NurikabeCell) board.getPuzzleElement(puzzleElement);
 
