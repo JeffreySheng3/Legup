@@ -47,6 +47,7 @@ public class FillinBlackBasicRule extends BasicRule {
         NurikabeType downCell = board.getCell(x, y + 1).getType();
         NurikabeType leftCell = board.getCell(x - 1, y).getType();
 
+/*
         if( (upCellType == NurikabeType.WHITE || upCellType == NurikabeType.UNKNOWN)  ||
                 (rightCell == NurikabeType.WHITE || rightCell == NurikabeType.UNKNOWN) ||
                 (downCell == NurikabeType.WHITE || downCell == NurikabeType.UNKNOWN) ||
@@ -54,28 +55,17 @@ public class FillinBlackBasicRule extends BasicRule {
             return "Does not follow the rule.";
         }
 
+ */
+        if( upCellType != NurikabeType.BLACK  ||
+                rightCell != NurikabeType.BLACK ||
+                downCell != NurikabeType.BLACK ||
+                leftCell != NurikabeType.BLACK ){
+            return "Does not follow the rule.";
+        }
+
         return null;
     }
-    /*
-    @Override
-    public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement) {
-        NurikabeBoard board = (NurikabeBoard) transition.getBoard();
-        NurikabeBoard origBoard = (NurikabeBoard) transition.getParents().get(0).getBoard();
-        ContradictionRule contraRule = new NoNumberContradictionRule();
 
-        NurikabeCell cell = (NurikabeCell) board.getPuzzleElement(puzzleElement);
-
-        if (cell.getType() != NurikabeType.BLACK) {
-            return "Only black cells are allowed for this rule!";
-        }
-        NurikabeBoard modified = origBoard.copy();
-        modified.getPuzzleElement(puzzleElement).setData(NurikabeType.WHITE.toValue());
-        if (contraRule.checkContradictionAt(modified, puzzleElement) != null) {
-            return "Black cells must be placed in a region of black cells!";
-        }
-        return null;
-    }
-     */
 
     /**
      * Creates a transition {@link Board} that has this rule applied to it using the {@link TreeNode}.
