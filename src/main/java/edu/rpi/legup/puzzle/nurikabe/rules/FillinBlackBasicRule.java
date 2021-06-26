@@ -3,11 +3,15 @@ package edu.rpi.legup.puzzle.nurikabe.rules;
 import edu.rpi.legup.model.gameboard.Board;
 import edu.rpi.legup.model.gameboard.PuzzleElement;
 import edu.rpi.legup.model.rules.BasicRule;
+import edu.rpi.legup.model.rules.ContradictionRule;
 import edu.rpi.legup.model.tree.TreeNode;
 import edu.rpi.legup.model.tree.TreeTransition;
 import edu.rpi.legup.puzzle.nurikabe.NurikabeBoard;
 import edu.rpi.legup.puzzle.nurikabe.NurikabeCell;
 import edu.rpi.legup.puzzle.nurikabe.NurikabeType;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 public class FillinBlackBasicRule extends BasicRule {
@@ -31,9 +35,13 @@ public class FillinBlackBasicRule extends BasicRule {
     //Rule checks out when black is placed on any location besides adjacent to a number tile
     @Override
     public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement){
-        NurikabeBoard board = (NurikabeBoard) transition.getBoard();
+        Set<ContradictionRule> contras = new LinkedHashSet<>();
+        contras.add(new BlackSquareContradictionRule());
 
-        NurikabeCell cell = (NurikabeCell) board.getPuzzleElement(puzzleElement);
+        NurikabeBoard destBoardState = (NurikabeBoard) transition.getBoard();
+        NurikabeBoard origBoardState = (NurikabeBoard) transition.getParents().get(0).getBoard();
+
+        NurikabeCell cell = (NurikabeCell) destBoardState.getPuzzleElement(puzzleElement);
 
         if(cell.getType() != NurikabeType.BLACK){
             return "Only black cells are allowed for this rule!";
@@ -41,29 +49,52 @@ public class FillinBlackBasicRule extends BasicRule {
 
         int x = cell.getLocation().x;
         int y = cell.getLocation().y;
+        int width = destBoardState.getWidth();
+        int height = destBoardState.getHeight();
 
-        NurikabeType upCellType = board.getCell(x, y - 1).getType();
-        NurikabeType rightCell = board.getCell(x + 1, y).getType();
-        NurikabeType downCell = board.getCell(x, y + 1).getType();
-        NurikabeType leftCell = board.getCell(x - 1, y).getType();
+        NurikabeType upCell;
+        NurikabeType rightCell;
+        NurikabeType downCell;
+        NurikabeType leftCell;
 
-/*
-        if( (upCellType == NurikabeType.WHITE || upCellType == NurikabeType.UNKNOWN)  ||
-                (rightCell == NurikabeType.WHITE || rightCell == NurikabeType.UNKNOWN) ||
-                (downCell == NurikabeType.WHITE || downCell == NurikabeType.UNKNOWN) ||
-                (leftCell == NurikabeType.WHITE || leftCell == NurikabeType.UNKNOWN) ){
-            return "Does not follow the rule.";
+        if(y-1 < 0){
+            upCell = null;
+        }else{
+            upCell = destBoardState.getCell(x, y - 1).getType();
         }
 
- */
-        if( upCellType != NurikabeType.BLACK  ||
-                rightCell != NurikabeType.BLACK ||
-                downCell != NurikabeType.BLACK ||
-                leftCell != NurikabeType.BLACK ){
-            return "Does not follow the rule.";
+        if(x-1 < 0){
+            leftCell = null;
+        }else{
+            leftCell = destBoardState.getCell(x - 1, y).getType();
         }
 
-        return null;
+        if(x+1 >= width){
+            rightCell = null;
+        }else{
+            rightCell = destBoardState.getCell(x + 1, y).getType();
+        }
+
+        if(y+1 >= height){
+            downCell = null;
+        }else{
+            downCell = destBoardState.getCell(x, y + 1).getType();
+        }
+
+
+        NurikabeBoard modified = origBoardState.copy();
+        modified.getCell(x, y).setData(NurikabeType.BLACK.toValue());
+
+        if( (upCell == NurikabeType.BLACK || upCell == null)  &&
+                (rightCell == NurikabeType.BLACK || rightCell == null) &&
+                (downCell == NurikabeType.BLACK || downCell == null) &&
+                (leftCell == NurikabeType.BLACK || leftCell == null) ){
+            //Check for contradiction here?
+            return null;
+        }
+        System.out.println("ERROR");
+        return "Does not follow the rule.";
+
     }
 
 
