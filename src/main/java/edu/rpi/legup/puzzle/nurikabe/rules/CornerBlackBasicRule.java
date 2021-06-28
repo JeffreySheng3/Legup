@@ -7,6 +7,7 @@ import edu.rpi.legup.model.rules.ContradictionRule;
 import edu.rpi.legup.model.tree.TreeNode;
 import edu.rpi.legup.model.tree.TreeTransition;
 import edu.rpi.legup.puzzle.nurikabe.NurikabeBoard;
+import edu.rpi.legup.puzzle.nurikabe.NurikabeCell;
 import edu.rpi.legup.puzzle.nurikabe.NurikabeType;
 import edu.rpi.legup.utility.ConnectedRegions;
 
@@ -30,6 +31,27 @@ public class CornerBlackBasicRule extends BasicRule {
      * @return null if the child node logically follow from the parent node at the specified puzzleElement,
      * otherwise error message
      */
+
+    /*
+    - Check corners for single number cell
+    - Check number cell's number
+    - Check if number cell is connected to any other white cells
+    - If not connected to any other white cells and cell number > 2, return true
+     */
+    @Override
+    public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement) {
+        NurikabeBoard destBoardState = (NurikabeBoard) transition.getBoard();
+        NurikabeBoard origBoardState = (NurikabeBoard) transition.getParents().get(0).getBoard();
+
+        NurikabeCell cell = (NurikabeCell) destBoardState.getPuzzleElement(puzzleElement);
+        int x = cell.getLocation().x;
+        int y = cell.getLocation().y;
+
+        System.out.println("X: " + x + "Y:" + y);
+        return null;
+    }
+
+    /*
     @Override
     public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement) {
         NurikabeBoard destBoardState = (NurikabeBoard) transition.getBoard();
@@ -121,6 +143,8 @@ public class CornerBlackBasicRule extends BasicRule {
         }
         return null;
     }
+
+     */
 
     /**
      * Creates a transition {@link Board} that has this rule applied to it using the {@link TreeNode}.
