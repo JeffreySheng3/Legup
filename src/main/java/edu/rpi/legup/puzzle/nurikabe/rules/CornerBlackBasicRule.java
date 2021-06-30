@@ -44,8 +44,37 @@ public class CornerBlackBasicRule extends BasicRule {
         NurikabeBoard origBoardState = (NurikabeBoard) transition.getParents().get(0).getBoard();
 
         NurikabeCell cell = (NurikabeCell) destBoardState.getPuzzleElement(puzzleElement);
+        if(cell.getType() != NurikabeType.BLACK){
+            return "Only black cells allowed for this rule.";
+        }
+
         int x = cell.getLocation().x;
         int y = cell.getLocation().y;
+        int width = destBoardState.getWidth();
+        int height = destBoardState.getHeight();
+
+        NurikabeType topLeftCell = null;
+        NurikabeType topRightCell = null;
+        NurikabeType downLeftCell = null;
+        NurikabeType downRightCell = null;
+
+
+        if(y-1 < 0 && x-1 < 0){
+            topLeftCell = destBoardState.getCell(x-1, y - 1).getType();
+        }
+        if(y-1 < 0 && x+1 >= width){
+            topRightCell = destBoardState.getCell(x+1, y-1).getType();
+        }
+        if(y+1 >= height && x-1 < 0){
+            downLeftCell = destBoardState.getCell(x-1,y+1).getType();
+        }
+        if(y+1 >= height && x+1 >= width){
+            downRightCell = destBoardState.getCell(x+1,y+1).getType();
+        }
+
+        int whiteCounter = 0
+
+
 
         System.out.println("X: " + x + "Y:" + y);
         return null;
