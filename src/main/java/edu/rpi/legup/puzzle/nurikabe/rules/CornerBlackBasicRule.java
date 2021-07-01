@@ -12,6 +12,8 @@ import edu.rpi.legup.puzzle.nurikabe.NurikabeType;
 import edu.rpi.legup.utility.ConnectedRegions;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Set;
 
 public class CornerBlackBasicRule extends BasicRule {
@@ -45,6 +47,7 @@ public class CornerBlackBasicRule extends BasicRule {
 
         NurikabeCell cell = (NurikabeCell) destBoardState.getPuzzleElement(puzzleElement);
         if(cell.getType() != NurikabeType.BLACK){
+            System.out.print("Cell type error");
             return "Only black cells allowed for this rule.";
         }
 
@@ -57,26 +60,46 @@ public class CornerBlackBasicRule extends BasicRule {
         NurikabeType topRightCell = null;
         NurikabeType downLeftCell = null;
         NurikabeType downRightCell = null;
-
+        ArrayList<NurikabeCell> whiteCells = new ArrayList<>();
 
         if(y-1 < 0 && x-1 < 0){
-            topLeftCell = destBoardState.getCell(x-1, y - 1).getType();
+            topLeftCell = destBoardState.getCell(x-1, y-1).getType();
+            if(topLeftCell == NurikabeType.NUMBER){
+                whiteCells.add(destBoardState.getCell(x-1, y-1));
+            }
         }
         if(y-1 < 0 && x+1 >= width){
             topRightCell = destBoardState.getCell(x+1, y-1).getType();
+            if(topRightCell == NurikabeType.NUMBER){
+                whiteCells.add(destBoardState.getCell(x+1, y-1));
+            }
         }
         if(y+1 >= height && x-1 < 0){
             downLeftCell = destBoardState.getCell(x-1,y+1).getType();
+            if(downLeftCell == NurikabeType.NUMBER){
+                whiteCells.add(destBoardState.getCell(x-1, y+11));
+            }
         }
         if(y+1 >= height && x+1 >= width){
             downRightCell = destBoardState.getCell(x+1,y+1).getType();
+            if(downRightCell == NurikabeType.NUMBER){
+                whiteCells.add(destBoardState.getCell(x+1, y+11));
+            }
         }
 
-        int whiteCounter = 0
+        //Make sure there is only 1 white cell and it needs another white to escape.
+        if(whiteCells.size() != 1){
+            System.out.println("White cell error. There are " + whiteCells.size() + " white cells.");
+            return "Incorrect number of white cells!";
+        }else{
+            NurikabeCell numberedCell = whiteCells.get(0);
+            if(numberedCell.getData() != 2){
+                System.out.println("Number error");
+                return "Incorrect number on white cell!";
+            }
+        }
 
 
-
-        System.out.println("X: " + x + "Y:" + y);
         return null;
     }
 
