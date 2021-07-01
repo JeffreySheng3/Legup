@@ -62,26 +62,27 @@ public class CornerBlackBasicRule extends BasicRule {
         NurikabeType downRightCell = null;
         ArrayList<NurikabeCell> whiteCells = new ArrayList<>();
 
-        if(y-1 < 0 && x-1 < 0){
+        if(y-1 >= 0 && x-1 >= 0){
             topLeftCell = destBoardState.getCell(x-1, y-1).getType();
             if(topLeftCell == NurikabeType.NUMBER){
                 whiteCells.add(destBoardState.getCell(x-1, y-1));
             }
         }
-        if(y-1 < 0 && x+1 >= width){
+        if(y-1 >= 0 && x+1 < width){
             topRightCell = destBoardState.getCell(x+1, y-1).getType();
             if(topRightCell == NurikabeType.NUMBER){
                 whiteCells.add(destBoardState.getCell(x+1, y-1));
             }
         }
-        if(y+1 >= height && x-1 < 0){
+        if(y+1 < height && x-1 >= 0){
             downLeftCell = destBoardState.getCell(x-1,y+1).getType();
             if(downLeftCell == NurikabeType.NUMBER){
                 whiteCells.add(destBoardState.getCell(x-1, y+11));
             }
         }
-        if(y+1 >= height && x+1 >= width){
+        if(y+1 < height && x+1 < width){
             downRightCell = destBoardState.getCell(x+1,y+1).getType();
+
             if(downRightCell == NurikabeType.NUMBER){
                 whiteCells.add(destBoardState.getCell(x+1, y+11));
             }
@@ -92,15 +93,18 @@ public class CornerBlackBasicRule extends BasicRule {
             System.out.println("White cell error. There are " + whiteCells.size() + " white cells.");
             return "Incorrect number of white cells!";
         }else{
-            NurikabeCell numberedCell = whiteCells.get(0);
-            if(numberedCell.getData() != 2){
-                System.out.println("Number error");
-                return "Incorrect number on white cell!";
+            if(whiteCells.size() == 1){
+                NurikabeCell numberedCell = whiteCells.get(0);
+                System.out.println("Cell is " + numberedCell.getLocation().x + " " + numberedCell.getLocation().y);
+                if(numberedCell.getData() != 2){
+                    System.out.println("Number error");
+                    return "Incorrect number on white cell!";
+                }else{
+                    return null;
+                }
             }
+            return "There are no surrounding white cells!";
         }
-
-
-        return null;
     }
 
     /*
