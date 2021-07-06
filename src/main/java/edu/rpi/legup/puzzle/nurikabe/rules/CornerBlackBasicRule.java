@@ -43,7 +43,6 @@ public class CornerBlackBasicRule extends BasicRule {
     @Override
     public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement) {
         NurikabeBoard destBoardState = (NurikabeBoard) transition.getBoard();
-        NurikabeBoard origBoardState = (NurikabeBoard) transition.getParents().get(0).getBoard();
 
         NurikabeCell cell = (NurikabeCell) destBoardState.getPuzzleElement(puzzleElement);
         if(cell.getType() != NurikabeType.BLACK){
@@ -56,12 +55,13 @@ public class CornerBlackBasicRule extends BasicRule {
         int width = destBoardState.getWidth();
         int height = destBoardState.getHeight();
 
-        NurikabeType topLeftCell = null;
-        NurikabeType topRightCell = null;
-        NurikabeType downLeftCell = null;
-        NurikabeType downRightCell = null;
+        NurikabeType topLeftCell ;
+        NurikabeType topRightCell;
+        NurikabeType downLeftCell;
+        NurikabeType downRightCell;
         ArrayList<NurikabeCell> whiteCells = new ArrayList<>();
 
+        //Check around new black cell for amount of number cells
         if(y-1 >= 0 && x-1 >= 0){
             topLeftCell = destBoardState.getCell(x-1, y-1).getType();
             if(topLeftCell == NurikabeType.NUMBER){
@@ -88,120 +88,19 @@ public class CornerBlackBasicRule extends BasicRule {
             }
         }
 
-        //Make sure there is only 1 white cell and it needs another white to escape.
+        //Make sure there is only 1 white cell
         if(whiteCells.size() != 1){
-            System.out.println("White cell error. There are " + whiteCells.size() + " white cells.");
             return "Incorrect number of white cells!";
         }else{
-            if(whiteCells.size() == 1){
-                NurikabeCell numberedCell = whiteCells.get(0);
-                System.out.println(numberedCell);
-//                System.out.println("Cell is " + numberedCell.getLocation().x + " " + numberedCell.getLocation().y);
-                if(numberedCell.getData() != 2){
-                    System.out.println("Number error");
-                    return "Incorrect number on white cell!";
-                }else{
-                    return null;
-                }
-            }
-            return "There are no surrounding white cells!";
-        }
-    }
-
-    /*
-    @Override
-    public String checkRuleRawAt(TreeTransition transition, PuzzleElement puzzleElement) {
-        NurikabeBoard destBoardState = (NurikabeBoard) transition.getBoard();
-        NurikabeBoard origBoardState = (NurikabeBoard) transition.getParents().get(0).getBoard();
-
-        int width = destBoardState.getWidth();
-        int height = destBoardState.getHeight();
-
-        ContradictionRule tooFewContra = new TooFewSpacesContradictionRule();
-
-        for (int y = 0; y < height; y++) {
-            for (int x = 0; x < width; x++) {
-                if (!destBoardState.getCell(x, y).equalsData(origBoardState.getCell(x, y))) {
-                    if (destBoardState.getCell(x, y).getData() != NurikabeType.BLACK.ordinal()) {
-                        return "Only black cells are allowed for this rule!";
-                    }
-
-                    NurikabeBoard modified = origBoardState.copy();
-                    // modified.getBoardCells()[y][x] = nurikabe.CELL_WHITE;
-
-                    boolean validPoint = false;
-
-                    // Check each corner of the changed cell
-                    for (int d = -1; d < 2; d += 2) {
-                        if ((x + d >= 0 && x + d < width) && (y + d >= 0 && y + d < height) && modified.getCell(x + d, y + d).getData() >= NurikabeType.WHITE.ordinal())    // >= is used to account for numbered cells
-                        {
-                            // Series of if statements to check conditions of rule
-                            // First check: cells adjacent to changed cell and white region corner are empty
-                            if (modified.getCell(x + d, y).getData() == NurikabeType.UNKNOWN.ordinal() && modified.getCell(x, y + d).getData() == NurikabeType.UNKNOWN.ordinal()) {
-                                modified.getCell(y + d, x).setData(NurikabeType.BLACK.ordinal());
-                                modified.getCell(y, x + d).setData(NurikabeType.BLACK.ordinal());
-                                // Second check: corner is only way to escape from the white region
-                                if (tooFewContra.checkContradiction(modified) == null) {
-                                    Set<Point> reg = ConnectedRegions.getRegionAroundPoint(new Point(x + d, y + d), NurikabeType.BLACK.ordinal(), modified.getIntArray(), modified.getWidth(), modified.getHeight());
-                                    int regionNum = 0;
-                                    for (Point p : reg) {
-                                        if (modified.getCell(p.x, p.y).getType() == NurikabeType.NUMBER) {
-                                            if (regionNum == 0) {
-                                                regionNum = modified.getCell(p.x, p.y).getData();
-                                            } else {
-                                                return "There is a MultipleNumbers Contradiction on the board.";
-                                            }
-                                        }
-                                    }
-                                    //Third check: The white region kittycorner to this currently has one less cell than required
-                                    if (regionNum > 0 && reg.size() == regionNum - 11) {
-                                        validPoint = true;
-                                        break;
-                                    }
-                                }
-                            }
-                        }
-
-                        if ((x + d >= 0 && x + d < width) && (y - d >= 0 && y - d < height) && modified.getCell(x + d, y - d).getData() >= NurikabeType.WHITE.ordinal()) {
-                            // Series of if statements to check conditions of rule
-                            // First check: cells adjacent to changed cell and white region corner are empty
-                            if (modified.getCell(x + d, y).getData() == NurikabeType.UNKNOWN.ordinal() && modified.getCell(x, y - d).getData() == NurikabeType.UNKNOWN.ordinal()) {
-                                modified.getCell(y - d, x).setData(NurikabeType.BLACK.ordinal());
-                                modified.getCell(y, x + d).setData(NurikabeType.BLACK.ordinal());
-                                // Second check: corner is only way to escape from the white region
-                                if (tooFewContra.checkContradiction(modified) == null) {
-                                    Set<Point> reg = ConnectedRegions.getRegionAroundPoint(new Point(x + d, y - d), NurikabeType.BLACK.ordinal(), modified.getIntArray(), modified.getWidth(), modified.getHeight());
-                                    int regionNum = 0;
-                                    for (Point p : reg) {
-                                        if (modified.getCell(p.x, p.y).getType() == NurikabeType.NUMBER) {
-                                            if (regionNum == 0) {
-                                                regionNum = modified.getCell(p.x, p.y).getData();
-                                            } else {
-                                                return "There is a MultipleNumbers Contradiction on the board!";
-                                            }
-                                        }
-                                    }
-                                    // Third check: The white region kittycorner to this currently has one less cell than required
-                                    if (regionNum > 0 && reg.size() == regionNum - 11) {
-                                        validPoint = true;
-                                        break;
-                                    }
-                                }
-                            }
-                        }
-
-
-                    }
-                    if (!validPoint) {
-                        return "This is not a valid use of the corner black rule!";
-                    }
-                }
+            //Make sure it needs more white cells to escape
+            NurikabeCell numberedCell = whiteCells.get(0);
+            if(numberedCell.getData() != 2){
+                return "Incorrect number on white cell!";
+            }else{
+                return null;
             }
         }
-        return null;
     }
-
-     */
 
     /**
      * Creates a transition {@link Board} that has this rule applied to it using the {@link TreeNode}.
