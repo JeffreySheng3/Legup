@@ -72,8 +72,8 @@ public class CornerBlackBasicRule extends BasicRule {
                                 modified.getCell(y, x + d).setData(NurikabeType.BLACK.ordinal());
                                 System.out.println("Marker 4");
 //                                 Second check: corner is only way to escape from the white region
-                               System.out.println(tooFewContra.checkContradiction(modified));
-                                if (tooFewContra.checkContradiction(modified) == null) {
+                               System.out.println("Contra check " + tooFewContra.checkContradiction(modified));
+                                if (tooFewContra.checkContradiction(modified) != null) {
                                     System.out.println("Marker 5");
                                     Set<Point> reg = ConnectedRegions.getRegionAroundPoint(new Point(x + d, y + d), NurikabeType.BLACK.ordinal(), modified.getIntArray(), modified.getWidth(), modified.getHeight());
                                     int regionNum = 0;
@@ -111,10 +111,12 @@ public class CornerBlackBasicRule extends BasicRule {
                                 modified.getCell(y - d, x).setData(NurikabeType.BLACK.ordinal());
                                 modified.getCell(y, x + d).setData(NurikabeType.BLACK.ordinal());
                                 // Second check: corner is only way to escape from the white region
-                                if (tooFewContra.checkContradiction(modified) == null) {
+                                if (tooFewContra.checkContradiction(modified) != null) {
+                                    System.out.println("Marker 7");
                                     Set<Point> reg = ConnectedRegions.getRegionAroundPoint(new Point(x + d, y - d), NurikabeType.BLACK.ordinal(), modified.getIntArray(), modified.getWidth(), modified.getHeight());
                                     int regionNum = 0;
                                     for (Point p : reg) {
+                                        System.out.println("Marker 8");
                                         if (modified.getCell(p.x, p.y).getType() == NurikabeType.NUMBER) {
 
                                             if (regionNum == 0) {
@@ -131,6 +133,7 @@ public class CornerBlackBasicRule extends BasicRule {
 
                                     // Third check: The white region kittycorner to this currently has one less cell than required
                                     if (regionNum > 0 && reg.size() == regionNum - 11) {
+                                        System.out.println("Marker 9");
                                         validPoint = true;
                                         System.out.println("2Region number is " + regionNum + " reg size is " + reg.size());
 
